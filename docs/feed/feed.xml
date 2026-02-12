@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Blog Title</title>
+  <subtitle>This is a longer description about your blog.</subtitle>
+  <link href="https://example.com/suecodes/feed/feed.xml" rel="self" />
+  <link href="https://example.com/suecodes/" />
+  <updated>2025-03-31T00:00:00Z</updated>
+  <id>https://example.com/suecodes/</id>
+  <author>
+    <name>Your Name</name>
+  </author>
+  <entry>
+    <title>We should still teach coding</title>
+    <link href="https://example.com/suecodes/blog/stillteach/" />
+    <updated>2025-03-31T00:00:00Z</updated>
+    <id>https://example.com/suecodes/blog/stillteach/</id>
+    <content type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;This post was originally published at &lt;a href=&quot;https://dev.to/fastly/we-should-still-teach-coding-3cjh&quot;&gt;dev.to/fastly&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Software written using generative AI is all over the web. Performance and security issues abound. Open source projects are being &lt;a href=&quot;https://arstechnica.com/ai/2025/03/devs-say-ai-crawlers-dominate-traffic-forcing-blocks-on-entire-countries/&quot;&gt;overwhelmed by bot traffic&lt;/a&gt;. There&#39;s a lot of harm being caused, but as an educator who cares about lowering barriers to software creation, I can&#39;t ignore the &lt;a href=&quot;https://dev.to/glitch/what-is-worth-learning-41e3&quot;&gt;democratizing potential&lt;/a&gt; of these tools either.&lt;/p&gt;
+&lt;p&gt;In this post I’d like to explore the opportunities for learning that this paradigm shift presents – from how to make your projects more efficient and secure, to learning about the &lt;a href=&quot;https://hbr.org/2023/04/generative-ai-has-an-intellectual-property-problem&quot;&gt;intellectual property&lt;/a&gt; and &lt;a href=&quot;https://www.technologyreview.com/2022/04/20/1050392/ai-industry-appen-scale-data-labels/&quot;&gt;labor exploitation&lt;/a&gt; that might have gone into training the models you used.&lt;/p&gt;
+&lt;h2 id=&quot;understanding-incentives&quot;&gt;Understanding incentives&lt;/h2&gt;
+&lt;p&gt;One thing I have learned working in education is the value of accepting people’s motivations – having a goal that a skill will help you achieve is the most effective motivator for learning. Clearly many people are finding ways to use AI to help them achieve goals.&lt;/p&gt;
+&lt;p&gt;Motivations are determined by complex socioeconomic factors beyond our ability to reason away. Let’s instead keep the door to the good internet open by empowering people to make responsible choices, equipping them with knowledge of the technical systems they’re creating within.&lt;/p&gt;
+&lt;p&gt;Gen AI might &lt;a href=&quot;https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated/&quot;&gt;help you spin up an MVP&lt;/a&gt;, but eventually you will have to dig into the code. You’ll either learn software engineering skills, or have to bring in the experts. Far from making engineers obsolete, I worry that less investment in these skills will make the barriers around the profession more extreme. &lt;em&gt;&lt;strong&gt;A select few having insight into how critical systems work is not a future I’m enthusiastic about.&lt;/strong&gt;&lt;/em&gt; Instead I’d like to find learning paths that these new ways of building software present.&lt;/p&gt;
+&lt;h2 id=&quot;the-conditions-for-learning-are-in-place&quot;&gt;The conditions for learning are in place&lt;/h2&gt;
+&lt;p&gt;Projects developed using gen AI can support a range of good practices in education, including some key activities that we often neglect in both formal learning and the workplace:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Personalization&lt;/strong&gt;: We can work on something meaningful to the learner rather than dragging them through a one-size-fits-all experience.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fast feedback loops&lt;/strong&gt;: Automation can fuel adaptive learning through short iterative cycles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reflection&lt;/strong&gt;: Reflecting on an experience helps you internalize skills you’ve acquired and reapply them in different contexts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code generated using LLMs enables and requires these perhaps more than “traditional” ways of making software. There are also some &lt;a href=&quot;https://teachcomputing.org/pedagogy&quot;&gt;coding pedagogy techniques&lt;/a&gt; that gen AI projects can lend themselves to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reading before writing&lt;/strong&gt; – code comprehension is a crucial software engineering skill, consider an experienced engineer performing code reviews and mentoring junior teammates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Starting from a functioning application&lt;/strong&gt; instead of a blank slate.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Running&lt;/strong&gt; an app to see what it does, then &lt;strong&gt;investigating&lt;/strong&gt; how it did it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Taking gradual ownership&lt;/strong&gt; of a project by making a first edit, then turning it into something new.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;⚠️ Generative AI is not an appropriate substitute for the many interpersonal aspects of effective learning IMO. “Mentoring” powered by &lt;a href=&quot;https://hai.stanford.edu/news/covert-racism-ai-how-language-models-are-reinforcing-outdated-stereotypes&quot;&gt;biased LLM content&lt;/a&gt; is incredibly dangerous.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;encouraging-inquiry-and-independent-thought&quot;&gt;Encouraging inquiry and independent thought&lt;/h2&gt;
+&lt;p&gt;I wonder about a gen AI coding exercise that gives you a broken project to fix, or prompts you to explore where the code came from – this kind of inquiry is being used in the humanities to support the development of &lt;a href=&quot;https://www.cambridge.org/elt/blog/2023/03/30/enhancing-learners-critical-thinking-skills-with-ai-assisted-technology/&quot;&gt;critical thinking skills&lt;/a&gt;, &lt;em&gt;especially important since these tools might by default &lt;a href=&quot;https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/&quot;&gt;erode those very skills&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Then we have the wealth of problems that arise when people deploy applications with little to no understanding of their implementation. What happens over the long term, what happens if your project becomes a &lt;em&gt;real thing&lt;/em&gt; people depend on, what happens when it breaks, what happens when it causes harm, how do we navigate the obfuscation of accountability? These are learning opportunities we’ll embrace if we want people to make more informed choices about how they use technology.&lt;/p&gt;
+&lt;p&gt;Software engineering is a very privileged profession, largely because it requires access to education. &lt;a href=&quot;https://simonwillison.net/2025/Mar/19/vibe-coding/&quot;&gt;Vibe coding&lt;/a&gt; creates new paths into building with tech. The starting point may be different, but we might even manage to invite more people into the spaces where we shape the future of the web.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>What is worth learning?</title>
+    <link href="https://example.com/suecodes/blog/worthlearning/" />
+    <updated>2024-04-25T00:00:00Z</updated>
+    <id>https://example.com/suecodes/blog/worthlearning/</id>
+    <content type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;This post was originally published at &lt;a href=&quot;https://dev.to/glitch/what-is-worth-learning-41e3&quot;&gt;dev.to/glitch&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;AI-assisted coding is lowering the barrier to making software. It’s also increasing the complexity of managing it. You can make applications with less upfront knowledge than before, and organizations are having to figure out how to handle the ensuing unpredictability and risk. So it’s getting easier and harder.&lt;/p&gt;
+&lt;p&gt;Building software became unnecessarily difficult over the last few years in my opinion. We switched to frameworks that closed a lot of the doors to opportunity we’d seen open in the earlier years of the web. Now there’s a widening divide between those with the skills to make software “properly” and those who are no longer prevented from participating by this gatekeeping. Then we have the threat of jobs being eliminated because some executives think AI removes the need for engineers. It&#39;s a bit of a mess.&lt;/p&gt;
+&lt;p&gt;Working in developer education, I often ask myself if I’m teaching the right skills, the ones that are worth learning. It’s getting harder to make reliable guesses about which topics will enable people to make the web and get paid doing it.&lt;/p&gt;
+&lt;h2 id=&quot;for-most-of-us-it-isn-t-about-the-tech&quot;&gt;For most of us it isn’t about the tech&lt;/h2&gt;
+&lt;p&gt;I recently set up a local developer environment for a project I wanted to contribute to. It was painful and I resented every minute of it lol. The actual contribution was easier than installing the tooling.&lt;/p&gt;
+&lt;p&gt;In spite of essentially being paid to learn coding skills so that I can teach them to others, I find it incredibly hard to motivate myself to learn if the subject doesn&#39;t interest me. A lot of what’s involved in setting up local environments falls into that category. Compatibility between libraries, reciting the correct incantations of path and environment variables, that type of thing. These are not the parts I care about.&lt;/p&gt;
+&lt;p&gt;The same frustration kills the motivation to learn. For a new developer to spend hours configuring an environment before they can make a change to a web page that they can see in the browser is a big problem when it comes to learning. The motivating part is where you achieve something visible, tangible, significant to you – that’s what builds momentum as you feel you’re making progress. Exasperating setup experiences tell the person “this is not for you” and most quietly go away.&lt;/p&gt;
+&lt;p&gt;The best motivator to learn any skill is a goal that is meaningful to you and that the skill is helping you to achieve. For most people, setting up an effective developer environment does not constitute such a goal.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If it does for you then congrats, but I believe you&#39;re in the minority! In the developer community there’s a wholesome passion for technical elegance, but unfortunately it’s frequently accompanied by an alienating disdain for those who don’t share the interest or understanding.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;it-shouldn-t-need-to-be-hard&quot;&gt;It shouldn’t need to be hard&lt;/h2&gt;
+&lt;p&gt;Earlier this year I ran employee training for my Fastly coworkers. I wanted to teach them to use our technical product in a way that absolutely anyone could engage with. Some colleagues feared this might be impossible, but for me, removing the expectation of prerequisite knowledge is a useful constraint – it helps me make learning experiences that are better for everyone. So I gave myself ground rules like no local environment, no dev platform accounts or tooling like GitHub. And it was surprisingly successful!&lt;/p&gt;
+&lt;p&gt;This is part of why I’ve always loved Glitch – and how we got those employees to use our technical product by the way. It lets you jump straight to the parts of a project that are intuitively valuable and resonant to most people. I’d rather spend my time learning how to create the functionality or the experience I want to give users than installing the toolchain that only gets me to the starting line for that work.&lt;/p&gt;
+&lt;p&gt;If I never had to set up a dev environment again I simply would not. 💅🏻&lt;/p&gt;
+&lt;h2 id=&quot;motivations-do-not-need-your-validation&quot;&gt;Motivations do not need your validation&lt;/h2&gt;
+&lt;p&gt;Today’s coding tools are abstracting away parts of software engineering that will invite many more people to the party &lt;em&gt;and&lt;/em&gt; create significant challenges around maintenance, security, performance, and more.&lt;/p&gt;
+&lt;p&gt;However attached we are to notions of correctness, of what people should know in order to create software, the reality is that most will not invest in something they don’t consider worth learning. You better believe people will flock to the tools that enable them without judgment or the expectation of virtuous toil! We can’t complain about this while insisting that the painful, exclusive alternative is the only valid one.&lt;/p&gt;
+&lt;p&gt;If we want software that is reliable, safe, and inclusive, we need to provide paths that empower a wide representation of people to build it. That means accepting the motivators they bring with them.&lt;/p&gt;
+&lt;p&gt;Our goals determine what is and isn’t worth our time, and for most of us the technologies that help us get there are largely incidental. Those choices are driven by the opportunities each person is trying to unlock.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What makes something worth learning to you?&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Software development isn’t writing syntax</title>
+    <link href="https://example.com/suecodes/blog/notsyntax/" />
+    <updated>2023-05-11T00:00:00Z</updated>
+    <id>https://example.com/suecodes/blog/notsyntax/</id>
+    <content type="html">&lt;!--
+&lt;img src=&quot;robots.png&quot; alt=&quot;robots&quot; /&gt;
+--&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;This post was originally published at &lt;a href=&quot;https://blog.glitch.com/post/software-development-isnt-writing-syntax&quot;&gt;blog.glitch.com&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;AI assisted coding has really taken off recently. The tech and &lt;a href=&quot;https://blog.glitch.com/post/yes-code-coding-with-ai&quot;&gt;the conversation around it&lt;/a&gt; say some interesting things about our understanding of what developers do.&lt;/p&gt;
+&lt;p&gt;AI can write some kinds of code, and it’s even helping people who aren’t coders to make software applications. It’s also frequently wrong. We’re still learning the types of coding task it’s suited to — in what specific contexts it’s a help rather than a hindrance. Unrealistic expectations and inaccurate interpretations abound! &lt;strong&gt;The conversation reveals our inability to define the real skills in being a software developer.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;It’s not writing syntax. Being able to recite the right keywords only takes you so far.&lt;/p&gt;
+&lt;h2 id=&quot;ok-what-is-it-then&quot;&gt;OK, what is it then?&lt;/h2&gt;
+&lt;p&gt;Back when I was training for tech, an instructor told us a story about a research exercise. A mix of people looked at a code sample for a short time and tried to memorize as much of it as possible. Some had never written code, and some were experienced software engineers. The non-coders were able to recount detail about the first couple of lines from the top of the excerpt. The developers remembered almost none of that detail, but recounted a high level overview of the structures they had seen (a loop, a conditional, etc). The developers understood the code differently.&lt;/p&gt;
+&lt;p&gt;Code comprehension remains a neglected part of developer education, but this exercise reflects how integral it is to making software, and that abstraction level is a key aspect of working with code. The actual syntax is a &lt;em&gt;detail&lt;/em&gt; — an important one, the code won’t work if it’s wrong — but focusing on syntax is only helpful at a granular level, it doesn’t come close to conveying what a developer actually does.&lt;/p&gt;
+&lt;h2 id=&quot;learning-and-context&quot;&gt;Learning and context&lt;/h2&gt;
+&lt;p&gt;When I see a job posting that requires experience in specific frameworks or programming languages, it always seems like such a missed opportunity. Software engineering is fundamentally a &lt;em&gt;learning&lt;/em&gt; activity. Developers are always learning new technologies and solving new problems. Once you’ve learned one language you pick up more. What characterizes the more experienced developer is the ability to reapply skills in different contexts.&lt;/p&gt;
+&lt;p&gt;I’ve had the privilege to work with incredibly highly skilled software engineers, and if I were to try to describe their talents and contributions, writing correct or efficient syntax would not make the list lol. Part of it is going past “how” and delving into “why” — articulating the problem as it stands within an organizational or social context, making sure you’re solving the right problem, and defining it in an actionable way. There’s a ton of communication and collaboration, and being comfortable with ambiguity is hugely valuable.&lt;/p&gt;
+&lt;h2 id=&quot;different-interfaces&quot;&gt;Different interfaces&lt;/h2&gt;
+&lt;p&gt;Shifting abstraction levels have given us an evolving definition of software engineering since the inception of coding. What seems like essential knowledge to one generation of coders becomes an invisible part of the stack to the next generation. There’s a strong argument that AI is another interface in this cycle. Remember the discussion a few years ago about knowing how to use effective phrasing for a Google search? The algorithms in the tools we use daily have advanced, but describing many of them as natural language processing is still a stretch.&lt;/p&gt;
+&lt;p&gt;Everyone who interacts with tech figures out how to give the inputs that get the desired output, whether you’re writing code or adjusting your accent because the voice recognition tool can’t process Glaswegian — we learn how to get the machines to do what we want.&lt;/p&gt;
+&lt;h2 id=&quot;engaging-with-complexity&quot;&gt;Engaging with complexity&lt;/h2&gt;
+&lt;p&gt;Increasing abstraction levels have been accompanied by the rise of the API — we make software by combining a lot of components towards a particular goal. Connecting all of these different tools means the activity is in part defined by its technological and community ecosystem. Software engineers make something valuable within a complex landscape of interacting systems.&lt;/p&gt;
+&lt;p&gt;The modular style of making software is successful because it frees developers to focus their creativity on the parts of a project that make it &lt;em&gt;unique&lt;/em&gt; — which are also the parts AI is least able to approach.&lt;/p&gt;
+&lt;p&gt;Making the web isn’t about writing code, it’s about being able to create and participate through technology. As it becomes harder to say what is and isn’t software development, maybe it becomes more interesting to ask other questions. For example, what does a tool enable people to do, what are the opportunities, and what are the risks of harm?&lt;/p&gt;
+</content>
+  </entry>
+</feed>
