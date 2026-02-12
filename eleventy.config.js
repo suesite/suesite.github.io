@@ -76,11 +76,11 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "Sue's blog",
+			subtitle: "A blog about coding and learning",
+			base: "https://www.sue.codes/",
 			author: {
-				name: "Your Name"
+				name: "Sue Smith"
 			}
 		}
 	});
@@ -164,5 +164,5 @@ export const config = {
 	// it will transform any absolute URLs in your HTML to include this
 	// folder name and does **not** affect where things go in the output folder.
 
-	 pathPrefix: "/suecodes/",
+//	 pathPrefix: "/",
 };

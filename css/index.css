@@ -55,7 +55,7 @@ body {
 html {
 	overflow-y: scroll;
 	padding-top: 3rem;
-	background-image: url("https://suesmith.github.io/suecodes/wall_chroma.jpg");
+	background-image: url("./img/wall_chroma.jpg");
 	background-size: cover;
 }
 body {

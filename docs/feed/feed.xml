@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="pretty-atom-feed.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>Blog Title</title>
-  <subtitle>This is a longer description about your blog.</subtitle>
-  <link href="https://example.com/suecodes/feed/feed.xml" rel="self" />
-  <link href="https://example.com/suecodes/" />
+  <title>Sue&#39;s blog</title>
+  <subtitle>A blog about coding and learning</subtitle>
+  <link href="https://www.sue.codes/feed/feed.xml" rel="self" />
+  <link href="https://www.sue.codes/" />
   <updated>2025-03-31T00:00:00Z</updated>
-  <id>https://example.com/suecodes/</id>
+  <id>https://www.sue.codes/</id>
   <author>
-    <name>Your Name</name>
+    <name>Sue Smith</name>
   </author>
   <entry>
     <title>We should still teach coding</title>
-    <link href="https://example.com/suecodes/blog/stillteach/" />
+    <link href="https://www.sue.codes/blog/stillteach/" />
     <updated>2025-03-31T00:00:00Z</updated>
-    <id>https://example.com/suecodes/blog/stillteach/</id>
+    <id>https://www.sue.codes/blog/stillteach/</id>
     <content type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;This post was originally published at &lt;a href=&quot;https://dev.to/fastly/we-should-still-teach-coding-3cjh&quot;&gt;dev.to/fastly&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Software written using generative AI is all over the web. Performance and security issues abound. Open source projects are being &lt;a href=&quot;https://arstechnica.com/ai/2025/03/devs-say-ai-crawlers-dominate-traffic-forcing-blocks-on-entire-countries/&quot;&gt;overwhelmed by bot traffic&lt;/a&gt;. There&#39;s a lot of harm being caused, but as an educator who cares about lowering barriers to software creation, I can&#39;t ignore the &lt;a href=&quot;https://dev.to/glitch/what-is-worth-learning-41e3&quot;&gt;democratizing potential&lt;/a&gt; of these tools either.&lt;/p&gt;
 &lt;p&gt;In this post I’d like to explore the opportunities for learning that this paradigm shift presents – from how to make your projects more efficient and secure, to learning about the &lt;a href=&quot;https://hbr.org/2023/04/generative-ai-has-an-intellectual-property-problem&quot;&gt;intellectual property&lt;/a&gt; and &lt;a href=&quot;https://www.technologyreview.com/2022/04/20/1050392/ai-industry-appen-scale-data-labels/&quot;&gt;labor exploitation&lt;/a&gt; that might have gone into training the models you used.&lt;/p&gt;
@@ -47,9 +47,9 @@
   </entry>
   <entry>
     <title>What is worth learning?</title>
-    <link href="https://example.com/suecodes/blog/worthlearning/" />
+    <link href="https://www.sue.codes/blog/worthlearning/" />
     <updated>2024-04-25T00:00:00Z</updated>
-    <id>https://example.com/suecodes/blog/worthlearning/</id>
+    <id>https://www.sue.codes/blog/worthlearning/</id>
     <content type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;This post was originally published at &lt;a href=&quot;https://dev.to/glitch/what-is-worth-learning-41e3&quot;&gt;dev.to/glitch&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;AI-assisted coding is lowering the barrier to making software. It’s also increasing the complexity of managing it. You can make applications with less upfront knowledge than before, and organizations are having to figure out how to handle the ensuing unpredictability and risk. So it’s getting easier and harder.&lt;/p&gt;
 &lt;p&gt;Building software became unnecessarily difficult over the last few years in my opinion. We switched to frameworks that closed a lot of the doors to opportunity we’d seen open in the earlier years of the web. Now there’s a widening divide between those with the skills to make software “properly” and those who are no longer prevented from participating by this gatekeeping. Then we have the threat of jobs being eliminated because some executives think AI removes the need for engineers. It&#39;s a bit of a mess.&lt;/p&gt;
@@ -76,9 +76,9 @@
   </entry>
   <entry>
     <title>Software development isn’t writing syntax</title>
-    <link href="https://example.com/suecodes/blog/notsyntax/" />
+    <link href="https://www.sue.codes/blog/notsyntax/" />
     <updated>2023-05-11T00:00:00Z</updated>
-    <id>https://example.com/suecodes/blog/notsyntax/</id>
+    <id>https://www.sue.codes/blog/notsyntax/</id>
     <content type="html">&lt;!--
 &lt;img src=&quot;robots.png&quot; alt=&quot;robots&quot; /&gt;
 --&gt;
