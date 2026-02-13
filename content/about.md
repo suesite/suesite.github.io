@@ -4,7 +4,8 @@ const eleventyNavigation = {
 	order: 3
 };
 ---
-# About
+
+# Hiya
 
 Hi! This is my new blog. I'll be adding new posts soon, but for now you can access the archive to read posts I published on other platforms over the last couple of years.
 
