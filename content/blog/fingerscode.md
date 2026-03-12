@@ -12,4 +12,8 @@ This week I'm talking at [Monki Gras](https://monkigras.com/) about developer le
 * [Learning Opportunities repo – Dr Cat Hicks](https://github.com/DrCatHicks/learning-opportunities)
 * [My DevRelCon talk about Developer Learning](https://developerrelations.com/developer-education/an-open-framework-for-developer-learning)
 
-I'll do a summary of the talk in blog post form soon!
+I'll do a summary of the talk in blog post form soon! In the meantime you can check out my other posts on the subject:
+
+* [We should still teach coding](https://www.sue.codes/blog/stillteach/)
+* [What is worth learning?](https://www.sue.codes/blog/worthlearning/)
+* [Software development isn't writing syntax](https://www.sue.codes/blog/notsyntax/)
