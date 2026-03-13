@@ -14,6 +14,7 @@ And here are some links I mentioned:
 
 * [Why kids still need to learn to code in the age of AI – Raspberry Pi Foundation](https://www.raspberrypi.org/blog/why-kids-still-need-to-learn-to-code-in-the-age-of-ai/)
 * [Making the Implicit Explicit talk – Erin McKean](https://developerrelations.com/talks/making-the-implicit-explicit/)
+* [Semantic Waves – National Centre for Computing Education](https://teachcomputing.org/blog/quick-read-6-semantic-waves)
 * [Learning Opportunities repo – Dr Cat Hicks](https://github.com/DrCatHicks/learning-opportunities)
 * [My DevRelCon talk about Developer Learning](https://developerrelations.com/developer-education/an-open-framework-for-developer-learning)
 
