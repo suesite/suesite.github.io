@@ -1,14 +1,14 @@
 ---
 title: Do your fingers remember how to code?
 description: Discovering developer skills worth learning when AI can write code.
-date: 2026-03-16
+date: 2026-03-17
 ---
 
 This week I'm talking at [Monki Gras](https://monkigras.com/) about developer learning and AI. 
 
 Here's my deck:
 
-* [deck to follow]()
+* [Do your fingers remember how to code – slides](https://docs.google.com/presentation/d/1bwSZalwQHD5p1t0ivBa3nuCD4D97xJX1V9jLZam7syo/edit?usp=sharing)
 
 And here are some links I mentioned:
 
