@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sue&#39;s blog about coding</title>
-		<meta name="description" content="Thoughts on making software.">
+		<title>Do your fingers remember how to code?</title>
+		<meta name="description" content="Discovering developer skills worth learning when AI can write code.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 		
 		
@@ -370,6 +370,174 @@ blockquote {
 
 .social-profile-icon:hover path, .social-profile-icon:focus path {
   fill: cyan;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 		
 	
@@ -397,21 +565,36 @@ blockquote {
 		<main id="main">
 			<heading-anchors>
 				
-<h1 id="content-not-found">Content not found.</h1>
-<p>Go <a href="/">home</a>.</p>
-<!--
 
-Read more: https://www.11ty.dev/docs/quicktips/not-found/
 
-This is compatible with:
+<h1 id="do-your-fingers-remember-how-to-code">Do your fingers remember how to code?</h1>
 
-- GitHub Pages: https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/
-- GitLab Pages: https://docs.gitlab.com/ee/user/project/pages/introduction.html#custom-error-codes-pages
-- Netlify: https://www.netlify.com/docs/redirects/#custom-404
-- Cloudflare Pages: https://developers.cloudflare.com/pages/platform/serving-pages/#not-found-behavior
-- Vercel: https://vercel.com/guides/custom-404-page#static-site-generator-ssg
--->
+<ul class="post-metadata">
+	<li><time datetime="2026-03-17">17 March 2026</time></li>
+</ul>
 
+<p>This week I'm talking at <a href="https://monkigras.com/">Monki Gras</a> about developer learning and AI.</p>
+<p>Here's my deck:</p>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1bwSZalwQHD5p1t0ivBa3nuCD4D97xJX1V9jLZam7syo/edit?usp=sharing">Do your fingers remember how to code – slides</a></li>
+</ul>
+<p>And here are some links I mentioned:</p>
+<ul>
+<li><a href="https://www.raspberrypi.org/blog/why-kids-still-need-to-learn-to-code-in-the-age-of-ai/">Why kids still need to learn to code in the age of AI – Raspberry Pi Foundation</a></li>
+<li><a href="https://developerrelations.com/talks/making-the-implicit-explicit/">Making the Implicit Explicit talk – Erin McKean</a></li>
+<li><a href="https://teachcomputing.org/blog/quick-read-6-semantic-waves">Semantic Waves – National Centre for Computing Education</a></li>
+<li><a href="https://github.com/DrCatHicks/learning-opportunities">Learning Opportunities repo – Dr Cat Hicks</a></li>
+<li><a href="https://developerrelations.com/developer-education/an-open-framework-for-developer-learning">My DevRelCon talk about Developer Learning</a></li>
+</ul>
+<p>I'll do a summary of the talk in blog post form soon! In the meantime you can check out my other posts on the subject:</p>
+<ul>
+<li><a href="https://www.sue.codes/blog/stillteach/">We should still teach coding</a></li>
+<li><a href="https://www.sue.codes/blog/worthlearning/">What is worth learning?</a></li>
+<li><a href="https://www.sue.codes/blog/notsyntax/">Software development isn't writing syntax</a></li>
+</ul>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/stillteach/">We should still teach coding</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -451,7 +634,7 @@ This is compatible with:
         </a></div>
 		</footer>
 
-		<!-- This page `/404.html` was built on 2026-03-17T10:25:07.311Z -->
+		<!-- This page `/blog/fingerscode/` was built on 2026-03-17T10:25:07.311Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

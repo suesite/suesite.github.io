@@ -5,11 +5,37 @@
   <subtitle>A blog about coding and learning</subtitle>
   <link href="https://www.sue.codes/feed/feed.xml" rel="self" />
   <link href="https://www.sue.codes/" />
-  <updated>2025-03-31T00:00:00Z</updated>
+  <updated>2026-03-17T00:00:00Z</updated>
   <id>https://www.sue.codes/</id>
   <author>
     <name>Sue Smith</name>
   </author>
+  <entry>
+    <title>Do your fingers remember how to code?</title>
+    <link href="https://www.sue.codes/blog/fingerscode/" />
+    <updated>2026-03-17T00:00:00Z</updated>
+    <id>https://www.sue.codes/blog/fingerscode/</id>
+    <content type="html">&lt;p&gt;This week I&#39;m talking at &lt;a href=&quot;https://monkigras.com/&quot;&gt;Monki Gras&lt;/a&gt; about developer learning and AI.&lt;/p&gt;
+&lt;p&gt;Here&#39;s my deck:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.google.com/presentation/d/1bwSZalwQHD5p1t0ivBa3nuCD4D97xJX1V9jLZam7syo/edit?usp=sharing&quot;&gt;Do your fingers remember how to code – slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And here are some links I mentioned:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.raspberrypi.org/blog/why-kids-still-need-to-learn-to-code-in-the-age-of-ai/&quot;&gt;Why kids still need to learn to code in the age of AI – Raspberry Pi Foundation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developerrelations.com/talks/making-the-implicit-explicit/&quot;&gt;Making the Implicit Explicit talk – Erin McKean&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://teachcomputing.org/blog/quick-read-6-semantic-waves&quot;&gt;Semantic Waves – National Centre for Computing Education&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/DrCatHicks/learning-opportunities&quot;&gt;Learning Opportunities repo – Dr Cat Hicks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developerrelations.com/developer-education/an-open-framework-for-developer-learning&quot;&gt;My DevRelCon talk about Developer Learning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&#39;ll do a summary of the talk in blog post form soon! In the meantime you can check out my other posts on the subject:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sue.codes/blog/stillteach/&quot;&gt;We should still teach coding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sue.codes/blog/worthlearning/&quot;&gt;What is worth learning?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sue.codes/blog/notsyntax/&quot;&gt;Software development isn&#39;t writing syntax&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>We should still teach coding</title>
     <link href="https://www.sue.codes/blog/stillteach/" />
