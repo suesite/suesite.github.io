@@ -34,7 +34,7 @@ I’m going to talk to you about developer learning in the context of AI assiste
 
 ![1. Identifying developer skills worth learning when AI can write code 2. Creating the conditions for this learning](slide2.jpg)
 
-I am part of a small cohort of people who specialise in developer learning in industry settings. I think there are about 9 of us. A lot of people are asking for advice about which developer skills we should be teaching right now. The truth is that I don’t know. I have some suspicions! But it really needs to be tailored to your own context, your software, your teams, your organisational priorities. What I can do is point at some techniques for discovering what developer skills even are, because it turns out we don't have a great conception of them. And I can outline some strategies for helping people learn them.
+I am part of a small cohort of people who specialise in developer learning in industry settings. I think there are about 9 of us lol. A lot of people are asking for advice about which developer skills we should be teaching right now. The truth is that I don’t know. I have some suspicions! But it really needs to be tailored to your own context, your software, your teams, your organisational priorities. What I can do is point at some techniques for discovering what developer skills even are, because it turns out we don't have a great conception of them. And I can outline some strategies for helping people learn them.
 
 ![Demonic figure saying "Code is cheap, The bottleneck has moved, There is no moat"](slide3.jpg)
 
@@ -54,11 +54,11 @@ But I think we have a better handle on this already. We’re seeing a clear dive
 
 ![Cesare from Cabinet of Dr Caligari and "There’s a parallel comprehension gap at the project level, as mental models drift"](slide7.jpg)
 
-And there’s a parallel gap at the project level. As developers using AI to generate code find their ability to build solid mental models of a codebase start to drift. This might be partly anxiety but there are indicators that this comes at a cost. It might be related to the increased rework we see on projects that rely heavily on AI code generation, and the slower incident mitigation. We're missing something intangible that I'd like to explore.
+And there’s a parallel gap at the project level. As developers using AI to generate code find their ability to build solid mental models of a codebase start to drift. This might be partly anxiety but there are indicators that it comes at a real cost. It might be related to the increased rework we see on projects that rely heavily on AI code generation, and the slower incident mitigation. We're missing something intangible that I'd like to explore.
 
 ![Dean Stockwell and Harry Dean Stanton in Paris Texas with the caption "my body remembers"](slide8.jpg)
 
-I’m gonna take you back to 1984, the movie Paris Texas. These two brothers are driving across America. One of them has been stranded in the desert for years, he hasn't spoken to anyone for a long time, and his brother is taking him back to where he lives. And they are discussing sharing the driving, so he asks him if he remembers how to drive, and he says my body remembers.
+I’m gonnae take you back to 1984, the movie Paris Texas. These two brothers are driving across America. One of them has been stranded in the desert for years, he hasn't spoken to anyone for a long time, and his brother is taking him back to where he lives. And they are discussing sharing the driving, so he asks him if he remembers how to drive, and he says my body remembers.
 
 ![Skills we aren’t aware of in the moment... Persist past a level of proficiency](slide9.jpg)
 
@@ -72,23 +72,23 @@ A sidebar on this. I do not believe that you will forget how to code because you
 
 ![A hacker news screenshot and the text: Remember the “quickest to google” discourse from a few years ago?](slide11.jpg)
 
-Remember this from a few years ago, 13 apparently. The idea was that we shouldn’t measure programmer ability by the ability to remember syntax. That we could kind of outsource remembering to the machine and still be a good programmer. What was most valuable was more abstract than that. We’ve been through this moral panic a few times haven’t we, can you copy and paste from Stack Overflow and still be a good programmer. 
+Remember this from a few years ago, 13 apparently. The idea was that we shouldn’t measure programmer ability by the ability to remember syntax. That we could kind of outsource remembering to the machine and still be a good programmer. What was most valuable was more abstract than that. We’ve been through this moral panic a few times haven’t we, can you copy and paste from Stack Overflow and still be a good programmer...
 
 But when we look at the trajectory of a senior engineer, we see someone who spends less time touching code, whose skills are more abstract and not dependent on the detail of a particular implementation. It could be that we can retain a similar trajectory as people move a bit further from the implementation. But we'll have to do it with intention, it won't happen by accident.
 
 ![Wait, what are skills? One important thing about them is that they are repeatable](slide12.jpg)
 
-As an educator I can’t meaningfully say that I’ve helped someone acquire a skill if they don’t leave me with the ability to do something repeatable. If it's not repeatable it's not a skill. That’s why framing prompts as a programming abstraction is problematic from an education standpoint. Because it's not repeatable enough. The natural language input is not specific enough and the LLM output is not predictable enough to create the kind of repetitive feedback loop we use when teaching programming skills. It would be easier for me to teach those skills using a high level programming language, where we see a similar enough result for the same action.
+As an educator I can’t meaningfully say that I’ve helped someone acquire a skill if they don’t leave me with the ability to do something repeatable. If it's not repeatable it's not a skill. That’s why framing prompts as a programming abstraction is problematic from an education standpoint. Because it's not repeatable enough. The natural language input is not specific enough and the LLM output is not predictable enough to create the kind of repetitive feedback loop we use when teaching programming skills. It would be easier for me to teach those skills using a high level programming language.
 
 ![Cesare and the text: Dragging what’s hidden out into the open](slide13.jpg)
 
-There was a fantastic talk a few years ago from Erin McKean at devrelcon a few years ago. It was called "making the implicit explicit" and was about the process we go through as educators, as we try to discover implicit skills and knowledge, and make it explicit so that we can teach it to others. And we can all benefit from doing this.
+There was a fantastic talk a few years ago from Erin McKean at devrelcon. It was called "making the implicit explicit" and was about the process we go through as educators, as we try to discover implicit skills and knowledge, and make them explicit so that we can teach it to others. We can all benefit from doing this.
 
 ![Teaching means guessing where the learner is, Finding out you were wrong](slide14.jpg)
 
-I run employee training at my work, I teach teams within the company to use our product. And when I first proposed this it was met with skepticism, some people thought that teaching our technical product to teams they didn't regard as technical would work. But I was insistent about doing it. 1 because I’m delusional enough to think I can teach anyone anything, and 2 because it’s a cheap way to test my training resources before we put them in front of customers. 
+I run employee training at my work, I teach teams within the company to use our product. And when I first proposed this it was met with skepticism, some people thought that teaching our technical product to teams they didn't regard as technical would not work. But I was insistent about doing it. 1 because I’m delusional enough to think I can teach anyone anything, and 2 because it’s a cheap way to test training resources before they get put in front of customers. 
 
-So I would start by guessing what the learners already knew and what needed explained, you need to go where the learner is to take them where you want to get them. I would guess what they already knew and create a space where they felt able to tell me I was wrong, and they’d no idea what I was talking about. I hadn't explained things that needed explained. I would feed that back into the process and go again. So it was a process of revealing my own assumptions to me.
+So I would start by guessing what the learners already knew and what needed explained, you need to go where the learner is then take them where they need to be. I would guess what they already knew and create a space where they felt able to tell me I was wrong, and they’d no idea what I was talking about. I hadn't explained things that needed explained. I would feed that back into the flow and go again. So it was a process of revealing my own assumptions to me.
 
 ![Mentorship and pair programming create similar feedback loops, Effective teaching results in shared learning](slide15.jpg)
 
@@ -96,7 +96,7 @@ A similar feedback loop happens when we do pair programming and mentorship. Some
 
 ![Cesare in the woods and: Reflection, That thing where you understand something as you hear yourself say it](slide16.jpg)
 
-A case in point is the value of reflection in learning. Did you ever have that feeling of hearing yourself say something and in that moment feel like you were understanding it yourself for the first time? Often we verbalise something, we put it into words in order to pull it from that hidden place into conscious awareness. Rubber ducking is probably similar, saying something out loud in order to understand it better. I quite often take notes during calls and I almost never read them, but the process of writing them seems to be helpful. 
+A case in point is the value of reflection in learning. Did you ever have that feeling of hearing yourself say something and in that moment feel like you were understanding it yourself for the first time? Often we verbalise something, we put it into words in order to pull it from that hidden place into conscious awareness. Rubber ducking is probably similar, saying something out loud in order to understand it better. I quite often take notes during calls that I almost never read, but the process of writing them seems to be helpful. 
 
 For years I specialised in learning how to do something with code then writing learning material to teach it to other people, and it took me a long time to realise that the writing was part of my learning process, it seemed to reinforce the learning.
 
@@ -108,7 +108,7 @@ I swim a lot, and last year I set myself an aggressive swimming goal. And of cou
 
 ![Cesare in pain "Are you suffering from… API brain"](slide18.jpg)
 
-At the time I was experiencing API brain. I had been evangelising for this stuff so long I saw it as a baseline expectation, that data would be available in a fully programmable form. And by the way how badly has that view aged.
+At the time I was experiencing API brain. I had been evangelising for this stuff so long I saw it as a baseline expectation, that data would be available in a fully programmable form. And by the way how badly has that viewpoint aged.
 
 ![Some charts and "Spreadsheet will have to do I SUPPOSE"](slide19.jpg)
 
@@ -130,12 +130,12 @@ OK that was a bit philosophical, let's talk about something more tangible. There
 
 * The PRIMM model and remixing, which you might be familiar with from platforms like Scratch and Glitch, these both work on the basis that you start from an existing app and walk the learner through digging into the code and gradually taking ownership over it.
 * Code comprehension is something we’ve neglected woefully, we wouldn’t teach people to write natural language without reading it, but that's what we do with code, and we're starting to feel the pain of that as we need to read more code. Our tooling for it is also not great.
-* One of the best learning experiences I had was my masters project, where I had to extend an existing system, and had to fix a load of annoying bugs before I could build my own shiny new features which frustrated the hell out of me at the time but turned out to be the best learning experience I could have had. I had a glitch starter I never managed to complete where you would give the learner a broken project to fix. Again, learning by debugging is super valuable but our tooling is not optimised for it, but I think AI could help there.
+* One of the best learning experiences I had was my masters project, where I had to extend an existing system, and had to fix a load of annoying bugs before I could build my own shiny new features which frustrated the hell out of me at the time but turned out to be the best learning experience I could have had. I had a Glitch starter I never managed to complete where you would give the learner a broken project to fix. Again, learning by debugging is super valuable but our tooling is not optimised for it, but I think AI could help there.
 * The semantic wave I want to talk about in more detail because it’s particularly relevant, this where we teach a topic by varying the levels of abstraction.
 
 ![A semantic wave chart and "Semantic waves, teachcomputing.org"](slide23.jpg)
 
-With the semantic wave, we introduce a topic at a high level of abstraction, then we come down the wave and dig into the implementation in code, hen we pack that back up into an abstract recap. And this pattern helps people to build mental models in programming. 
+With the semantic wave, we introduce a topic at a high level of abstraction, then we come down the wave and dig into the implementation in code, then we pack that back up into an abstract recap. And this pattern helps people to build mental models in programming. 
 
 So it could be tempting to think that since we can generate code that we can just stay at the higher part of the wave, and teach computational thinking for example. But I don’t believe that will work, because spending time at the implementation level is part of how we create that repeatable feedback loop I mentioned. If we want people to acquire programming skills we will need to linger over the code.
 
@@ -143,7 +143,7 @@ So it could be tempting to think that since we can generate code that we can jus
 
 When I say we need to spend time lingering at the code level, does that mean we need to type every character, no. Can we use autocomplete, probably. Can we copy and paste, probably. We're going to find out what amount of coding is actually necessary to acquire skills the hard way eh. But if we learn from natural language literacy, we see that writing skills improve reading. So I would thoroughly recommend that anyone looking to become a software developer spend significant time writing code. 
 
-We can also engage in other forms of active learning around the code. We can practice retrieval for example, where we might use a little pop quiz to stimulate the learner in retrieving what they've learned about the code. We can use other tactics like spacing and interleaving where we have gaps in our coverage of a topic and mix it up with others.
+We can also engage in other forms of active learning around the code. We can practice retrieval for example, where we might use a little pop quiz to stimulate the learner in retrieving what they've learned about the code. We can use other tactics like spacing and interleaving where we include gaps in our coverage of a topic and mix it up with others.
 
 ![Cesare on an expressionist building and "The incumbent abstraction level acts as an important point of leverage"](slide25.jpg)
 
