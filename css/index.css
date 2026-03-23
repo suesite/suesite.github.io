@@ -56,7 +56,8 @@ html {
 	overflow-y: scroll;
 	padding-top: 3rem;
 	background-image: url("/img/wall_chroma.jpg");
-	background-size: cover;
+	background-size:100vw;
+	background-repeat: repeat-y;
 }
 body {
 	max-width: 50em;
