@@ -38,7 +38,7 @@ I am part of a small cohort of people who specialise in developer learning in in
 
 ![Demonic figure saying "Code is cheap, The bottleneck has moved, There is no moat"](slide3.jpg)
 
-First things first. This is LinkedIn obviously. The proclamations of doom. Bottlenecks and moats and all that. I have been involved in a number of organisational change initiatives over the years, and on thing they typically have in common is that they take a long time. So this idea that entire professions are being made obsolete overnight, I think we can take that with a pinch of salt. There are digital transformation initiatives still in operation...
+First things first. This is LinkedIn obviously. The proclamations of doom. Bottlenecks and moats and all that. I have been involved in a number of organisational change initiatives over the years, and one thing they typically have in common is that they take a long time. So this idea that entire professions are being made obsolete overnight, I think we can take that with a pinch of salt. There are digital transformation initiatives still in operation...
 
 ![The same slide but with NOT TODAY SATAN over it](slide4.jpg)
 
@@ -46,7 +46,7 @@ I can't really point fingers, because I worked in devrel. But I was fortunate en
 
 ![A lassie saying "I, an experienced software engineer, can build software without writing code, so coding must no longer be necessary"](slide5.jpg)
 
-Let’s look at another take that might lead us in more constructive direction. This is typical of what we were seeing maybe a year ago. Someone who already knows how to write code uses AI to generate code effectively and comes to the conclusion no one needs to know about code anymore.
+Let’s look at another take that might lead us in a more constructive direction. This is typical of what we were seeing maybe a year ago. Someone who already knows how to write code uses AI to generate code effectively and comes to the conclusion no one needs to know about code anymore.
 
 ![The same slide but with "an experienced software engineer" highlighted](slide6.jpg)
 
@@ -58,13 +58,13 @@ And there’s a parallel gap at the project level. As developers using AI to gen
 
 ![Dean Stockwell and Harry Dean Stanton in Paris Texas with the caption "my body remembers"](slide8.jpg)
 
-I’m gonna take you back to 1984, the movie Paris Texas. These two brothers are driving across America. One of them has been stranded in the desert for years, he has spoken to anyone for a long time, and his brother is taking him back to where he lives. And they are discussing sharing the driving, so he asks him if he remembers how to drive, and he says my body remembers.
+I’m gonna take you back to 1984, the movie Paris Texas. These two brothers are driving across America. One of them has been stranded in the desert for years, he hasn't spoken to anyone for a long time, and his brother is taking him back to where he lives. And they are discussing sharing the driving, so he asks him if he remembers how to drive, and he says my body remembers.
 
 ![Skills we aren’t aware of in the moment... Persist past a level of proficiency](slide9.jpg)
 
 A lot of our skills work like this. We aren’t aware of them in the moment, as we apply them. Some of them are motor skills. If you drive, you might have had the experience of driving somewhere and having no memory of the drive. Your body was driving. But it also applies to other skills. With coding it can be instructive to consider natural language skills like reading and writing. Once you reach a level of proficiency you can read without being aware that you're applying the skill of reading. 
 
-And once you reach a level of proficiency some skills appear to become persistent. You could not see written language for a long time would probably still be able to read, unless something else had happened to you.
+And once you reach a level of proficiency some skills appear to become persistent. You could not see written language for a long time and would probably still be able to read, unless something else had happened to you.
 
 ![Dr Caligari and the text: You will not forget how to code because you used an LLM to generate some of it, Acquiring a skill is different to retaining it](slide10.jpg)
 
@@ -102,7 +102,7 @@ For years I specialised in learning how to do something with code then writing l
 
 ![A swimming map and "Metacognition, Must you optimise?"](slide17.jpg)
 
-A lot of what I’m talking about here is metacognition. We ca cultivate awareness of our own learning. Practices like self-regulation and monitoring can make people more effective learners. 
+A lot of what I’m talking about here is metacognition. We can cultivate awareness of our own learning. Practices like self-regulation and monitoring can make people more effective learners. 
 
 I swim a lot, and last year I set myself an aggressive swimming goal. And of course I planned on optimizing the hell out of it, I was gonna build an app connected to my fitness tracker and create visualisations and all that. So I looked up the API for my fitness tracker, and immediately discovered it wasn't going to work, the data was just not available in a suitable form for what I wanted to do. And I was appalled by this!
 
@@ -116,7 +116,7 @@ I came to the conclusion that a spreadsheet would be the easiest option, that I 
 
 ![Terry Laughlin in a pool with "the practice of learning"](slide20.jpg)
 
-This is my swimming hero [Terry Laughlin](https://www.youtube.com/watch?v=hC8ZZZhabp4) who's no longer with us unfortunately. I was watching an old webinar where he talked about how his goal switched over the years from distance and speed to becoming a better swimmer. His goal was to be a better each time he got out of the water than when he got in. And one of the practices he used was as soon as he finished his swim, he would take copious notes. And when heard him say it I thought, of course, he’s talking about reflection. That’s why I’m getting something valuable out of this spreadsheet. Now, I’ve taught people the value of reflection, but somehow I didn’t have the self awareness to realise that’s what I was doing.
+This is my swimming hero [Terry Laughlin](https://www.youtube.com/watch?v=hC8ZZZhabp4) who's no longer with us unfortunately. I was watching an old webinar where he talked about how his goal switched over the years from distance and speed to becoming a better swimmer. His goal was to be a better swimmer each time he got out of the water than when he got in. And one of the practices he used was as soon as he finished his swim, he would take copious notes. And when I heard him say it I thought, of course, he’s talking about reflection. That’s why I’m getting something valuable out of this spreadsheet. Now, I’ve taught people the value of reflection, but somehow I didn’t have the self awareness to realise that’s what I was doing.
 
 ![Caligari revealing Cesare and "A commitment to learning means being continually revealed to yourself"](slide21.jpg)
 
@@ -143,7 +143,7 @@ So it could be tempting to think that since we can generate code that we can jus
 
 When I say we need to spend time lingering at the code level, does that mean we need to type every character, no. Can we use autocomplete, probably. Can we copy and paste, probably. We're going to find out what amount of coding is actually necessary to acquire skills the hard way eh. But if we learn from natural language literacy, we see that writing skills improve reading. So I would thoroughly recommend that anyone looking to become a software developer spend significant time writing code. 
 
-We can also engage in other foms of active learning around the code. We can practice retrieval for example, where we might use a little pop quiz to stimulate the learner in retrieving what they've learned about the code. We can use other tactics like spacing and interleaving where we have gaps in our coverage of a topic and mix it up with others.
+We can also engage in other forms of active learning around the code. We can practice retrieval for example, where we might use a little pop quiz to stimulate the learner in retrieving what they've learned about the code. We can use other tactics like spacing and interleaving where we have gaps in our coverage of a topic and mix it up with others.
 
 ![Cesare on an expressionist building and "The incumbent abstraction level acts as an important point of leverage"](slide25.jpg)
 
@@ -157,7 +157,7 @@ But there’s good news, we can use AI to enable learning. The Raspberry Pi Foun
 
 So in my side project, I'm using LLMs, but not to write code. Because it would defeat the purpose, writing the code is part of me exploring the problem. I wouldn’t be able to write a specification for it because I don’t know what it needs to do yet, I’m figuring that out by writing the code. It’s an investment in my future work on the problem. 
 
-And this balancing of short and long term goals is going to be key to deciding when an AI tool is the right tool for the job. But he economic conditions that we work in make this way of building challenging.
+And this balancing of short and long term goals is going to be key to deciding when an AI tool is the right tool for the job. But the economic conditions that we work in make this way of building challenging.
 
 ![My spreadsheet "Naturally I added a notes column"](slide28.jpg)
 
