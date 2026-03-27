@@ -6,6 +6,8 @@ date: 2026-03-27
 
 This week I spent time with a group of leaders in research software engineering at a [workshop](https://www.researchsoft.org/events/rse-ai-workshop/) on the implications of using LLMs in their work. I gave a short lightning talk and shared a position paper representing my current thinking on AI assisted coding. 
 
+<!-- excerpt -->
+
 ## My position
 
 _Here's the position paper I shared prior to the workshop:_

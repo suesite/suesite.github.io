@@ -9,6 +9,8 @@ ___This post was originally published at [dev.to/fastly](https://dev.to/fastly/w
 
 Software written using generative AI is all over the web. Performance and security issues abound. Open source projects are being [overwhelmed by bot traffic](https://arstechnica.com/ai/2025/03/devs-say-ai-crawlers-dominate-traffic-forcing-blocks-on-entire-countries/). There's a lot of harm being caused, but as an educator who cares about lowering barriers to software creation, I can't ignore the [democratizing potential](https://dev.to/glitch/what-is-worth-learning-41e3) of these tools either.
 
+<!-- excerpt -->
+
 In this post I’d like to explore the opportunities for learning that this paradigm shift presents – from how to make your projects more efficient and secure, to learning about the [intellectual property](https://hbr.org/2023/04/generative-ai-has-an-intellectual-property-problem) and [labor exploitation](https://www.technologyreview.com/2022/04/20/1050392/ai-industry-appen-scale-data-labels/) that might have gone into training the models you used.
 
 ## Understanding incentives

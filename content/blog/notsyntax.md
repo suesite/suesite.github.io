@@ -14,6 +14,8 @@ AI assisted coding has really taken off recently. The tech and [the conversation
 
 AI can write some kinds of code, and it’s even helping people who aren’t coders to make software applications. It’s also frequently wrong. We’re still learning the types of coding task it’s suited to — in what specific contexts it’s a help rather than a hindrance. Unrealistic expectations and inaccurate interpretations abound! **The conversation reveals our inability to define the real skills in being a software developer.**
 
+<!-- excerpt -->
+
 It’s not writing syntax. Being able to recite the right keywords only takes you so far.
 
 ## OK, what is it then?

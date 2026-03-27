@@ -6,6 +6,8 @@ date: 2026-03-17
 
 This week I'm talking at [Monki Gras](https://monkigras.com/) about developer learning and AI. 
 
+<!-- excerpt -->
+
 Here's my deck:
 
 * [Do your fingers remember how to code – slides](https://docs.google.com/presentation/d/1bwSZalwQHD5p1t0ivBa3nuCD4D97xJX1V9jLZam7syo/edit?usp=sharing)

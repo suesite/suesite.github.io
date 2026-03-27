@@ -9,6 +9,8 @@ ___This post was originally published at [dev.to/glitch](https://dev.to/glitch/w
 
 AI-assisted coding is lowering the barrier to making software. It’s also increasing the complexity of managing it. You can make applications with less upfront knowledge than before, and organizations are having to figure out how to handle the ensuing unpredictability and risk. So it’s getting easier and harder.
 
+<!-- excerpt -->
+
 Building software became unnecessarily difficult over the last few years in my opinion. We switched to frameworks that closed a lot of the doors to opportunity we’d seen open in the earlier years of the web. Now there’s a widening divide between those with the skills to make software “properly” and those who are no longer prevented from participating by this gatekeeping. Then we have the threat of jobs being eliminated because some executives think AI removes the need for engineers. It's a bit of a mess.
 
 Working in developer education, I often ask myself if I’m teaching the right skills, the ones that are worth learning. It’s getting harder to make reliable guesses about which topics will enable people to make the web and get paid doing it.

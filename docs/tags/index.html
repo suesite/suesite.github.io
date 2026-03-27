@@ -164,7 +164,7 @@ main :first-child {
 }
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
+	
 	font-size: 1.3em;
 }
 
@@ -286,6 +286,8 @@ header {
 	align-items: baseline;
 /*	counter-increment: start-from -1;*/
 	margin-bottom: 1em;
+	padding-bottom: 1rem;
+	border-bottom: 1px dotted var(--color-gray-90);
 }
 .postlist-item:before {
 	display: inline-block;
@@ -377,6 +379,29 @@ blockquote {
 span.description {
 	color:var(--text-color-desc);
 	width:100%;
+	font-style: italic;
+	padding-top: 1rem;
+}
+.excerpt p {
+	display:inline;
+	font-style: normal;
+	font-weight: normal;
+}
+.excerpt {
+	padding-top: 1rem;
+}
+a.readmore {
+	font-style: italic;
+}
+.excerpt a:link:not(.readmore) {
+	text-decoration: none;
+	color: var(--text-color);
+	font-style: normal;
+	font-weight: normal;
+}
+.excerpt strong, .excerpt em {
+	font-style: normal;
+	font-weight: normal;
 }</style>
 		
 	
@@ -449,7 +474,7 @@ span.description {
         </a></div>
 		</footer>
 
-		<!-- This page `/tags/` was built on 2026-03-27T14:09:51.687Z -->
+		<!-- This page `/tags/` was built on 2026-03-27T15:10:31.296Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

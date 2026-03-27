@@ -3,18 +3,19 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import markdownIt from 'markdown-it';
 
 import pluginFilters from "./_config/filters.js";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
-export default async function(eleventyConfig) {
+export default async function (eleventyConfig) {
 	// Drafts, see also _data/eleventyDataSchema.js
 	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
 		if (data.draft) {
 			data.title = `${data.title} (draft)`;
 		}
 
-		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+		if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
 			return false;
 		}
 	});
@@ -42,6 +43,12 @@ export default async function(eleventyConfig) {
 		// Add all <style> content to `css` bundle (use <style eleventy:ignore> to opt-out)
 		// Supported selectors: https://www.npmjs.com/package/posthtml-match-helper
 		bundleHtmlContentFromSelector: "style",
+	});
+
+	eleventyConfig.setFrontMatterParsingOptions({
+		excerpt: true,
+		// Optional, default is "---"
+		excerpt_separator: "<!-- excerpt -->",
 	});
 
 	// Bundle <script> content and adds a {% js %} paired shortcode
@@ -109,6 +116,10 @@ export default async function(eleventyConfig) {
 	// Filters
 	eleventyConfig.addPlugin(pluginFilters);
 
+	eleventyConfig.addFilter("md", function (content = "") {
+		return markdownIt({ html: true }).render(content);
+	});
+
 	eleventyConfig.addPlugin(IdAttributePlugin, {
 		// by default we use Eleventy’s built-in `slugify` filter:
 		// slugify: eleventyConfig.getFilter("slugify"),
@@ -164,5 +175,5 @@ export const config = {
 	// it will transform any absolute URLs in your HTML to include this
 	// folder name and does **not** affect where things go in the output folder.
 
-//	 pathPrefix: "/",
+	//	 pathPrefix: "/",
 };
