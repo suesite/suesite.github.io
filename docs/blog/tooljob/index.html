@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sue&#39;s blog about coding</title>
-		<meta name="description" content="Thoughts on making software.">
+		<title>When is a tool the right tool for the job?</title>
+		<meta name="description" content="Digging into skill development with a group of research software engineering experts.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 		
 		
@@ -377,6 +377,174 @@ blockquote {
 span.description {
 	color:var(--text-color-desc);
 	width:100%;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 		
 	
@@ -394,7 +562,7 @@ span.description {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/blog/" aria-current="page">Posts</a></li>
+					<li class="nav-item"><a href="/blog/">Posts</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
@@ -405,38 +573,32 @@ span.description {
 			<heading-anchors>
 				
 
-<h1 id="posts">Posts</h1>
 
+<h1 id="when-is-a-tool-the-right-tool-for-the-job">When is a tool the right tool for the job?</h1>
 
-<ul reversed="" class="postlist" style="--postlist-index: 6">
-	<li class="postlist-item">
-		<a href="/blog/tooljob/" class="postlist-link">When is a tool the right tool for the job?</a>
-		<time class="postlist-date" datetime="2026-03-27">27 March 2026</time>
-		<span class="description">Digging into skill development with a group of research software engineering experts.</span>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/fingerscode/" class="postlist-link">Do your fingers remember how to code?</a>
-		<time class="postlist-date" datetime="2026-03-17">17 March 2026</time>
-		<span class="description">My Monki Gras talk – discovering developer skills worth learning when AI can write code.</span>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/stillteach/" class="postlist-link">We should still teach coding</a>
-		<time class="postlist-date" datetime="2025-03-31">31 March 2025</time>
-		<span class="description">Coding skills are going to be as important as ever.</span>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/worthlearning/" class="postlist-link">What is worth learning?</a>
-		<time class="postlist-date" datetime="2024-04-25">25 April 2024</time>
-		<span class="description">What is worth learning an a world of AI assisted coding frameworks.</span>
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/notsyntax/" class="postlist-link">Software development isn’t writing syntax</a>
-		<time class="postlist-date" datetime="2023-05-11">11 May 2023</time>
-		<span class="description">On AI assisted coding and software development.</span>
-	</li>
+<ul class="post-metadata">
+	<li><time datetime="2026-03-27">27 March 2026</time></li>
 </ul>
 
+<p>This week I spent time with a group of leaders in research software engineering at a <a href="https://www.researchsoft.org/events/rse-ai-workshop/">workshop</a> on the implications of using LLMs in their work. I gave a short lightning talk and shared a position paper representing my current thinking on AI assisted coding.</p>
+<h2 id="my-position">My position</h2>
+<p><em>Here's the position paper I shared prior to the workshop:</em></p>
+<p>I specialise in creating learning experiences to help people acquire developer skills. I’ve mostly worked in software industry settings, such as developer community platforms that enable people to make web apps. My perspective on AI-assisted coding is very mixed. On the one hand I can’t deny the enabling potential of a technology that helps people build software solutions without engineering skills, and on the other I’m concerned about a loss of understanding around software implementation, together with a decreasing investment in those skills.</p>
+<p>I’m not an expert in research engineering at all, so my perspective is entirely based on what I’m seeing in industry. The panic around jobs potentially being made obsolete is making it incredibly difficult for us to take the time necessary to explore the true potential and limitations of this new technology. There is undeniable utility here, but the costs for adoption are still largely unknown, in terms of individual and organisational success over the long term.</p>
+<p>What preoccupies me most as an educator is the “comprehension debt” or “cognitive debt” that appears to accompany AI-assisted coding. We’re seeing a widening gap between entry level and experienced software engineers. It’s not clear how we’ll create paths for those early in their careers to acquire the skills experienced developers are using to get the most effective use from LLMs, and that they acquired the “old fashioned” way, by writing code.</p>
+<p>There’s a parallel gap at the systems level, as we lose the ability to build solid mental models of the systems we’re using LLMs to generate. In software worked on collaboratively by teams, this is a more significant problem, as the source code exists, not just to provide instructions for a computer, but also acts as a shared human-readable representation of the system, a place where we come together to reason about how it works – the code performs a function natural language is not suited to.</p>
+<p>When it comes to comprehension, we’ll need to learn how to decide when LLMs are the right tool for the job, and when they aren’t. This will be determined by what level of fidelity about a system is the optimal one to work at, in order to meet individual and shared goals – balancing those over the short and long term is going to be both challenging and essential.</p>
+<blockquote>
+<p><a href="https://docs.google.com/presentation/d/1XtjsFOLdi1nrWVpftY0jVYWdDJx5i1APSBS-BmCIYWE/">My lightning talk deck is available here too</a></p>
+</blockquote>
+<h2 id="the-workshop">The workshop</h2>
+<p>I have to say it was a luxury to be in a room with people who are thinking deeply about AI code generation and how we can prepare for its impact. I've found very few spaces where I can have these conversations and begin to grapple with the detail of this new automation, both in terms of opportunities and risks of harm.</p>
+<p>It was also fanstastic to be able to sit at a table of educators who are on the front line teaching people the skills they believe will serve their individual and shared goals – that is not an easy task, especially right now!</p>
+<p>The tension I keep coming back to is that language models could enable programming learning, but the platform interaction patterns are not optimised for it – if anything they're designed to avoid learning, as they're funded on the belief that AI removes the need for human beings to do certain categories of software work. I do believe this will change, as incidents continue to rise, organisations will discover the need for their teams to understand codebases with a new urgency.</p>
+<p>I learned a ton this week, I have a ludicrous number of tabs open in my browser for reading lol. I left the experience more motivated than ever to experiment with ways to enable learning in this new way of making software.</p>
 
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/fingerscode/">Do your fingers remember how to code?</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -476,7 +638,7 @@ span.description {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/` was built on 2026-03-27T14:09:51.687Z -->
+		<!-- This page `/blog/tooljob/` was built on 2026-03-27T14:09:51.688Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 ---
 title: Do your fingers remember how to code?
-description: Discovering developer skills worth learning when AI can write code.
+description: My Monki Gras talk – discovering developer skills worth learning when AI can write code.
 date: 2026-03-17
 ---
 

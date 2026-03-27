@@ -1,6 +1,6 @@
 ---
 title: Software development isn’t writing syntax
-description: On AI assisted coding and software development
+description: On AI assisted coding and software development.
 canonical: https://blog.glitch.com/post/software-development-isnt-writing-syntax
 date: 2023-05-11
 ---

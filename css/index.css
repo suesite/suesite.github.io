@@ -16,6 +16,7 @@
 	--text-color-link: navy;
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
+	--text-color-desc: darkslategray;
 
 	--syntax-tab-size: 2;
 }
@@ -286,6 +287,7 @@ header {
 .postlist-item:before {
 /*	font-size: 0.8125em; /* 13px /16 */
 	color: var(--color-gray-90);
+	font-weight: bold;
 }
 .postlist-date {
 	word-spacing: -0.5px;
@@ -359,4 +361,8 @@ blockquote {
 
 .social-profile-icon:hover path, .social-profile-icon:focus path {
   fill: cyan;
+}
+span.description {
+	color:var(--text-color-desc);
+	width:100%;
 }

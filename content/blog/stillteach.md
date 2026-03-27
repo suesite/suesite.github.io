@@ -1,6 +1,6 @@
 ---
 title: We should still teach coding
-description: Coding skills are going to be as important as ever
+description: Coding skills are going to be as important as ever.
 date: 2025-03-31
 canonical: https://dev.to/fastly/we-should-still-teach-coding-3cjh
 ---
