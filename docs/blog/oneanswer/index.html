@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sue&#39;s blog about coding</title>
-		<meta name="description" content="Thoughts on making software.">
+		<title>What to do about developer skills</title>
+		<meta name="description" content="This week I talked at Haggis Ruby in Glasgow.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<link rel="shortcut icon" href="https://suesite.github.io/invert.ico">
@@ -404,6 +404,174 @@ a.readmore {
 .excerpt strong, .excerpt em {
 	font-style: normal;
 	font-weight: normal;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 		
 	
@@ -421,7 +589,7 @@ a.readmore {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/blog/" aria-current="page">Posts</a></li>
+					<li class="nav-item"><a href="/blog/">Posts</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
@@ -432,49 +600,31 @@ a.readmore {
 			<heading-anchors>
 				
 
-<h1 id="posts">Posts</h1>
 
+<h1 id="what-to-do-about-developer-skills">What to do about developer skills</h1>
 
-<ul reversed="" class="postlist" style="--postlist-index: 7">
-	<li class="postlist-item">
-		<a href="/blog/oneanswer/" class="postlist-link">What to do about developer skills</a>
-		<time class="postlist-date" datetime="2026-04-24">24 April 2026</time>
-		<span class="description">This week I talked at Haggis Ruby in Glasgow.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/tooljob/" class="postlist-link">When is a tool the right tool for the job?</a>
-		<time class="postlist-date" datetime="2026-03-27">27 March 2026</time>
-		<span class="description">Digging into skill development with a group of research software engineering experts.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/fingerscode/" class="postlist-link">Do your fingers remember how to code?</a>
-		<time class="postlist-date" datetime="2026-03-17">17 March 2026</time>
-		<span class="description">My Monki Gras talk – discovering developer skills worth learning when AI can write code.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/stillteach/" class="postlist-link">We should still teach coding</a>
-		<time class="postlist-date" datetime="2025-03-31">31 March 2025</time>
-		<span class="description">Coding skills are going to be as important as ever.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/worthlearning/" class="postlist-link">What is worth learning?</a>
-		<time class="postlist-date" datetime="2024-04-25">25 April 2024</time>
-		<span class="description">What is worth learning an a world of AI assisted coding frameworks.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/notsyntax/" class="postlist-link">Software development isn’t writing syntax</a>
-		<time class="postlist-date" datetime="2023-05-11">11 May 2023</time>
-		<span class="description">On AI assisted coding and software development.</span>
-		
-	</li>
+<ul class="post-metadata">
+	<li><time datetime="2026-04-24">24 April 2026</time></li>
 </ul>
 
+<p>I've been giving talks about developer learning and AI-assisted coding pretty regularly over the last couple of months. Doing this is helping me clarify my own thoughts and better position me to advise others, based on what I've learned about software engineering and pedagogy over the years. This week I had the pleasure of speaking at <a href="https://haggisruby.co.uk/">Haggis Ruby</a> in Glasgow, with a community I wasn't part of but who could not have been more welcoming and open to what I was saying. ❤️</p>
+<p>It was lovely and very weird to be at a dev event with a mix of folk from various places <strong>in Glasgow</strong>. I'm so used to that being an experience I have away from home that it felt odd in a good way. I love Glasgow a lot so it makes me extremely happy to see so many more people experiencing the city these days, and in many cases choosing to stay. A mere ten minute train ride to get to the event was nice too.</p>
+<blockquote>
+<p>Here's my deck:
+<a href="https://docs.google.com/presentation/d/1S901LCH4T2zhKxUfltQYIHHaGIHCjm2xxx4PXXUR644/">Developer skills worth learning when AI can write code</a></p>
+</blockquote>
+<h2 id="there-is-no-one-answer-to-this">There is no one answer to this</h2>
+<p>Here's the thing, I'm sure there are consultancy firms sending folk into workplaces all over the world right now and giving them identical advice on what they need to do to get ready for this new world of AI writing code. Yeah, I don't think that's how this works. Aside from the fact that anyone claiming to know with certainty what is going to happen is either delusional or lying, approaching this strategically can really only be done in context. It's something we're all going to need to figure out collectively.</p>
+<h2 id="can-we-start-being-sensible-about-this-yet">Can we start being sensible about this yet?</h2>
+<p><picture><source type="image/avif" srcset="/blog/oneanswer/AbtzyF-W2--960.avif 960w"><source type="image/webp" srcset="/blog/oneanswer/AbtzyF-W2--960.webp 960w"><img loading="lazy" decoding="async" src="/blog/oneanswer/AbtzyF-W2--960.jpeg" alt="Code is cheap, The bottleneck has moved, There is no moat" width="960" height="540"></picture></p>
+<p>At the start of my talk I show this daft slide and wait for a few moments, watching how people react. I've had a bit of variation lol, but when I follow it up with &quot;I'm not sure how much time you spend on LinkedIn&quot; people typically laugh and let out a small sigh of relief.</p>
+<p>My hope is that as the dust settles and we see more of the fallout from the initial waves of adoption (and frequently overreliance) on LLMs to generate code, we'll be able to find the space to start having more constructive conversations about the real utility and impact of this tooling. Perhaps I am an optimist after all.</p>
+<h2 id="ok-maybe-there-is-one-answer">OK maybe there is one answer</h2>
+<p>I lied, I think there is one answer I'd give to people asking what to do about developer skills right now. Create the conditions for shared learning within your organisation. Yeah it's a bit abstract, but I strongly believe that the companies and communities who can cultivate peer learning will set themselves up to succeed with this new way of making software.</p>
+<p>I have a lot more to think and say about this, and shall do that right here on this blog, which you can subscribe to <a href="/feed/feed.xml">via the RSS feed</a>.</p>
 
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/tooljob/">When is a tool the right tool for the job?</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -514,7 +664,7 @@ a.readmore {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/` was built on 2026-04-24T14:46:31.477Z -->
+		<!-- This page `/blog/oneanswer/` was built on 2026-04-24T14:46:31.477Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

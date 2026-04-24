@@ -5,11 +5,33 @@
   <subtitle>A blog about coding and learning</subtitle>
   <link href="https://www.sue.codes/feed/feed.xml" rel="self" />
   <link href="https://www.sue.codes/" />
-  <updated>2026-03-27T00:00:00Z</updated>
+  <updated>2026-04-24T00:00:00Z</updated>
   <id>https://www.sue.codes/</id>
   <author>
     <name>Sue Smith</name>
   </author>
+  <entry>
+    <title>What to do about developer skills</title>
+    <link href="https://www.sue.codes/blog/oneanswer/" />
+    <updated>2026-04-24T00:00:00Z</updated>
+    <id>https://www.sue.codes/blog/oneanswer/</id>
+    <content type="html">&lt;p&gt;I&#39;ve been giving talks about developer learning and AI-assisted coding pretty regularly over the last couple of months. Doing this is helping me clarify my own thoughts and better position me to advise others, based on what I&#39;ve learned about software engineering and pedagogy over the years. This week I had the pleasure of speaking at &lt;a href=&quot;https://haggisruby.co.uk/&quot;&gt;Haggis Ruby&lt;/a&gt; in Glasgow, with a community I wasn&#39;t part of but who could not have been more welcoming and open to what I was saying. ❤️&lt;/p&gt;
+&lt;p&gt;It was lovely and very weird to be at a dev event with a mix of folk from various places &lt;strong&gt;in Glasgow&lt;/strong&gt;. I&#39;m so used to that being an experience I have away from home that it felt odd in a good way. I love Glasgow a lot so it makes me extremely happy to see so many more people experiencing the city these days, and in many cases choosing to stay. A mere ten minute train ride to get to the event was nice too.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here&#39;s my deck:
+&lt;a href=&quot;https://docs.google.com/presentation/d/1S901LCH4T2zhKxUfltQYIHHaGIHCjm2xxx4PXXUR644/&quot;&gt;Developer skills worth learning when AI can write code&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;there-is-no-one-answer-to-this&quot;&gt;There is no one answer to this&lt;/h2&gt;
+&lt;p&gt;Here&#39;s the thing, I&#39;m sure there are consultancy firms sending folk into workplaces all over the world right now and giving them identical advice on what they need to do to get ready for this new world of AI writing code. Yeah, I don&#39;t think that&#39;s how this works. Aside from the fact that anyone claiming to know with certainty what is going to happen is either delusional or lying, approaching this strategically can really only be done in context. It&#39;s something we&#39;re all going to need to figure out collectively.&lt;/p&gt;
+&lt;h2 id=&quot;can-we-start-being-sensible-about-this-yet&quot;&gt;Can we start being sensible about this yet?&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://www.sue.codes/blog/oneanswer/AbtzyF-W2--960.avif 960w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://www.sue.codes/blog/oneanswer/AbtzyF-W2--960.webp 960w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://www.sue.codes/blog/oneanswer/AbtzyF-W2--960.jpeg&quot; alt=&quot;Code is cheap, The bottleneck has moved, There is no moat&quot; width=&quot;960&quot; height=&quot;540&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;At the start of my talk I show this daft slide and wait for a few moments, watching how people react. I&#39;ve had a bit of variation lol, but when I follow it up with &amp;quot;I&#39;m not sure how much time you spend on LinkedIn&amp;quot; people typically laugh and let out a small sigh of relief.&lt;/p&gt;
+&lt;p&gt;My hope is that as the dust settles and we see more of the fallout from the initial waves of adoption (and frequently overreliance) on LLMs to generate code, we&#39;ll be able to find the space to start having more constructive conversations about the real utility and impact of this tooling. Perhaps I am an optimist after all.&lt;/p&gt;
+&lt;h2 id=&quot;ok-maybe-there-is-one-answer&quot;&gt;OK maybe there is one answer&lt;/h2&gt;
+&lt;p&gt;I lied, I think there is one answer I&#39;d give to people asking what to do about developer skills right now. Create the conditions for shared learning within your organisation. Yeah it&#39;s a bit abstract, but I strongly believe that the companies and communities who can cultivate peer learning will set themselves up to succeed with this new way of making software.&lt;/p&gt;
+&lt;p&gt;I have a lot more to think and say about this, and shall do that right here on this blog, which you can subscribe to &lt;a href=&quot;https://www.sue.codes/feed/feed.xml&quot;&gt;via the RSS feed&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>When is a tool the right tool for the job?</title>
     <link href="https://www.sue.codes/blog/tooljob/" />
