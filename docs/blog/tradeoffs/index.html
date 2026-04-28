@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sue&#39;s blog about coding</title>
-		<meta name="description" content="Thoughts on making software.">
+		<title>Automation is a trade-off</title>
+		<meta name="description" content="We should have more explicit conversations about the trade-offs we make when we use automations.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<link rel="shortcut icon" href="https://suesite.github.io/invert.ico">
@@ -404,10 +404,178 @@ a.readmore {
 .excerpt strong, .excerpt em {
 	font-style: normal;
 	font-weight: normal;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 		
 	
-	    <link rel="canonical" href="">
+	    <link rel="canonical" href="https://dev.to/suesmith/automation-is-a-trade-off-2fh8">
 	
 	</head>
 	<body>
@@ -431,12 +599,56 @@ a.readmore {
 		<main id="main">
 			<heading-anchors>
 				
-<h1 id="tags">Tags</h1>
 
-<ul>
 
+<h1 id="automation-is-a-trade-off">Automation is a trade-off</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2026-04-28">28 April 2026</time></li>
 </ul>
 
+<p><em><strong>This post was originally published on <a href="https://dev.to/suesmith/automation-is-a-trade-off-2fh8">dev.to</a>.</strong></em></p>
+<p><picture><source type="image/avif" srcset="/blog/tradeoffs/QBkCG2r27R-1002.avif 1002w"><source type="image/webp" srcset="/blog/tradeoffs/QBkCG2r27R-1002.webp 1002w"><img loading="lazy" decoding="async" src="/blog/tradeoffs/QBkCG2r27R-1002.jpeg" alt="artwork of a solar microscope drawing box" width="1002" height="420"></picture></p>
+<p>A couple of years ago I wrote <a href="https://dev.to/suesmith/abstractions-no-not-like-that-3pl3">a post about abstractions</a>. I’m revisiting it here with AI-assisted coding in mind, because I see similar issues arising. LLMs make it easier than ever to generate code, but when we look at what happens next, the picture becomes a little bit less clear.</p>
+<p>When you build an abstraction or automation intended for use by other people, you make a decision about <strong>what is valuable for them to know about</strong>, and what isn’t. In programming this is extraordinarily hard. Often we accidentally hide information it turns out the user needs or wants to know about. And it can change over time, because in software, context has a huge influence over how and what we build.</p>
+<p>The world of APIs grew from the power of being able to import code written by others – we were able to focus on the unique aspects of our own problems / solutions. But choosing to use a dependency has consequences we didn’t always take seriously. It’s a trade-off I wish we were having more explicit conversations about with AI.</p>
+<blockquote>
+<p>⚠️ <em>I should note that I don’t view LLM prompts as programming abstractions but as code generation automations, for reasons I’ve been exploring in <a href="https://www.sue.codes/blog/fingerscode/">recent talks</a>.</em></p>
+</blockquote>
+<h2 id="progressive-disclosure">Progressive Disclosure?</h2>
+<p>One approach to managing the trade-off is to provide a kind of <a href="https://www.nngroup.com/articles/progressive-disclosure/">escape hatch</a> where you can see and configure the underlying implementation if you want, or ignore it if you don’t need to know what’s going on under there.</p>
+<p>Here’s where I get skeptical about vibe coding platforms positioning themselves as <em>empowering</em>. I won’t name the company, but I recently tried generating a simple static website from a service aimed at people without prior coding skills. I exported the app to VS Code. The implementation was ludicrously over-engineered, with a ton of TypeScript files and <strong>zero</strong> documentation. Not a code comment, not a README, nothing. The output was effectively obfuscated. Even as an experienced developer I would have had an extremely hard time working with this codebase.</p>
+<p>Perhaps you’re wondering if this is an edge case, assuming these codebases don’t need to be worked on directly. I pay close attention to accounts from people using these services and that's not what I'm finding. Overwhelmingly they get you to a prototype, but in order to take your app to the next level you do need to engage with the code. Even the platforms themselves have subtly shifted their messaging to reflect this.</p>
+<h2 id="the-interface-is-not-the-llm">The interface is not the LLM</h2>
+<p>The platforms I'm referring to here are a little different from e.g. using an assistant or agent in your IDE. The underlying prompts and LLM scaffolding are partly or wholly hidden from the user. They could easily instruct the model to prefer human-readable implementations and provide ample documentation – to produce programs that are optimized for the user to learn from, and that act as a foundation to build on. That would be empowering.</p>
+<p>Here’s another awkward piece of the puzzle. In order to ask the model for such an enabling starting point, you already need to know something about how software is built. So that precludes anyone without prior development experience.</p>
+<h2 id="let-s-talk-about-the-trade-offs">Let’s talk about the trade-offs</h2>
+<p>Here are some considerations I think are valuable when it comes to either designing or using an automation for code generation:</p>
+<ul>
+<li><strong>What details are being hidden from the user?</strong></li>
+<li><strong>What decisions are being made about the implementation?</strong>
+<ul>
+<li><strong>Are the decisions accidental or deliberate, what is driving them?</strong></li>
+</ul>
+</li>
+<li><strong>How can these decisions be changed?</strong></li>
+</ul>
+<p>Importantly:</p>
+<ul>
+<li><strong>What might the user need to know later that they don’t know now?</strong></li>
+</ul>
+<p>Taking a moment to answer these questions might help us make better choices about the abstractions we build, and those we choose to adopt.</p>
+<h2 id="what-does-empowerment-look-like">What does empowerment look like?</h2>
+<p>Sometimes I imagine a platform like Glitch, but that generates apps from a prompt, while prioritizing ease of extension and subsequent learning – what the Glitch Hello apps were meticulously designed to do. Such a thing is absolutely feasible, at least technically. But the reality is that software company decisions are determined by economic dynamics. They are incentivized to prioritize engagement over enablement – in many cases what this looks like is platform lock-in.</p>
+<p>I do see people being enabled to build software using LLMs, usually with the support of other human beings in their workplaces or communities. There is tremendous potential for opening the gateway to developer skills with this technology, but it won’t happen by accident, and we should scrutinize claims of empowerment that don’t check out when we scratch the surface.</p>
+<h2 id="what-does-accountability-look-like">What does accountability look like?</h2>
+<p>There’s a parallel problem even professional developers are experiencing, as AI-generated code is harder to work with, increasing the maintenance burden over time. Using LLMs to generate code is reducing our ability to build strong mental models of our codebases. Again, I don’t believe this has to be the case, we could use these automations while still preserving agency and understanding.</p>
+<p>For working developers, the question of accountability plays a huge role here. When things go wrong, who is held responsible, and what are the consequences? Understanding what you’re committing to a codebase has implications I don’t believe we’ve fully reckoned with yet.</p>
+<h2 id="we-can-shape-this">We can shape this</h2>
+<p>As we begin to discover the longer term consequences of using LLMs to generate code, I would love to see more honest conversations about what is truly involved in enabling people over both the short and long term. Because we can build for that if we want to.</p>
+
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/oneanswer/">What to do about developer skills</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -476,7 +688,7 @@ a.readmore {
         </a></div>
 		</footer>
 
-		<!-- This page `/tags/` was built on 2026-04-28T15:14:00.115Z -->
+		<!-- This page `/blog/tradeoffs/` was built on 2026-04-28T15:14:00.115Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
