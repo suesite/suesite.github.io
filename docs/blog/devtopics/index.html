@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sue&#39;s blog about coding</title>
-		<meta name="description" content="Thoughts on making software.">
+		<title>How should we teach software development now?</title>
+		<meta name="description" content="Exploring software development learning topics in the context of AI-assisted coding.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<link rel="shortcut icon" href="https://suesite.github.io/invert.ico">
@@ -404,6 +404,174 @@ a.readmore {
 .excerpt strong, .excerpt em {
 	font-style: normal;
 	font-weight: normal;
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 		
 	
@@ -421,7 +589,7 @@ a.readmore {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/blog/" aria-current="page">Posts</a></li>
+					<li class="nav-item"><a href="/blog/">Posts</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
@@ -432,61 +600,48 @@ a.readmore {
 			<heading-anchors>
 				
 
-<h1 id="posts">Posts</h1>
 
+<h1 id="how-should-we-teach-software-development-now">How should we teach software development now?</h1>
 
-<ul reversed="" class="postlist" style="--postlist-index: 9">
-	<li class="postlist-item">
-		<a href="/blog/devtopics/" class="postlist-link">How should we teach software development now?</a>
-		<time class="postlist-date" datetime="2026-04-30">30 April 2026</time>
-		<span class="description">Exploring software development learning topics in the context of AI-assisted coding.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/tradeoffs/" class="postlist-link">Automation is a trade-off</a>
-		<time class="postlist-date" datetime="2026-04-28">28 April 2026</time>
-		<span class="description">We should have more explicit conversations about the trade-offs we make when we use automations.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/oneanswer/" class="postlist-link">What to do about developer skills</a>
-		<time class="postlist-date" datetime="2026-04-24">24 April 2026</time>
-		<span class="description">This week I talked at Haggis Ruby in Glasgow.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/tooljob/" class="postlist-link">When is a tool the right tool for the job?</a>
-		<time class="postlist-date" datetime="2026-03-27">27 March 2026</time>
-		<span class="description">Digging into skill development with a group of research software engineering experts.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/fingerscode/" class="postlist-link">Do your fingers remember how to code?</a>
-		<time class="postlist-date" datetime="2026-03-17">17 March 2026</time>
-		<span class="description">My Monki Gras talk – discovering developer skills worth learning when AI can write code.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/stillteach/" class="postlist-link">We should still teach coding</a>
-		<time class="postlist-date" datetime="2025-03-31">31 March 2025</time>
-		<span class="description">Coding skills are going to be as important as ever.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/worthlearning/" class="postlist-link">What is worth learning?</a>
-		<time class="postlist-date" datetime="2024-04-25">25 April 2024</time>
-		<span class="description">What is worth learning an a world of AI assisted coding frameworks.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/notsyntax/" class="postlist-link">Software development isn’t writing syntax</a>
-		<time class="postlist-date" datetime="2023-05-11">11 May 2023</time>
-		<span class="description">On AI assisted coding and software development.</span>
-		
-	</li>
+<ul class="post-metadata">
+	<li><time datetime="2026-04-30">30 April 2026</time></li>
 </ul>
 
+<p>Yesterday I <a href="https://www.linkedin.com/posts/sue-smith-benormal_ive-been-thinking-and-posting-about-ai-assisted-activity-7455333012457738240-1n7y">posted on LinkedIn</a> about realising I've been thinking and writing about AI-assisted coding for three years now, and that overwhelmingly I still stand by the positions I've taken. My first public post on the subject was in May 2023, so I'm going to revisit it on the same day this year. But for now, since the discussion touched on what we should be teaching on software engineering courses, it prompted me to jot down my current thinking, still very much WIP but here you go.</p>
+<p>⚠️ <em>Note that this is squarely focused on courses where the goal is to learn the skills in being a working software developer. Many other courses involve writing code as a technique in service of some other goal – strategies will vary enormously there, as the potential to lean more heavily on LLMs to generate code increases on small scale, low complexity apps. The skills I'm focused on here are for preparing to work on the kind of complex systems teams of software engineers collaborate on.</em></p>
+<ol>
+<li>
+<p>I thoroughly recommend restricting reliance on LLMs when teaching programming fundamentals. It's unrealistic to expect to eliminate it, but as far as possible I'd get students up to speed with the basics the &quot;old fashioned&quot; way, by writing their code manually.</p>
+</li>
+<li>
+<p>I would also look to the humanities, where educators are using LLMs to generate content, then having the students engage in critical thinking about the output. Raspberry Pi Foundation have shared resources for similar, covering topics like <a href="https://www.raspberrypi.org/blog/ai-education-anthropomorphism/">anthropomorphism</a>.</p>
+</li>
+</ol>
+<blockquote>
+<p><em>These first two are essentially focused on harm reduction regarding the negative consequences of LLMs being available. That's unfortunate but necessary at this stage.</em></p>
+</blockquote>
+<ol start="3">
+<li>
+<p>Explore using LLMs to aid activities such as debugging and code comprehension. We're going to need a heavier focus on code reading skills when lots more code is being generated, and I'm cautiously optimistic we'll see the rise of better tooling to support these practices. Similarly, with the explosion in outages and incidents, I have to assume performance and security topics are going to be more central to the working life of a developer.</p>
+</li>
+<li>
+<p>I think there's tremendous potential to use LLMs to generate practice exercises dynamically. Mostly I see anecdotal accounts of people doing this, but again I'm hopeful we'll have dedicated tooling to enable it. Having an LLM generate a broken project the learner has to fix is an idea I'd like to experiment with.</p>
+</li>
+<li>
+<p>In terms of developing <em>with</em> LLMs, this is where I'm more hesitant. I'm thinking writing specifications, LLM scaffolding etc (the many and varied markdown files involved in effective deployment of this stuff). I would tend to treat this as an advanced topic, second to e.g. learning a foundation in programming with one or two existing languages. It might seem frustrating to not be leveraging recent technology straight away, but I storngly believe an upfront investment in these foundational skills will pay off in the long run.</p>
+</li>
+</ol>
+<p>In industry settings, the overarching advice I'd give is to <a href="/blog/oneanswer/">build a culture of learning</a> in your organisation. That is of course not a trivial task, but a good start would be encouraging tactics like peer learning, pair programming, and mentorship – these are going to be more valuable and essential than ever.</p>
+<p>I am a broken record on this but Raspberry Pi Foundation publish phenomenal resources on teaching programming in the context of AI:</p>
+<ul>
+<li><a href="https://www.raspberrypi.org/blog/pedagogy-quick-reads-turning-abstract-ideas-into-classroom-practice/">AI pedagogy quick reads</a></li>
+<li><a href="https://experience-ai.org/en/units">Experience AI</a></li>
+<li><a href="https://www.raspberrypi.org/hello-world/">The Hello World magazine</a> which has tons of example lessons</li>
+</ul>
+<p>I am extremely interested in hearing other perspectives on teaching with this stuff!</p>
 
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/tradeoffs/">Automation is a trade-off</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -526,7 +681,7 @@ a.readmore {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/` was built on 2026-04-30T09:04:53.325Z -->
+		<!-- This page `/blog/devtopics/` was built on 2026-04-30T09:04:53.323Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
