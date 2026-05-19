@@ -44,7 +44,7 @@ _If this was about building products to better suit real world use cases, I don'
 
 Developers often hate on management, but the role being sidelined has wider consequences. **Part of what product managers do is make intention legible to the company.** They frame a product in terms of vision and value, helping teams around the company to understand what is getting built. By putting customer-embedded engineers in a position to decide what gets built instead, employees lose both visibility into what they are shipping, and opportunities to influence it collectively. 
 
-> Reducing worker understanding of what is being built is a long established labour-crushing tactic. Losing the ability to understand what your company is shipping means losing paths through which we might minimise the harms our software causes.
+> Reducing worker understanding of what is being built is a long established labour-crushing tactic. Losing the ability to understand what your company is shipping means losing paths through which we might mitigate the harms our software causes.
 
 ## Finding leverage
 
