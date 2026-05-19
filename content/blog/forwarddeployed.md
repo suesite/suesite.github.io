@@ -1,6 +1,6 @@
 ---
 title: Which direction is forward?
-description: Software role changes tell us something about the goal of AI companies.
+description: Software role changes tell us something about the goals in LLM deployment.
 date: 2026-05-19
 ---
 
