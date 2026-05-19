@@ -43,7 +43,7 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;finding-leverage&quot;&gt;Finding leverage&lt;/h2&gt;
 &lt;p&gt;Couple all of this with the deployment of LLMs to generate code in a way that obfuscates understanding of it, and you can see where we’re headed. A world where it&#39;s harder to understand systems that affect us. This is why I’m focusing on helping people to understand codebases, and building tooling for that purpose. LLMs can actually aid that understanding – they are being weaponised with clear intention to undermine it.&lt;/p&gt;
-&lt;p&gt;The primary push for LLM code generation is part of an attempt at deskilling software engineers, but I don&#39;t believe it will work. I think it&#39;s based on a misunderstanding of what LLMs can do, and what software engineering is. More code in the world is going to mean leverage for people who can understand and change it, we should be ready to take advantage of that.&lt;/p&gt;
+&lt;p&gt;The primary push for LLM code generation is part of an &lt;em&gt;attempt&lt;/em&gt; at deskilling software engineers, but I don&#39;t believe it will work. I think it&#39;s based on a misunderstanding of what LLMs can do, and what software engineering is. More code in the world is going to mean leverage for people who can understand and change it, we should be ready to take advantage of that.&lt;/p&gt;
 </content>
   </entry>
   <entry>
