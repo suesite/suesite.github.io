@@ -101,8 +101,15 @@
 	
 		
 		<url>
+			<loc>https://www.sue.codes/blog/forwarddeployed/</loc>
+			<lastmod>2026-05-19</lastmod>
+		</url>
+	
+	
+		
+		<url>
 			<loc>https://www.sue.codes/feed/feed.xml</loc>
-			<lastmod>2026-05-11</lastmod>
+			<lastmod>2026-05-19</lastmod>
 		</url>
 	
 </urlset>

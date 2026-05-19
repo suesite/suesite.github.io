@@ -1,3 +1,6 @@
 _site/
 node_modules/
 .cache
+docs/CNAME
+.DS_Store
+.vscode/settings.json

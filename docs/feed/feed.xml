@@ -5,11 +5,47 @@
   <subtitle>A blog about coding and learning</subtitle>
   <link href="https://www.sue.codes/feed/feed.xml" rel="self" />
   <link href="https://www.sue.codes/" />
-  <updated>2026-05-11T00:00:00Z</updated>
+  <updated>2026-05-19T00:00:00Z</updated>
   <id>https://www.sue.codes/</id>
   <author>
     <name>Sue Smith</name>
   </author>
+  <entry>
+    <title>Which direction is forward?</title>
+    <link href="https://www.sue.codes/blog/forwarddeployed/" />
+    <updated>2026-05-19T00:00:00Z</updated>
+    <id>https://www.sue.codes/blog/forwarddeployed/</id>
+    <content type="html">&lt;p&gt;There’s a role that appears to be exploding in popularity in AI adjacent companies right now: the Forward Deployed Engineer. Since I first heard about LLM assisted coding, aside from the very real enabling potential, I’ve worried that the outcome would be a future where fewer people understood how critical systems worked. I believe some of what we’re seeing with these jobs is a reflection of that.&lt;/p&gt;
+&lt;p&gt;Software companies have long had engineering roles embedded in the sales cycle. Sales engineers might build demos and proofs of concept pre-sales. Solutions engineers and architects set up bespoke configurations or integrations of a product for specific customers. Field engineers might support client implementations in their environments. Now we have these “forward deployed” engineers.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The role name comes from Palantir and is borrowed from military language (shoutout to &lt;a href=&quot;https://glasgow.social/@tante@tldr.nettime.org/116595174714390869&quot;&gt;@tante&lt;/a&gt; for informing me of this on mastodon).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you’ve worked at a SaaS (Software as a Service) company, you’ll likely be aware that conflict often arises in deciding what to build. In theory product management leads the decision, in collaboration with engineering, with input from sales / customer engagement. In practice it’s usually more complicated.&lt;/p&gt;
+&lt;h2 id=&quot;services-vs-scale&quot;&gt;Services vs scale&lt;/h2&gt;
+&lt;p&gt;When your product is software, integrating it into a customer’s system can involve building additional software to support the integration. This is something a solutions engineer might do. If your solutions folk are constantly building the same stuff to get your product in place for customers, it might make sense to incorporate what they’re building into the product itself. That way the same solution benefits your other customers, making it easier (and cheaper) to onboard new customers.&lt;/p&gt;
+&lt;p&gt;The golden rule for SaaS companies was to build for scale. If you depend too heavily on professional services (what those solutions engineers do), growing your customer base means hiring more and more people to service it. The more you can automate by supporting common customer use cases through the product itself, the more easily you can scale to support a steeper growth trajectory.&lt;/p&gt;
+&lt;p&gt;So far so good, but what one customer needs might not actually be what others need, in fact there can be many reasons not to incorporate a solution into your core product. This is where product management comes in. PMs determine what to include in the roadmap, what the future of the product should be – in doing that they define the bounds of the product, where its edges are. What falls within its bounds is the software you commit to making available at scale, and maintaining over the longer term.&lt;/p&gt;
+&lt;p&gt;Product managers liaise with engineering and other teams to determine what is feasible and in the interests of the company’s overall plan. With these constraints in mind, the short and long term goals of the company theoretically determine whether or not those customer integrations become part of the product itself.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;When we build this way, it becomes important for a significant portion of the people who work at a company to understand something about what the product does, in order to carry out their own duties. Internal communication about the product therefore becomes a priority.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;whos-driving-the-bus&quot;&gt;Who&#39;s driving the bus&lt;/h2&gt;
+&lt;p&gt;When those sales-situated engineering roles are clearly defined, it creates a dialogue with customers that makes the product more likely to be successful. In practice it often creates pressure on the relationships between teams. If a customer is a big enough deal for the company, their input can effectively hijack the product process and force prioritisation that benefits them, more than it does your future as the vendor.&lt;/p&gt;
+&lt;p&gt;Compensation structures are part of this story too. Where product engineers are typically paid in salary and perhaps bonuses / stock, engineers who work in sales are paid partly in commission. The incentivisation difference creates divergent views of what success looks like.&lt;/p&gt;
+&lt;p&gt;Sometimes these teams are effectively disconnected from the product process, deploying whatever specific customers need – your software ends up a hundred different things to a hundred different customers, and congrats, you&#39;ve accidentally become a dev shop instead of a product company. Shifting control away from product management can also &lt;strong&gt;reduce visibility into what is actually being delivered&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It used to be that the lack of scalability curbed dependence on building in this service-oriented way, certainly for startups if not large incumbent corporations. But there’s a huge push to get this tech embedded inside organisations by any means necessary, so that the need to demonstrate value – and justify the inevitable price hikes that follow deep subsidisation – become redundant.&lt;/p&gt;
+&lt;h2 id=&quot;whos-being-escorted-out-of-the-room&quot;&gt;Who&#39;s being escorted out of the room&lt;/h2&gt;
+&lt;p&gt;The rise of these roles is accompanied by an increasing trend in AI-excused layoffs, citing “flattening” management structures as the goal. Companies are laying off middle managers, many of them in product, and telling an unconvincing tale that AI is automating what they did.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;If this was about building products to better suit real world use cases, I don&#39;t believe we&#39;d be using these distinct job titles, or getting rid of managers en masse.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Developers often hate on management, but the role being sidelined has wider consequences. &lt;strong&gt;Part of what product managers do is make intention legible to the company.&lt;/strong&gt; They frame a product in terms of vision and value, helping teams around the company to understand what is getting built. By putting customer-embedded engineers in a position to decide what gets built instead, employees lose both visibility into what they are shipping, and opportunities to influence it collectively.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Reducing worker understanding of what is being built is a long established labour-crushing tactic. Losing the ability to understand what your company is shipping means losing paths through which we might minimise the harms our software causes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;finding-leverage&quot;&gt;Finding leverage&lt;/h2&gt;
+&lt;p&gt;Couple all of this with the deployment of LLMs to generate code in a way that obfuscates understanding of it, and you can see where we’re headed. A world where it&#39;s harder to understand systems that affect us. This is why I’m focusing on helping people to understand codebases, and building tooling for that purpose. LLMs can actually aid that understanding – they are being weaponised with clear intention to undermine it.&lt;/p&gt;
+&lt;p&gt;The primary push for LLM code generation is part of an attempt at deskilling software engineers, but I don&#39;t believe it will work. I think it&#39;s based on a misunderstanding of what LLMs can do, and what software engineering is. More code in the world is going to mean leverage for people who can understand and change it, we should be ready to take advantage of that.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Pedagogy is the way</title>
     <link href="https://www.sue.codes/blog/pedagogyway/" />
@@ -374,33 +410,6 @@
 &lt;p&gt;If we want software that is reliable, safe, and inclusive, we need to provide paths that empower a wide representation of people to build it. That means accepting the motivators they bring with them.&lt;/p&gt;
 &lt;p&gt;Our goals determine what is and isn’t worth our time, and for most of us the technologies that help us get there are largely incidental. Those choices are driven by the opportunities each person is trying to unlock.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;What makes something worth learning to you?&lt;/strong&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Software development isn’t writing syntax</title>
-    <link href="https://www.sue.codes/blog/notsyntax/" />
-    <updated>2023-05-11T00:00:00Z</updated>
-    <id>https://www.sue.codes/blog/notsyntax/</id>
-    <content type="html">&lt;!--
-&lt;img src=&quot;robots.png&quot; alt=&quot;robots&quot; /&gt;
---&gt;
-&lt;p&gt;&lt;em&gt;&lt;strong&gt;This post was originally published at &lt;a href=&quot;https://blog.glitch.com/post/software-development-isnt-writing-syntax&quot;&gt;blog.glitch.com&lt;/a&gt;.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;AI assisted coding has really taken off recently. The tech and &lt;a href=&quot;https://blog.glitch.com/post/yes-code-coding-with-ai&quot;&gt;the conversation around it&lt;/a&gt; say some interesting things about our understanding of what developers do.&lt;/p&gt;
-&lt;p&gt;AI can write some kinds of code, and it’s even helping people who aren’t coders to make software applications. It’s also frequently wrong. We’re still learning the types of coding task it’s suited to — in what specific contexts it’s a help rather than a hindrance. Unrealistic expectations and inaccurate interpretations abound! &lt;strong&gt;The conversation reveals our inability to define the real skills in being a software developer.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;It’s not writing syntax. Being able to recite the right keywords only takes you so far.&lt;/p&gt;
-&lt;h2 id=&quot;ok-what-is-it-then&quot;&gt;OK, what is it then?&lt;/h2&gt;
-&lt;p&gt;Back when I was training for tech, an instructor told us a story about a research exercise. A mix of people looked at a code sample for a short time and tried to memorize as much of it as possible. Some had never written code, and some were experienced software engineers. The non-coders were able to recount detail about the first couple of lines from the top of the excerpt. The developers remembered almost none of that detail, but recounted a high level overview of the structures they had seen (a loop, a conditional, etc). The developers understood the code differently.&lt;/p&gt;
-&lt;p&gt;Code comprehension remains a neglected part of developer education, but this exercise reflects how integral it is to making software, and that abstraction level is a key aspect of working with code. The actual syntax is a &lt;em&gt;detail&lt;/em&gt; — an important one, the code won’t work if it’s wrong — but focusing on syntax is only helpful at a granular level, it doesn’t come close to conveying what a developer actually does.&lt;/p&gt;
-&lt;h2 id=&quot;learning-and-context&quot;&gt;Learning and context&lt;/h2&gt;
-&lt;p&gt;When I see a job posting that requires experience in specific frameworks or programming languages, it always seems like such a missed opportunity. Software engineering is fundamentally a &lt;em&gt;learning&lt;/em&gt; activity. Developers are always learning new technologies and solving new problems. Once you’ve learned one language you pick up more. What characterizes the more experienced developer is the ability to reapply skills in different contexts.&lt;/p&gt;
-&lt;p&gt;I’ve had the privilege to work with incredibly highly skilled software engineers, and if I were to try to describe their talents and contributions, writing correct or efficient syntax would not make the list lol. Part of it is going past “how” and delving into “why” — articulating the problem as it stands within an organizational or social context, making sure you’re solving the right problem, and defining it in an actionable way. There’s a ton of communication and collaboration, and being comfortable with ambiguity is hugely valuable.&lt;/p&gt;
-&lt;h2 id=&quot;different-interfaces&quot;&gt;Different interfaces&lt;/h2&gt;
-&lt;p&gt;Shifting abstraction levels have given us an evolving definition of software engineering since the inception of coding. What seems like essential knowledge to one generation of coders becomes an invisible part of the stack to the next generation. There’s a strong argument that AI is another interface in this cycle. Remember the discussion a few years ago about knowing how to use effective phrasing for a Google search? The algorithms in the tools we use daily have advanced, but describing many of them as natural language processing is still a stretch.&lt;/p&gt;
-&lt;p&gt;Everyone who interacts with tech figures out how to give the inputs that get the desired output, whether you’re writing code or adjusting your accent because the voice recognition tool can’t process Glaswegian — we learn how to get the machines to do what we want.&lt;/p&gt;
-&lt;h2 id=&quot;engaging-with-complexity&quot;&gt;Engaging with complexity&lt;/h2&gt;
-&lt;p&gt;Increasing abstraction levels have been accompanied by the rise of the API — we make software by combining a lot of components towards a particular goal. Connecting all of these different tools means the activity is in part defined by its technological and community ecosystem. Software engineers make something valuable within a complex landscape of interacting systems.&lt;/p&gt;
-&lt;p&gt;The modular style of making software is successful because it frees developers to focus their creativity on the parts of a project that make it &lt;em&gt;unique&lt;/em&gt; — which are also the parts AI is least able to approach.&lt;/p&gt;
-&lt;p&gt;Making the web isn’t about writing code, it’s about being able to create and participate through technology. As it becomes harder to say what is and isn’t software development, maybe it becomes more interesting to ask other questions. For example, what does a tool enable people to do, what are the opportunities, and what are the risks of harm?&lt;/p&gt;
 </content>
   </entry>
 </feed>

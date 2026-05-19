@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sue&#39;s blog about coding</title>
-		<meta name="description" content="Thoughts on making software.">
+		<title>Which direction is forward?</title>
+		<meta name="description" content="Software role changes tell us something about the goal of AI companies.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<link rel="shortcut icon" href="https://suesite.github.io/invert.ico">
@@ -479,6 +479,174 @@ a.readmore {
 	blockquote {
 		background: midnightblue;
 	}
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 		
 	
@@ -496,7 +664,7 @@ a.readmore {
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
 					<li class="nav-item"><a href="/">Home</a></li>
-					<li class="nav-item"><a href="/blog/" aria-current="page">Posts</a></li>
+					<li class="nav-item"><a href="/blog/">Posts</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
 				</ul>
@@ -507,79 +675,45 @@ a.readmore {
 			<heading-anchors>
 				
 
-<h1 id="posts">Posts</h1>
 
+<h1 id="which-direction-is-forward">Which direction is forward?</h1>
 
-<ul reversed="" class="postlist" style="--postlist-index: 12">
-	<li class="postlist-item">
-		<a href="/blog/forwarddeployed/" class="postlist-link">Which direction is forward?</a>
-		<time class="postlist-date" datetime="2026-05-19">19 May 2026</time>
-		<span class="description">Software role changes tell us something about the goal of AI companies.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/pedagogyway/" class="postlist-link">Pedagogy is the way</a>
-		<time class="postlist-date" datetime="2026-05-11">11 May 2026</time>
-		<span class="description">Looking back at three years of thinking and posting about ai assisted coding.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/convenienceunderstanding/" class="postlist-link">On convenience and understanding</a>
-		<time class="postlist-date" datetime="2026-05-07">07 May 2026</time>
-		<span class="description">Can we leverage automation while still preserving understanding?</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/devtopics/" class="postlist-link">How should we teach software development now?</a>
-		<time class="postlist-date" datetime="2026-04-30">30 April 2026</time>
-		<span class="description">Exploring software development learning topics in the context of AI-assisted coding.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/tradeoffs/" class="postlist-link">Automation is a trade-off</a>
-		<time class="postlist-date" datetime="2026-04-28">28 April 2026</time>
-		<span class="description">We should have more explicit conversations about the trade-offs we make when we use automations.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/oneanswer/" class="postlist-link">What to do about developer skills</a>
-		<time class="postlist-date" datetime="2026-04-24">24 April 2026</time>
-		<span class="description">This week I talked at Haggis Ruby in Glasgow.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/tooljob/" class="postlist-link">When is a tool the right tool for the job?</a>
-		<time class="postlist-date" datetime="2026-03-27">27 March 2026</time>
-		<span class="description">Digging into skill development with a group of research software engineering experts.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/fingerscode/" class="postlist-link">Do your fingers remember how to code?</a>
-		<time class="postlist-date" datetime="2026-03-17">17 March 2026</time>
-		<span class="description">My Monki Gras talk – discovering developer skills worth learning when AI can write code.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/stillteach/" class="postlist-link">We should still teach coding</a>
-		<time class="postlist-date" datetime="2025-03-31">31 March 2025</time>
-		<span class="description">Coding skills are going to be as important as ever.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/worthlearning/" class="postlist-link">What is worth learning?</a>
-		<time class="postlist-date" datetime="2024-04-25">25 April 2024</time>
-		<span class="description">What is worth learning an a world of AI assisted coding frameworks.</span>
-		
-	</li>
-	<li class="postlist-item">
-		<a href="/blog/notsyntax/" class="postlist-link">Software development isn’t writing syntax</a>
-		<time class="postlist-date" datetime="2023-05-11">11 May 2023</time>
-		<span class="description">On AI assisted coding and software development.</span>
-		
-	</li>
+<ul class="post-metadata">
+	<li><time datetime="2026-05-19">19 May 2026</time></li>
 </ul>
 
+<p>There’s a role that appears to be exploding in popularity in AI adjacent companies right now: the Forward Deployed Engineer. Since I first heard about LLM assisted coding, aside from the very real enabling potential, I’ve worried that the outcome would be a future where fewer people understood how critical systems worked. I believe some of what we’re seeing with these jobs is a reflection of that.</p>
+<p>Software companies have long had engineering roles embedded in the sales cycle. Sales engineers might build demos and proofs of concept pre-sales. Solutions engineers and architects set up bespoke configurations or integrations of a product for specific customers. Field engineers might support client implementations in their environments. Now we have these “forward deployed” engineers.</p>
+<blockquote>
+<p>The role name comes from Palantir and is borrowed from military language (shoutout to <a href="https://glasgow.social/@tante@tldr.nettime.org/116595174714390869">@tante</a> for informing me of this on mastodon).</p>
+</blockquote>
+<p>If you’ve worked at a SaaS (Software as a Service) company, you’ll likely be aware that conflict often arises in deciding what to build. In theory product management leads the decision, in collaboration with engineering, with input from sales / customer engagement. In practice it’s usually more complicated.</p>
+<h2 id="services-vs-scale">Services vs scale</h2>
+<p>When your product is software, integrating it into a customer’s system can involve building additional software to support the integration. This is something a solutions engineer might do. If your solutions folk are constantly building the same stuff to get your product in place for customers, it might make sense to incorporate what they’re building into the product itself. That way the same solution benefits your other customers, making it easier (and cheaper) to onboard new customers.</p>
+<p>The golden rule for SaaS companies was to build for scale. If you depend too heavily on professional services (what those solutions engineers do), growing your customer base means hiring more and more people to service it. The more you can automate by supporting common customer use cases through the product itself, the more easily you can scale to support a steeper growth trajectory.</p>
+<p>So far so good, but what one customer needs might not actually be what others need, in fact there can be many reasons not to incorporate a solution into your core product. This is where product management comes in. PMs determine what to include in the roadmap, what the future of the product should be – in doing that they define the bounds of the product, where its edges are. What falls within its bounds is the software you commit to making available at scale, and maintaining over the longer term.</p>
+<p>Product managers liaise with engineering and other teams to determine what is feasible and in the interests of the company’s overall plan. With these constraints in mind, the short and long term goals of the company theoretically determine whether or not those customer integrations become part of the product itself.</p>
+<blockquote>
+<p>When we build this way, it becomes important for a significant portion of the people who work at a company to understand something about what the product does, in order to carry out their own duties. Internal communication about the product therefore becomes a priority.</p>
+</blockquote>
+<h2 id="whos-driving-the-bus">Who's driving the bus</h2>
+<p>When those sales-situated engineering roles are clearly defined, it creates a dialogue with customers that makes the product more likely to be successful. In practice it often creates pressure on the relationships between teams. If a customer is a big enough deal for the company, their input can effectively hijack the product process and force prioritisation that benefits them, more than it does your future as the vendor.</p>
+<p>Compensation structures are part of this story too. Where product engineers are typically paid in salary and perhaps bonuses / stock, engineers who work in sales are paid partly in commission. The incentivisation difference creates divergent views of what success looks like.</p>
+<p>Sometimes these teams are effectively disconnected from the product process, deploying whatever specific customers need – your software ends up a hundred different things to a hundred different customers, and congrats, you've accidentally become a dev shop instead of a product company. Shifting control away from product management can also <strong>reduce visibility into what is actually being delivered</strong>.</p>
+<p>It used to be that the lack of scalability curbed dependence on building in this service-oriented way, certainly for startups if not large incumbent corporations. But there’s a huge push to get this tech embedded inside organisations by any means necessary, so that the need to demonstrate value – and justify the inevitable price hikes that follow deep subsidisation – become redundant.</p>
+<h2 id="whos-being-escorted-out-of-the-room">Who's being escorted out of the room</h2>
+<p>The rise of these roles is accompanied by an increasing trend in AI-excused layoffs, citing “flattening” management structures as the goal. Companies are laying off middle managers, many of them in product, and telling an unconvincing tale that AI is automating what they did.</p>
+<p><em>If this was about building products to better suit real world use cases, I don't believe we'd be using these distinct job titles, or getting rid of managers en masse.</em></p>
+<p>Developers often hate on management, but the role being sidelined has wider consequences. <strong>Part of what product managers do is make intention legible to the company.</strong> They frame a product in terms of vision and value, helping teams around the company to understand what is getting built. By putting customer-embedded engineers in a position to decide what gets built instead, employees lose both visibility into what they are shipping, and opportunities to influence it collectively.</p>
+<blockquote>
+<p>Reducing worker understanding of what is being built is a long established labour-crushing tactic. Losing the ability to understand what your company is shipping means losing paths through which we might minimise the harms our software causes.</p>
+</blockquote>
+<h2 id="finding-leverage">Finding leverage</h2>
+<p>Couple all of this with the deployment of LLMs to generate code in a way that obfuscates understanding of it, and you can see where we’re headed. A world where it's harder to understand systems that affect us. This is why I’m focusing on helping people to understand codebases, and building tooling for that purpose. LLMs can actually aid that understanding – they are being weaponised with clear intention to undermine it.</p>
+<p>The primary push for LLM code generation is part of an attempt at deskilling software engineers, but I don't believe it will work. I think it's based on a misunderstanding of what LLMs can do, and what software engineering is. More code in the world is going to mean leverage for people who can understand and change it, we should be ready to take advantage of that.</p>
 
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/pedagogyway/">Pedagogy is the way</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -619,7 +753,7 @@ a.readmore {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/` was built on 2026-05-19T13:55:50.896Z -->
+		<!-- This page `/blog/forwarddeployed/` was built on 2026-05-19T13:55:50.896Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
