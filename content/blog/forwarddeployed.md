@@ -34,7 +34,7 @@ Compensation structures are part of this story too. Where product engineers are 
 
 Sometimes these teams are effectively disconnected from the product process, deploying whatever specific customers need – your software ends up a hundred different things to a hundred different customers, and congrats, you've accidentally become a dev shop instead of a product company. Shifting control away from product management can also **reduce visibility into what is actually being delivered**. 
 
-It used to be that the lack of scalability curbed dependence on building in this service-oriented way, certainly for startups if not large incumbent corporations. But there's a belief that AI removes this constraint – that's debatable at best. Either way, there’s a huge push to get this tech embedded inside organisations by any means necessary, so that the need to demonstrate value – and justify the inevitable price hikes that follow deep subsidisation – become redundant. 
+It used to be that the lack of scalability curbed dependence on this kind of service-based delivery, certainly for startups if not large incumbent corporations – but there's a belief that AI removes that constraint. Whether that's realistic or not, there’s a push to get this tech embedded inside organisations by any means necessary, so that the need to demonstrate value – and justify the inevitable price hikes that follow deep subsidisation – become redundant, leaving behind implementations that are problematic to remove.
 
 ## Who's being escorted out of the room
 
