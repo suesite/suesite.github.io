@@ -1,6 +1,6 @@
 ---
 title: Being intentional about friction
-description: Thinking about Glitch and developer learning with LLMs.
+description: Pondering what Glitch tell us about friction and developer learning when LLMs can generate code.
 date: 2026-06-01
 img: https://www.sue.codes/websitecompute.png
 ---
