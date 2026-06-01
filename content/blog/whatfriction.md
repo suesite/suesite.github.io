@@ -2,6 +2,7 @@
 title: Being intentional about friction
 description: Thinking about Glitch and developer learning with LLMs.
 date: 2026-06-01
+img: https://www.sue.codes/websitecompute.png
 ---
 
 This time last year I was building paths for folk migrating apps away from Glitch. We were approaching the shutdown date and I needed alternatives for the Fastly onboarding projects I'd used as the foundation of the learning program I was leading – and that I’d candidly been hoping to integrate enough into product onboarding that the company would be persuaded to keep Glitch around. I also had a more personal need to figure out alternatives, as I'd relied on Glitch for teaching much longer than I'd been employed to work on it. 

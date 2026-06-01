@@ -3,6 +3,7 @@ title: Automation is a trade-off
 description: We should have more explicit conversations about the trade-offs we make when we use automations.
 date: 2026-04-28
 canonical: https://dev.to/suesmith/automation-is-a-trade-off-2fh8
+img: https://www.sue.codes/machine.jpg
 ---
 
 ___This post was originally published on [dev.to](https://dev.to/suesmith/automation-is-a-trade-off-2fh8).___
