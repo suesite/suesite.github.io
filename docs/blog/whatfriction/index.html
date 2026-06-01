@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Which direction is forward?</title>
-		<meta name="description" content="Software role changes tell us something about the goals in LLM deployment.">
+		<title>Being intentional about friction</title>
+		<meta name="description" content="Thinking about Glitch and developer learning with LLMs.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<meta property="og:image" content="https://www.sue.codes/blogmeta.jpg">
@@ -680,43 +680,45 @@ pre[class*="language-diff-"] {
 				
 
 
-<h1 id="which-direction-is-forward">Which direction is forward?</h1>
+<h1 id="being-intentional-about-friction">Being intentional about friction</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2026-05-19">19 May 2026</time></li>
+	<li><time datetime="2026-06-01">01 June 2026</time></li>
 </ul>
 
-<p>There’s a role that appears to be exploding in popularity in AI adjacent companies right now: the Forward Deployed Engineer. Since I first heard about LLM assisted coding, aside from the very real enabling potential, I’ve worried that the outcome would be a future where fewer people understood how critical systems worked. I believe some of what we’re seeing with these jobs is a reflection of that.</p>
-<p>Software companies have long had engineering roles embedded in the sales cycle. Sales engineers might build demos and proofs of concept pre-sales. Solutions engineers and architects set up bespoke configurations or integrations of a product for specific customers. Field engineers might support client implementations in their environments. Now we have these “forward deployed” engineers.</p>
+<p>This time last year I was building paths for folk migrating apps away from Glitch. We were approaching the shutdown date and I needed alternatives for the Fastly onboarding projects I'd used as the foundation of the learning program I was leading – and that I’d candidly been hoping to integrate enough into product onboarding that the company would be persuaded to keep Glitch around. I also had a more personal need to figure out alternatives, as I'd relied on Glitch for teaching much longer than I'd been employed to work on it.</p>
+<p><picture><source type="image/avif" srcset="/blog/whatfriction/0zPaeoP9l3-3024.avif 3024w"><source type="image/webp" srcset="/blog/whatfriction/0zPaeoP9l3-3024.webp 3024w"><img loading="lazy" decoding="async" src="/blog/whatfriction/0zPaeoP9l3-3024.png" alt="project in github codespaces" width="3024" height="1582"></picture></p>
+<p>It's four years since Glitch was acquired by Fastly and therefore four years since I went to work there – I left last week. This isn't a dunk on my former employer, nor is it one of those our-incredible-journey things, just some reflections on what I learned during this particular part of mine, as I step into the next bit.</p>
+<h2 id="why-i-needed-a-replacement">Why I needed a replacement</h2>
+<p>We’re finding out more than ever that <a href="https://www.sue.codes/blog/convenienceunderstanding/">removing friction doesn’t necessarily empower people</a> when it comes to learning. One of the best things about Glitch was that it seemed to remove exactly the right kinds of friction, focusing the learner on the parts of making websites that resonated most with them. No dev environment setup or deployment barriers, just jumping straight into the functionality you wanted to craft.</p>
+<p>It was a phenomenal asset for onboarding developers with a tool or framework. That’s what I used it for at a few different startups including Postman, and why I was able to embed it in various Fastly enablement processes. It let you get straight to the part where you figure out how to interact with a particular dev product, and form the mental models to do so effectively, in Fastly’s case integrating edge computing into your site.</p>
 <blockquote>
-<p>The role name comes from Palantir and is borrowed from military language (shoutout to <a href="https://glasgow.social/@tante@tldr.nettime.org/116595174714390869">@tante</a> for informing me of this on mastodon).</p>
+<p>None of this invalidates wanting to spin up a website with no intention of learning about the implementation, there's a reason WordPress has remained so popular for so long. <strong>Being able to choose which details are worth paying attention to is the trick.</strong></p>
 </blockquote>
-<p>If you’ve worked at a SaaS (Software as a Service) company, you’ll likely be aware that conflict often arises in deciding what to build. In theory product management leads the decision, in collaboration with engineering, with input from sales / customer engagement. In practice it’s usually more complicated.</p>
-<h2 id="services-vs-scale">Services vs scale</h2>
-<p>When your product is software, integrating it into a customer’s system can involve building additional software to support the integration. This is something a solutions engineer might do. If your solutions folk are constantly building the same stuff to get your product in place for customers, it might make sense to incorporate what they’re building into the product itself. That way the same solution benefits your other customers, making it easier (and cheaper) to onboard new customers.</p>
-<p>The golden rule for SaaS companies was to build for scale. If you depend too heavily on professional services (what those solutions engineers do), growing your customer base means hiring more and more people to service it. The more you can automate by supporting common customer use cases through the product itself, the more easily you can scale to support a steeper growth trajectory.</p>
-<p>So far so good, but what one customer needs might not actually be what others need, in fact there can be many reasons not to incorporate a solution into your core product. This is where product management comes in. PMs determine what to include in the roadmap, what the future of the product should be – in doing that they define the bounds of the product, where its edges are. What falls within its bounds is the software you commit to making available at scale, and maintaining over the longer term.</p>
-<p>Product managers liaise with engineering and other teams to determine what is feasible and in the interests of the company’s overall plan. With these constraints in mind, the short and long term goals of the company theoretically determine whether or not those customer integrations become part of the product itself.</p>
+<p>Many platforms have taken inspiration from Glitch – building in the browser is much more common now, so is remixing from a template (a pattern hugely popularised by Scratch). In order to preserve some semblance of the easy flow I’d been able to create in Glitch, I built <a href="https://dev.to/fastly/enabling-developers-in-github-codespaces-1l3a">custom dev container configurations</a> to create a kind-of-sort-of similar flow in GitHub Codespaces. It helped me not completely abandon the approach, but suffice it to say it wasn’t Glitch. It’s basically the VS Code editor in the browser, so the experience is overwhelming for new developers and there’s a pretty severe limit to how effectively you can mitigate that.</p>
+<h2 id="what-has-changed">What has changed</h2>
+<p>The advent of LLMs and changes to the web itself make what Glitch was, in practical terms at least, no longer sensible. Letting anyone spin up a live website in seconds was both expensive from an infrastructure perspective and incredibly prone to abuse, and that was before AI agents.
+There were also abstractions that didn’t age quite so well. Not having to think about deployment was a blessing right up until it became a curse. The git rewind feature fared similarly. Starting from a small set of app templates seems quaint when you can use a prompt to generate anything you like – although there were advantages to that, and I suspect they partially explain why LLMs are not enabling creation the way some expected them to.</p>
+<h2 id="what-we-still-need">What we still need</h2>
+<p>As anyone familiar with creative tooling will tell you, starting from a blank slate isn’t always ideal when it comes to stimulating users. A blank chat box is no different. That's why learning platforms like Scratch focus so heavily on the remix pathway. What happens after you generate your starter project has a huge influence on whether or not you continue. What is in there really matters.</p>
 <blockquote>
-<p>When we build this way, it becomes important for a significant portion of the people who work at a company to understand something about what the product does, in order to carry out their own duties. Internal communication about the product therefore becomes a priority.</p>
+<p>Removing barriers that kill momentum – without disadvantaging the learner later – is a <a href="https://www.sue.codes/blog/tradeoffs/">balancing act</a> that needs continually revisited.</p>
 </blockquote>
-<h2 id="whos-driving-the-bus">Who's driving the bus</h2>
-<p>When those sales-situated engineering roles are clearly defined, it creates a dialogue with customers that makes the product more likely to be successful. In practice it often creates pressure on the relationships between teams. If a customer is a big enough deal for the company, their input can effectively hijack the product process and force prioritisation that benefits them, more than it does your future as the vendor.</p>
-<p>Compensation structures are part of this story too. Where product engineers are typically paid in salary and perhaps bonuses / stock, engineers who work in sales are paid partly in commission. The incentivisation difference creates divergent views of what success looks like.</p>
-<p>Sometimes these teams are effectively disconnected from the product process, deploying whatever specific customers need – your software ends up a hundred different things to a hundred different customers, and congrats, you've accidentally become a dev shop instead of a product company. Shifting control away from product management can also <strong>reduce visibility into what is actually being delivered</strong>.</p>
-<p>It used to be that the lack of scalability curbed dependence on this kind of service-based delivery, certainly for startups if not large incumbent corporations – but there's a belief that AI removes that constraint. Whether that's realistic or not, there’s a push to get this tech embedded inside organisations by any means necessary, so that the need to demonstrate value – and justify the inevitable price hikes that follow deep subsidisation – become redundant, leaving behind implementations that are problematic to remove.</p>
-<h2 id="whos-being-escorted-out-of-the-room">Who's being escorted out of the room</h2>
-<p>The rise of these roles is accompanied by an increasing trend in AI-excused layoffs, citing “flattening” management structures as the goal. Companies are laying off middle managers, many of them in product, and telling an unconvincing tale that AI is automating what they did.</p>
-<p><em>If this was about building products to better suit real world use cases, I don't believe we'd be using these distinct job titles, or getting rid of managers en masse.</em></p>
-<p>Developers often hate on management, but the role being sidelined has wider consequences. <strong>Part of what product managers do is make intention legible to the company.</strong> They frame a product in terms of vision and value, helping teams around the company to understand what is getting built. By putting customer-embedded engineers in a position to decide what gets built instead, employees lose both visibility into what they are shipping, and opportunities to influence it collectively.</p>
+<p>I recently tried exporting a simple website from a vibe coding platform and found it a frustrating dead end, with zero in-project guidance and mystifying implementation choices. <em>There was no feasible path forward that involved touching this code.</em> Contrast that with the Glitch Hello apps – they were painstakingly designed to act as <strong>jumping off points</strong> for people learning a new framework. The preview, code comments, and project docs were all curated to guide the learner through first steps that set them up to keep going. You know, the kind of material LLMs are trained on.</p>
+<picture><source type="image/avif" srcset="/blog/whatfriction/8jlfchdv0K-1840.avif 1840w"><source type="image/webp" srcset="/blog/whatfriction/8jlfchdv0K-1840.webp 1840w"><img loading="lazy" decoding="async" src="/blog/whatfriction/8jlfchdv0K-1840.png" alt="john wick on the phone as the one tech writer still employed while viggo says we're gonnae automate coding using docs" style="width:400px;" width="1840" height="1800"></picture>
+<p>Anil described Glitch as a <a href="https://blog.glitch.com/post/yes-code-coding-with-ai">&quot;yes code&quot;</a> platform, distinct from &quot;no code&quot; where the user was encouraged not to even look at the code generated. I think it’s safe to say that most LLM products aimed at people without prior experience fall firmly into the no code camp. There’s an assumption that no one needs to know about code anymore, <a href="https://www.sue.codes/blog/stillteach/">I think that’s a mistake</a>. We still need people to <a href="https://www.sue.codes/blog/devtopics/">understand code</a> in order to understand how systems built in software work, and to shape them reliably. So where are the &quot;yes code&quot; LLM platforms?</p>
 <blockquote>
-<p>Reducing worker understanding of what is being built is a long established labour-crushing tactic. Losing the ability to understand what your company is shipping means losing paths through which we might mitigate the harms our software causes.</p>
+<p>The claim is that we don't need those jumping off points anymore, but without them, how will anyone learn to swim?</p>
 </blockquote>
-<h2 id="finding-leverage">Finding leverage</h2>
-<p>Couple all of this with the deployment of LLMs to generate code in a way that obfuscates understanding of it, and you can see where we’re headed. A world where it's harder to understand systems that affect us. This is why I’m focusing on helping people to understand codebases, and building tooling for that purpose. LLMs can actually aid that understanding – they are being weaponised with clear intention to undermine it.</p>
-<p>The primary push for LLM code generation is part of an <em>attempt</em> at deskilling software engineers, but I don't believe it will work. I think it's based on a misunderstanding of what LLMs can do, and what software engineering is. More code in the world is going to mean leverage for people who can understand and change it, we should be ready to take advantage of that.</p>
+<p><strong>We need software building experiences that design friction with intention, being deliberate about what is abstracted away and what is left in the learner's path.</strong> What is exposed should be the details that equip the learner with whatever understanding serves their goals (or their organisation's). Balancing short and long term goals is, as always, where we find tension we'll want to manage effectively – if we're to leave the experience empowered, rather than dependent on automations we don't fully understand.</p>
+<h2 id="what-doors-have-opened">What doors have opened?</h2>
+<p>People who are being empowered through building with LLMs are overwhelmingly doing it in conjunction with support from others – being able to initialise a project only takes you so far. Claims that LLMs democratise access to the opportunities that come from making software are popular, but in reality that involves a lot more than generating code from a natural language prompt.</p>
+<p>I believe LLMs give us a host of new paths for people learning to make software, but not through a chat window that separates you from coworkers and peers. We could do a lot more to build tooling around LLMs that would better support learning. Might be an idea to <a href="https://www.sue.codes/blog/pedagogyway/">pay attention to the pedagogy</a> eh.</p>
+<blockquote>
+<p>I'm available for <a href="https://www.buoyancies.com">consulting work</a> now btw.</p>
+</blockquote>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/pedagogyway/">Pedagogy is the way</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/whatfriction/">Being intentional about friction</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/forwarddeployed/">Which direction is forward?</a></li>
 </ul>
 
 			</heading-anchors>
@@ -766,7 +768,7 @@ pre[class*="language-diff-"] {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/forwarddeployed/` was built on 2026-06-01T09:57:29.836Z -->
+		<!-- This page `/blog/whatfriction/` was built on 2026-06-01T09:57:29.836Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

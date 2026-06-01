@@ -2,7 +2,7 @@ export default {
 	title: "Sue's blog about coding",
 	url: "https://www.sue.codes/",
 	language: "en",
-	description: "Thoughts on making software.",
+	description: "Sue's thoughts on how developers learn while making software when AI can write the code.",
 	author: {
 		name: "Sue Smith",
 		email: "sue@sue.codes",

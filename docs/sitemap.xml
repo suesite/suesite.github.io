@@ -108,8 +108,15 @@
 	
 		
 		<url>
+			<loc>https://www.sue.codes/blog/whatfriction/</loc>
+			<lastmod>2026-06-01</lastmod>
+		</url>
+	
+	
+		
+		<url>
 			<loc>https://www.sue.codes/feed/feed.xml</loc>
-			<lastmod>2026-05-29</lastmod>
+			<lastmod>2026-06-01</lastmod>
 		</url>
 	
 </urlset>
