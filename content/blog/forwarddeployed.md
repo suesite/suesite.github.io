@@ -46,6 +46,8 @@ Developers often hate on management, but the role being sidelined has wider cons
 
 > Reducing worker understanding of what is being built is a long established labour-crushing tactic. Losing the ability to understand what your company is shipping means losing paths through which we might mitigate the harms our software causes.
 
+An added bonus for companies using AI-generated solutions: employees working directly with customers enjoy leverage that makes them problematic to remove, but if the solution a customer relationship depends on isn't even understood by the engineer who built it, that problem goes away too.
+
 ## Finding leverage
 
 Couple all of this with the deployment of LLMs to generate code in a way that obfuscates understanding of it, and you can see where we’re headed. A world where it's harder to understand systems that affect us. This is why I’m focusing on helping people to understand codebases, and building tooling for that purpose. LLMs can actually aid that understanding – they are being weaponised with clear intention to undermine it.
