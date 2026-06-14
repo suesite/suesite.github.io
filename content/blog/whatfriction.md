@@ -38,6 +38,8 @@ I recently tried exporting a simple website from a vibe coding platform and foun
 
 <img alt="john wick on the phone as the one tech writer still employed while viggo says we're gonnae automate coding using docs" src="wickcallmeme.png" style="width:400px;"/>
 
+> The claim is that we don't need those jumping off points anymore, but without them, how will anyone learn to swim?
+
 Anil described Glitch as a ["yes code"](https://blog.glitch.com/post/yes-code-coding-with-ai) platform, distinct from "no code" where the user was encouraged not to even look at the code generated. I think it’s safe to say that most LLM products aimed at people without prior experience fall firmly into the no code camp. There’s an assumption that no one needs to know about code anymore, [I think that’s a mistake](https://www.sue.codes/blog/stillteach/). We still need people to [understand code](https://www.sue.codes/blog/devtopics/) in order to understand how systems built in software work, and to shape them reliably. So where are the "yes code" LLM platforms?
 
 **We need software building experiences that design friction with intention, being deliberate about what is abstracted away and what is left in the learner's path.** What is exposed should be the details that equip the learner with whatever understanding serves their goals (or their organisation's). Balancing short and long term goals is, as always, where we find tension we'll want to manage effectively – if we're to leave the experience empowered, rather than dependent on automations we don't fully understand.

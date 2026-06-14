@@ -53,4 +53,4 @@ I ended my first post on this subject with a prompt:
 
 It's been distressing to see some of the risks of harm become real in the time since I posted this. I think engaging with the question might be more valuable than ever.
 
-🚌 **If your organisation needs help embracing the power of pedagogy, [give me a shout](mailto:suesmithglasgow@gmail.com).**
+🚌 **If your organisation needs help embracing the power of pedagogy, [give me a shout](https://www.buoyancies.com).**
