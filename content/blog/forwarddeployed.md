@@ -2,6 +2,7 @@
 title: Which direction is forward?
 description: Software role changes tell us something about the goals in LLM deployment.
 date: 2026-05-19
+updated: 2026-06-20
 ---
 
 There’s a role that appears to be exploding in popularity in AI adjacent companies right now: the Forward Deployed Engineer. Since I first heard about LLM assisted coding, aside from the very real enabling potential, I’ve worried that the outcome would be a future where fewer people understood how critical systems worked. I believe some of what we’re seeing with these jobs is a reflection of that.
