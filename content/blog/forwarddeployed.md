@@ -10,15 +10,19 @@ There’s a role that appears to be exploding in popularity in AI adjacent compa
 
 Software companies have long had engineering roles embedded in the sales cycle. Sales engineers might build demos and proofs of concept pre-sales. Solutions engineers and architects set up bespoke configurations or integrations of a product for specific customers. Field engineers might support client implementations in their environments. Now we have these “forward deployed” engineers.
 
-> The role name comes from Palantir and is borrowed from military language (shoutout to [@tante](https://glasgow.social/@tante@tldr.nettime.org/116595174714390869) for informing me of this on mastodon). 
+> The role name comes from Palantir and is borrowed from military language (shoutout to [@tante](https://glasgow.social/@tante@tldr.nettime.org/116595174714390869) for informing me of this). 
 
-If you’ve worked at a SaaS (Software as a Service) company, you’ll likely be aware that conflict often arises in deciding what to build. In theory product management leads the decision, in collaboration with engineering, with input from sales / customer engagement. In practice it’s usually more complicated.
+FDEs are the latest chapter in tech industry [manipulation of the procurement and compliance process](https://www.prospectmagazine.co.uk/politics/democracy/government/71511/how-palantir-infiltrated-the-state) for contracting with large organisations such as government / public sector bodies. AI appears to be fueling the adoption of this pattern in software companies that would historically have practiced product-led growth. This post is an exploration of what's changing from the perspective of building in that kind of environment.
 
 ## Services vs scale
+
+If you’ve worked at a SaaS (Software as a Service) company, you’ll likely be aware that conflict often arises in deciding what to build. In theory product management leads the decision, in collaboration with engineering, with input from sales / customer engagement. In practice it’s usually more complicated.
 
 When your product is software, integrating it into a customer’s system can involve building additional software to support the integration. This is something a solutions engineer might do. If your solutions folk are constantly building the same stuff to get your product in place for customers, it might make sense to incorporate what they’re building into the product itself. That way the same solution benefits your other customers, making it easier (and cheaper) to onboard new customers.
 
 The golden rule for SaaS companies was to build for scale. If you depend too heavily on professional services (what those solutions engineers do), growing your customer base means hiring more and more people to service it. The more you can automate by supporting common customer use cases through the product itself, the more easily you can scale to support a steeper growth trajectory.
+
+## What is the product anyway
 
 So far so good, but what one customer needs might not actually be what others need, in fact there can be many reasons not to incorporate a solution into your core product. This is where product management comes in. PMs determine what to include in the roadmap, what the future of the product should be – in doing that they define the bounds of the product, where its edges are. What falls within its bounds is the software you commit to making available at scale, and maintaining over the longer term. 
 
