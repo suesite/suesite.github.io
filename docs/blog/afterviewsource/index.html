@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Sue&#39;s blog about coding</title>
-		<meta property="og:title" content="Sue&#39;s blog about coding">
-		<meta name="description" content="Sue&#39;s thoughts on how developers learn while making software when AI can write the code.">
-		<meta property="og:description" content="Sue&#39;s thoughts on how developers learn while making software when AI can write the code.">
+		<title>What comes after view source?</title>
+		<meta property="og:title" content="What comes after view source?">
+		<meta name="description" content="We still need pathways for people to understand how software systems work">
+		<meta property="og:description" content="We still need pathways for people to understand how software systems work">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<meta property="og:image" content="https://www.sue.codes/blogmeta.jpg">
@@ -487,6 +487,174 @@ a.readmore {
 	blockquote {
 		background: midnightblue;
 	}
+}
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #f8f8f2;
+	background: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #272822;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #8292a2;
+}
+
+.token.punctuation {
+	color: #f8f8f2;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+	color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+	color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+/*
+ * New diff- syntax
+ */
+
+pre[class*="language-diff-"] {
+	--eleventy-code-padding: 1.25em;
+	padding-left: var(--eleventy-code-padding);
+	padding-right: var(--eleventy-code-padding);
+}
+.token.deleted {
+	background-color: hsl(0, 51%, 37%);
+	color: inherit;
+}
+.token.inserted {
+	background-color: hsl(126, 31%, 39%);
+	color: inherit;
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+	-webkit-user-select: none;
+	user-select: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.token.prefix.inserted,
+.token.prefix.deleted {
+	width: var(--eleventy-code-padding);
+	background-color: rgba(0,0,0,.2);
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+	display: block;
+	margin-left: calc(-1 * var(--eleventy-code-padding));
+	margin-right: calc(-1 * var(--eleventy-code-padding));
+	text-decoration: none; /* override del, ins, mark defaults */
+	color: inherit; /* override del, ins, mark defaults */
 }</style>
 		
 	
@@ -503,7 +671,7 @@ a.readmore {
 			<nav>
 				<h2 class="visually-hidden" id="top-level-navigation-menu">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/" aria-current="page">Home</a></li>
+					<li class="nav-item"><a href="/">Home</a></li>
 					<li class="nav-item"><a href="/blog/">Posts</a></li>
 					<li class="nav-item"><a href="/about/">About</a></li>
 					<li class="nav-item"><a href="/feed/feed.xml">Feed</a></li>
@@ -516,89 +684,30 @@ a.readmore {
 				
 
 
+<h1 id="what-comes-after-view-source">What comes after view source?</h1>
 
-
-
-
-<ul reversed="" class="postlist" style="--postlist-index: 14">
-	<li class="postlist-item">
-		<a href="/blog/afterviewsource/" class="postlist-link">What comes after view source?</a>
-		<time class="postlist-date" datetime="2026-07-02">02 July 2026</time>
-		<span class="description">We still need pathways for people to understand how software systems work</span><div class="excerpt"><p>This week during the inaugural <a href="https://youtu.be/w3kV6JtJFIw">Write Through It</a> we got onto the subject of View Source. Kin reflected on what <a href="https://kinlane.com/2026/07/01/view-source-is-dead/">the loss of this pathway</a> means for opportunity and the web over on his blog, which got me thinking about it once again.</p>
-
-		<a class="readmore" href="/blog/afterviewsource/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/whatfriction/" class="postlist-link">Being intentional about friction</a>
-		<time class="postlist-date" datetime="2026-06-01">01 June 2026</time>
-		<span class="description">Pondering what Glitch tells us about friction and developer learning when LLMs can generate code.</span><div class="excerpt"><p>This time last year I was building paths for folk migrating apps away from Glitch. We were approaching the shutdown date and I needed alternatives for the Fastly onboarding projects I'd used as the foundation of the learning program I was leading – and that I’d candidly been hoping to integrate enough into product onboarding that the company would be persuaded to keep Glitch around. I also had a more personal need to figure out alternatives, as I'd relied on Glitch for teaching much longer than I'd been employed to work on it.</p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fwebsitecompute.png&width=3024&format=avif&via=transform 3024w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fwebsitecompute.png&width=3024&format=webp&via=transform 3024w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fwebsitecompute.png&width=3024&format=png&via=transform" alt="project in github codespaces" width="3024" height="1582"></picture></p>
-
-		<a class="readmore" href="/blog/whatfriction/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/forwarddeployed/" class="postlist-link">Which direction is forward?</a>
-		<time class="postlist-date" datetime="2026-05-19">19 May 2026</time>
-		<span class="description">Software role changes tell us something about the goals in LLM deployment.</span><div class="excerpt"><p>There’s a role that appears to be exploding in popularity in AI adjacent companies right now: the Forward Deployed Engineer. Since I first heard about LLM assisted coding, aside from the very real enabling potential, I’ve worried that the outcome would be a future where fewer people understood how critical systems worked. I believe some of what we’re seeing with these jobs is a reflection of that.</p>
-
-		<a class="readmore" href="/blog/forwarddeployed/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/pedagogyway/" class="postlist-link">Pedagogy is the way</a>
-		<time class="postlist-date" datetime="2026-05-11">11 May 2026</time>
-		<span class="description">Looking back at three years of thinking and posting about ai assisted coding.</span><div class="excerpt"><p>It’s three years since I first wrote about AI assisted coding. You can still read that post on the Glitch blog: <strong><a href="https://blog.glitch.com/post/software-development-isnt-writing-syntax">Software development isn't writing syntax</a></strong></p>
-<p>A lot has happened since then, but as I said in a <a href="https://www.linkedin.com/posts/sue-smith-benormal_ive-been-thinking-and-posting-about-ai-assisted-activity-7455333012457738240-1n7y/">weirdly popular LinkedIn post</a> recently, my beliefs have proven pretty resilient – tl;dr:</p>
-
-		<a class="readmore" href="/blog/pedagogyway/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/convenienceunderstanding/" class="postlist-link">On convenience and understanding</a>
-		<time class="postlist-date" datetime="2026-05-07">07 May 2026</time>
-		<span class="description">Can we leverage automation while still preserving understanding?</span><div class="excerpt"><blockquote>
-<p><em>&quot;There is some compulsion in software where automation breeds more automation and we accidentally leap over the phase where it was actually optimal for both usefulness and understanding.&quot;</em> <a href="https://glasgow.social/@sue/116499571969099762">Me, on mastodon the other day</a></p>
-</blockquote>
-<p><strong>Being able to generate code is forcing us to figure out when it’s a good idea to actually write it.</strong></p>
-
-		<a class="readmore" href="/blog/convenienceunderstanding/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/devtopics/" class="postlist-link">How should we teach software development now?</a>
-		<time class="postlist-date" datetime="2026-04-30">30 April 2026</time>
-		<span class="description">Exploring software development learning topics in the context of AI-assisted coding.</span><div class="excerpt"><p>Yesterday I <a href="https://www.linkedin.com/posts/sue-smith-benormal_ive-been-thinking-and-posting-about-ai-assisted-activity-7455333012457738240-1n7y">posted on LinkedIn</a> about realising I've been thinking and writing about AI-assisted coding for three years now, and that overwhelmingly I still stand by the positions I've taken. My first public post on the subject was in May 2023, so I'm going to revisit it on the same day this year. But for now, since the discussion touched on what we should be teaching on software engineering courses, it prompted me to jot down my current thinking, still very much WIP but here you go.</p>
-
-		<a class="readmore" href="/blog/devtopics/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/tradeoffs/" class="postlist-link">Automation is a trade-off</a>
-		<time class="postlist-date" datetime="2026-04-28">28 April 2026</time>
-		<span class="description">We should have more explicit conversations about the trade-offs we make when we use automations.</span><div class="excerpt"><p><em><strong>This post was originally published on <a href="https://dev.to/suesmith/automation-is-a-trade-off-2fh8">dev.to</a>.</strong></em></p>
-<p><picture><source type="image/avif" srcset="/.11ty/image/?src=content%2Fmachine.jpg&width=1002&format=avif&via=transform 1002w"><source type="image/webp" srcset="/.11ty/image/?src=content%2Fmachine.jpg&width=1002&format=webp&via=transform 1002w"><img loading="lazy" decoding="async" src="/.11ty/image/?src=content%2Fmachine.jpg&width=1002&format=jpeg&via=transform" alt="artwork of a solar microscope drawing box" width="1002" height="420"></picture></p>
-<p>A couple of years ago I wrote <a href="https://dev.to/suesmith/abstractions-no-not-like-that-3pl3">a post about abstractions</a>. I’m revisiting it here with AI-assisted coding in mind, because I see similar issues arising. LLMs make it easier than ever to generate code, but when we look at what happens next, the picture becomes a little bit less clear.</p>
-
-		<a class="readmore" href="/blog/tradeoffs/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/oneanswer/" class="postlist-link">What to do about developer skills</a>
-		<time class="postlist-date" datetime="2026-04-24">24 April 2026</time>
-		<span class="description">This week I talked at Haggis Ruby in Glasgow.</span><div class="excerpt"><p>I've been giving talks about developer learning and AI-assisted coding pretty regularly over the last couple of months. Doing this is helping me clarify my own thoughts and better position me to advise others, based on what I've learned about software engineering and pedagogy over the years. This week I had the pleasure of speaking at <a href="https://haggisruby.co.uk/">Haggis Ruby</a> in Glasgow, with a community I wasn't part of but who could not have been more welcoming and open to what I was saying. ❤️</p>
-
-		<a class="readmore" href="/blog/oneanswer/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/tooljob/" class="postlist-link">When is a tool the right tool for the job?</a>
-		<time class="postlist-date" datetime="2026-03-27">27 March 2026</time>
-		<span class="description">Digging into skill development with a group of research software engineering experts.</span><div class="excerpt"><p>This week I spent time with a group of leaders in research software engineering at a <a href="https://www.researchsoft.org/events/rse-ai-workshop/">workshop</a> on the implications of using LLMs in their work. I gave a short lightning talk and shared a position paper representing my current thinking on AI assisted coding.</p>
-
-		<a class="readmore" href="/blog/tooljob/"> Read more...</a></div></li>
-	<li class="postlist-item">
-		<a href="/blog/fingerscode/" class="postlist-link">Do your fingers remember how to code?</a>
-		<time class="postlist-date" datetime="2026-03-17">17 March 2026</time>
-		<span class="description">My Monki Gras talk – discovering developer skills worth learning when AI can write code.</span><div class="excerpt"><p>This week I'm talking at <a href="https://monkigras.com/">Monki Gras</a> about developer learning and AI.</p>
-
-		<a class="readmore" href="/blog/fingerscode/"> Read more...</a></div></li>
+<ul class="post-metadata">
+	<li><time datetime="2026-07-02">02 July 2026</time> </li>
 </ul>
 
+<p>This week during the inaugural <a href="https://youtu.be/w3kV6JtJFIw">Write Through It</a> we got onto the subject of View Source. Kin reflected on what <a href="https://kinlane.com/2026/07/01/view-source-is-dead/">the loss of this pathway</a> means for opportunity and the web over on his blog, which got me thinking about it once again.</p>
+<p>View Source was the ability to right-click on a web page and see its source code. It was a learning path many used to acquire developer skills. Its usefulness had <a href="https://www.sue.codes/blog/convenienceunderstanding/">already been compromised</a> by changes in the way we build websites. First processing shifted to the server side, rather than the client, where those browser tools could provide illumination. Then as front-end embraced generated static site frameworks, what the browser could see became the much more complicated scripted output of a build tool.</p>
+<h2 id="the-ghost-of-view-source-still-haunts-us">The ghost of view source still haunts us</h2>
+<p><a href="https://thenewstack.io/glitch-brings-view-source-philosophy-to-react-node-js/">Glitch tried to keep the spirit of View Source alive</a> by exposing the functionality that powered websites using those server and generated front-end frameworks, but of course the web continued to grow in complexity.</p>
+<p>A while back we got a smart telly in our house, which has an Android operating system running the apps for streaming services and the like. I had the fun challenge of trying to explain to my partner that he was interacting with the TV operating system and not the Netflix app one day as he was trying to search for a movie. I asked myself how I knew, and the only tangible signs I could point to were subtle UI indicators. It occurred to me that the experience of <strong>not being able to orient yourself in a technological context</strong> is getting increasingly common.</p>
+<blockquote>
+<p>I might have called this <a href="https://glasgow.social/@sue/114642396769301405">platform cultivated context ambiguity</a> over on mastodon lol.</p>
+</blockquote>
+<h2 id="the-road-was-paved-with-apis">The road was paved with APIs</h2>
+<p>For a long time I worked in and around APIs. My goal was helping people understand how we combine these lego block components into a cohesive user experience. APIs and dependency ecosystems paved the way to the web we find ourselves with today. They are also a huge part of what makes AI agents able to be <em>a thing</em>.</p>
+<p>These forms of abstraction have enabled automation that powered creative uses of data and processing on an incredible scale. As we watched this happen, we also saw it getting harder to understand how our systems worked, and harder to maintain reliability. Entire specialties in software grew out of the need to support all of this.</p>
+<p>On top of the complexity-induced confusion, we’ve also witnessed a significant amount of intentional obfuscation. From platforms hiding their underlying algorithms, to gatekeeping developer culture promoting over-engineered implementations – making it increasingly challenging for new people to enter the field.</p>
+<h2 id="ai-and-obfuscation">AI and obfuscation</h2>
+<p>What stresses me out the most about LLM code generation is exactly this. I don’t think the average developer would choose to deploy a solution they did not understand, but the economic conditions make it inevitable. We’ve leapt headlong into a situation where systems are in operation having had little to no inspection of their implementation. For the companies selling this tooling and those investing in them, the prospect of undermining labour makes the <a href="https://www.sue.codes/blog/forwarddeployed/">loss of comprehension a feature</a> and not a bug.</p>
+<p>Since I started in tech, my career has been shaped by a compulsion to force the machines to illuminate themselves to human beings, often using interfaces that were extremely not designed to support that. As it happens language models are quite helpful for this. I’m working on tooling to aid codebase comprehension, not necessarily on a line by line basis, but at a different level of fidelity – I think that's necessary given the mountain of code we’re drowning in. It might not be View Source, but hopefully it’ll be something.</p>
 
-
-
-<p><a href="/blog/">3 more posts</a></p>
-
-
-
-
-
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/whatfriction/">Being intentional about friction</a></li>
+</ul>
 
 			</heading-anchors>
 		</main>
@@ -647,7 +756,7 @@ a.readmore {
         </a></div>
 		</footer>
 
-		<!-- This page `/` was built on 2026-07-02T09:48:04.249Z -->
+		<!-- This page `/blog/afterviewsource/` was built on 2026-07-02T09:48:04.249Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
