@@ -11,7 +11,7 @@ This week during the inaugural [Write Through It](https://youtu.be/w3kV6JtJFIw) 
 
 <!-- excerpt -->
 
-View Source was the ability to right-click on a web page and see its source code. It was a learning path many used to acquire developer skills. Its usefulness had [already been compromised](https://www.sue.codes/blog/convenienceunderstanding/) by changes in the way we build websites. First processing shifted to the server side, rather than the client, where those browser tools could provide illumination. Then as front-end embraced generated static site frameworks, what the browser could see became the much more complicated scripted output of a build tool.
+View Source was the ability to right-click on a web page and see its source code. It was a learning path many used to acquire developer skills. Its usefulness had [already been compromised](https://www.sue.codes/blog/convenienceunderstanding/) by changes in the way we build websites. First, processing shifted to the server side, rather than the client where those browser tools could provide illumination. Then, as front-end embraced generated static site frameworks, what the browser could see became the much more complicated scripted output of a build tool.
 
 ## The ghost of view source still haunts us
 
