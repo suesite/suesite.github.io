@@ -2,7 +2,10 @@
 title: What comes after view source?
 description: We still need pathways for people to understand how software systems work.
 date: 2026-07-02
+img: https://www.sue.codes/viewsource.jpg
 ---
+
+![view source for the react dev site which is literally just a function](viewsource.jpg)
 
 This week during the inaugural [Write Through It](https://youtu.be/w3kV6JtJFIw) we got onto the subject of View Source. Kin reflected on what [the loss of this pathway](https://kinlane.com/2026/07/01/view-source-is-dead/) means for opportunity and the web over on his blog, which got me thinking about it once again.
 
