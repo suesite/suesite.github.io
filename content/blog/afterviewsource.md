@@ -1,6 +1,6 @@
 ---
 title: What comes after view source?
-description: We still need pathways for people to understand how software systems work
+description: We still need pathways for people to understand how software systems work.
 date: 2026-07-02
 ---
 
