@@ -25,7 +25,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;I need to strike a balance between the robustness of deterministic processing on the static / dynamic analysis with the unreliable but semantically helpful language model input. The LLM is helping in two ways:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Identifying key locations based on pattern matching from so many codebases in the training data&lt;/li&gt;
+&lt;li&gt;Identifying key location candidates based on pattern matching from so many codebases in the training data&lt;/li&gt;
 &lt;li&gt;Providing natural language explanations of the code points&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;

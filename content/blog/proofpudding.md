@@ -21,7 +21,7 @@ Deciding where to insert the LLM call, what information to pass it – and there
 I could keep building more and more processing into the analysis to improve the quality of the info I send the model, but there’s a point at which it’s not worth the additional coding or execution resources. What I’m after is a first pass at some information that I’m going to build into further anlaysis, and update as more information becomes available. **There is no one correct answer to the query**, and no real benchmark or baseline to check it against.
 
 >  I need to strike a balance between the robustness of deterministic processing on the static / dynamic analysis with the unreliable but semantically helpful language model input. The LLM is helping in two ways:
-> * Identifying key locations based on pattern matching from so many codebases in the training data
+> * Identifying key location candidates based on pattern matching from so many codebases in the training data
 > * Providing natural language explanations of the code points 
 
 ## That'll do prompt
