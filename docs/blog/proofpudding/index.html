@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>What is worth learning?</title>
-		<meta property="og:title" content="What is worth learning?">
-		<meta name="description" content="What is worth learning an a world of AI assisted coding frameworks.">
-		<meta property="og:description" content="What is worth learning an a world of AI assisted coding frameworks.">
+		<title>The proofs are in the pudding</title>
+		<meta property="og:title" content="The proofs are in the pudding">
+		<meta name="description" content="Learning about static analysis is teaching me about robustness and effectiveness.">
+		<meta property="og:description" content="Learning about static analysis is teaching me about robustness and effectiveness.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<meta property="og:image" content="https://www.sue.codes/blogmeta.jpg">
@@ -658,7 +658,7 @@ pre[class*="language-diff-"] {
 }</style>
 		
 	
-	    <link rel="canonical" href="https://dev.to/glitch/what-is-worth-learning-41e3">
+	    <link rel="canonical" href="">
 	
 	</head>
 	<body>
@@ -684,36 +684,36 @@ pre[class*="language-diff-"] {
 				
 
 
-<h1 id="what-is-worth-learning">What is worth learning?</h1>
+<h1 id="the-proofs-are-in-the-pudding">The proofs are in the pudding</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2024-04-25">25 April 2024</time> </li>
+	<li><time datetime="2026-07-20">20 July 2026</time> </li>
 </ul>
 
-<p><em><strong>This post was originally published at <a href="https://dev.to/glitch/what-is-worth-learning-41e3">dev.to/glitch</a>.</strong></em></p>
-<p>AI-assisted coding is lowering the barrier to making software. It’s also increasing the complexity of managing it. You can make applications with less upfront knowledge than before, and organizations are having to figure out how to handle the ensuing unpredictability and risk. So it’s getting easier and harder.</p>
-<p>Building software became unnecessarily difficult over the last few years in my opinion. We switched to frameworks that closed a lot of the doors to opportunity we’d seen open in the earlier years of the web. Now there’s a widening divide between those with the skills to make software “properly” and those who are no longer prevented from participating by this gatekeeping. Then we have the threat of jobs being eliminated because some executives think AI removes the need for engineers. It's a bit of a mess.</p>
-<p>Working in developer education, I often ask myself if I’m teaching the right skills, the ones that are worth learning. It’s getting harder to make reliable guesses about which topics will enable people to make the web and get paid doing it.</p>
-<h2 id="for-most-of-us-it-isn-t-about-the-tech">For most of us it isn’t about the tech</h2>
-<p>I recently set up a local developer environment for a project I wanted to contribute to. It was painful and I resented every minute of it lol. The actual contribution was easier than installing the tooling.</p>
-<p>In spite of essentially being paid to learn coding skills so that I can teach them to others, I find it incredibly hard to motivate myself to learn if the subject doesn't interest me. A lot of what’s involved in setting up local environments falls into that category. Compatibility between libraries, reciting the correct incantations of path and environment variables, that type of thing. These are not the parts I care about.</p>
-<p>The same frustration kills the motivation to learn. For a new developer to spend hours configuring an environment before they can make a change to a web page that they can see in the browser is a big problem when it comes to learning. The motivating part is where you achieve something visible, tangible, significant to you – that’s what builds momentum as you feel you’re making progress. Exasperating setup experiences tell the person “this is not for you” and most quietly go away.</p>
-<p>The best motivator to learn any skill is a goal that is meaningful to you and that the skill is helping you to achieve. For most people, setting up an effective developer environment does not constitute such a goal.</p>
+<p>I’ve been making myself describe the project I’m working on so that I can get input on some design decisions. I stumbled on a timely <a href="https://www.linkedin.com/posts/vincentlextrait_an-overdue-analysis-of-claude-code-behind-ugcPost-7476646859185233920-7RFe/">LinkedIn post</a> about how Claude Code works. It touches on static analysis, something I’m having to learn a wee bit about for my project. The post is focused on claims of machine understanding – I’m not particularly interested in those kinds of conversation as I don’t see the value. However the detail might speak to the limitations of LLMs in practice, which I do care about because it affects the power of this technology to undermine labour. But I digress.</p>
+<h2 id="seeing-the-wood-and-the-trees">Seeing the wood <em>and</em> the trees</h2>
+<p>In my project, I need to make a series of trade-offs in processing the content of a codebase. The project is aimed at helping people understand how a software system works, using a combination of direct analysis and language model queries. It’s something I’ve wanted to build for a long time, but the arrival of LLMs makes it more feasible, and makes a more comprehensive solution possible with minimal investment – not by generating code, but by integrating language models programmatically to support user understanding.</p>
+<p>I'm building this because what concerns me most about LLMs is the reduction in code comprehension we're watching unfold. More software in the world and fewer people who understand it is <a href="https://www.sue.codes/blog/stillteach/">a prospect that alarms me</a>, because understanding how systems work enables us to influence them.</p>
+<h2 id="a-very-weird-database-query">A very weird database query</h2>
+<p>Deciding where to insert the LLM call, what information to pass it – and therefore what to carry out before querying it – is turning out to be the bulk of the work. I’m doing a bit of static analysis in the application itself, passing the output of that to the model, then doing more processing on the response. Defining the bounds of the functionality I author in the app means specifying the interface with the model. I'm having to think about which signifiers in a codebase are most informative.</p>
+<p>I could keep building more and more processing into the analysis to improve the quality of the info I send the model, but there’s a point at which it’s not worth the additional coding or execution resources. What I’m after is a first pass at some information that I’m going to build into further anlaysis, and update as more information becomes available. <strong>There is no one correct answer to the query</strong>, and no real benchmark or baseline to check it against.</p>
 <blockquote>
-<p>If it does for you then congrats, but I believe you're in the minority! In the developer community there’s a wholesome passion for technical elegance, but unfortunately it’s frequently accompanied by an alienating disdain for those who don’t share the interest or understanding.</p>
+<p>I need to strike a balance between the robustness of deterministic processing on the static / dynamic analysis with the unreliable but semantically helpful language model input. The LLM is helping in two ways:</p>
+<ul>
+<li>Identifying key locations based on pattern matching from so many codebases in the training data</li>
+<li>Providing natural language explanations of the code points</li>
+</ul>
 </blockquote>
-<h2 id="it-shouldn-t-need-to-be-hard">It shouldn’t need to be hard</h2>
-<p>Earlier this year I ran employee training for my Fastly coworkers. I wanted to teach them to use our technical product in a way that absolutely anyone could engage with. Some colleagues feared this might be impossible, but for me, removing the expectation of prerequisite knowledge is a useful constraint – it helps me make learning experiences that are better for everyone. So I gave myself ground rules like no local environment, no dev platform accounts or tooling like GitHub. And it was surprisingly successful!</p>
-<p>This is part of why I’ve always loved Glitch – and how we got those employees to use our technical product by the way. It lets you jump straight to the parts of a project that are intuitively valuable and resonant to most people. I’d rather spend my time learning how to create the functionality or the experience I want to give users than installing the toolchain that only gets me to the starting line for that work.</p>
-<p>If I never had to set up a dev environment again I simply would not. 💅🏻</p>
-<h2 id="motivations-do-not-need-your-validation">Motivations do not need your validation</h2>
-<p>Today’s coding tools are abstracting away parts of software engineering that will invite many more people to the party <em>and</em> create significant challenges around maintenance, security, performance, and more.</p>
-<p>However attached we are to notions of correctness, of what people should know in order to create software, the reality is that most will not invest in something they don’t consider worth learning. You better believe people will flock to the tools that enable them without judgment or the expectation of virtuous toil! We can’t complain about this while insisting that the painful, exclusive alternative is the only valid one.</p>
-<p>If we want software that is reliable, safe, and inclusive, we need to provide paths that empower a wide representation of people to build it. That means accepting the motivators they bring with them.</p>
-<p>Our goals determine what is and isn’t worth our time, and for most of us the technologies that help us get there are largely incidental. Those choices are driven by the opportunities each person is trying to unlock.</p>
-<p><strong>What makes something worth learning to you?</strong></p>
+<h2 id="that-ll-do-prompt">That'll do prompt</h2>
+<p>In software we often face this tension between robustness and effort (both human and machine). Platforms that are successful don’t win because they prioritise an exhaustive solution, they win primarily on account of what they enable people to do – by solving a real problem and presenting an interface people can use. Many of the products that have achieved mass adoption hide unsophisticated, inefficient implementations under the hood, but they’re available and usable.</p>
+<blockquote>
+<p>Criticism of AI platform implementation is <a href="https://glasgow.social/@sue/116872943163360034">academic</a> as long as the results are good enough in practice, in context. It doesn't really matter how many research papers prove something isn't what it's claimed to be, what matters is what plays out in practice – these insights can inform that, but they don't change outcomes when more powerful dynamics are at play.</p>
+</blockquote>
+<p>I'm highly sceptical about LLMs being able to generate anything of signficiant complexity without engineering knowhow, but there are places where a guess based on training data is good enough to complete a task.</p>
+<p><strong>What level of fidelity is good enough depends entirely on context.</strong> None of us are paying attention to all possible implementation details. Even if we’re not using LLMs, we’re mostly writing in high level programming languages, using dependencies and APIs to abstract away the detail we’ve decided not to pay attention to. Making solid judgements about <a href="https://www.sue.codes/blog/tradeoffs/">what level of detail</a> is suited to a particular task is the trick.</p>
+<p><em><strong>You can see a teeny tiny preview of some early progress on my project over at <a href="https://www.randan.dev">randan.dev</a>.</strong></em></p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/notsyntax/">Software development isn’t writing syntax</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/stillteach/">We should still teach coding</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/afterviewsource/">What comes after view source?</a></li>
 </ul>
 
 			</heading-anchors>
@@ -765,7 +765,7 @@ pre[class*="language-diff-"] {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/worthlearning/` was built on 2026-07-20T11:33:01.948Z -->
+		<!-- This page `/blog/proofpudding/` was built on 2026-07-20T11:33:01.948Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
