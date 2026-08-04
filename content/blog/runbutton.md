@@ -45,6 +45,6 @@ Some years ago I was interviewing for a job in San Francisco. It was the first t
 
 ![limmy in the what is it you say again sketch](limmywhat.jpg)
 
-The barriers to opportunity are often not obvious to those of us who’ve already had it. If LLMs can generate entire working applications, surely we can give people environments that automate away the tasks that send them away while also empowering them with control over the details they care about. Give folk a bloody run button in your IDE for goodness sake.
+The barriers to opportunity are often not obvious to those of us who’ve already had it. If LLMs can generate entire working applications, surely we can give people environments that take care of the tasks that send them away while also empowering them with control over the details they care about. Give folk a bloody run button in your IDE for goodness sake.
 
 _I got that job btw._
