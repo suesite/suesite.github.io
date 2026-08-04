@@ -83,6 +83,8 @@ body {
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
 img {
 	max-width: 100%;
+	display: block;
+	margin: auto;
 }
 
 img[width][height] {
@@ -94,7 +96,6 @@ img[src$=".svg"] {
 	height: auto;
 	max-width: none;
 }
-
 video,
 iframe {
 	width: 100%;
@@ -518,7 +519,13 @@ a.readmore {
 <h1 id="posts">Posts</h1>
 
 
-<ul reversed="" class="postlist" style="--postlist-index: 15">
+<ul reversed="" class="postlist" style="--postlist-index: 16">
+	<li class="postlist-item">
+		<a href="/blog/runbutton/" class="postlist-link">I am once again asking for a run button</a>
+		<time class="postlist-date" datetime="2026-08-04">04 August 2026</time>
+		<span class="description">Sometimes it isn&#39;t the most complicated things that put people off learning.</span>
+		
+	</li>
 	<li class="postlist-item">
 		<a href="/blog/proofpudding/" class="postlist-link">The proofs are in the pudding</a>
 		<time class="postlist-date" datetime="2026-07-20">20 July 2026</time>
@@ -656,7 +663,7 @@ a.readmore {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/` was built on 2026-07-20T11:47:49.897Z -->
+		<!-- This page `/blog/` was built on 2026-08-04T13:18:38.109Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

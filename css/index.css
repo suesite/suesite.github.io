@@ -65,6 +65,8 @@ body {
 /* Fluid images via https://www.zachleat.com/web/fluid-images/ */
 img {
 	max-width: 100%;
+	display: block;
+	margin: auto;
 }
 
 img[width][height] {
@@ -76,7 +78,6 @@ img[src$=".svg"] {
 	height: auto;
 	max-width: none;
 }
-
 video,
 iframe {
 	width: 100%;
