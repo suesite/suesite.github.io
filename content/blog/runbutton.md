@@ -2,6 +2,7 @@
 title: I am once again asking for a run button
 description:  Sometimes it isn't the most complicated things that put people off learning.
 date: 2026-08-04
+img: https://www.sue.codes/randanstopped.png
 ---
 
 I’m [building a thing to help people understand codebases](https://www.randan.dev). A primary use case I have in mind is someone who has no coding experience but has vibe coded an application they now find themselves needing or wanting to understand. You’d be forgiven for assuming the hardest part of this would be helping people learn how their implementation works, but you might be wrong. 
