@@ -5,7 +5,7 @@ date: 2026-09-05
 img: https://www.sue.codes/harnessdog.jpg
 ---
 
-When I decided I wanted to make a programming learning tool that incorporates LLMs, I chose to build for IDEs, starting with VS Code. I did that because I believed there would be value in steering people back towards code, and because that way I could build with LLMs in a **model agnostic** way. What's happening with open models and model companies in general is making me glad I didn't target one of their platforms.
+When I decided I wanted to make a programming learning tool that incorporates LLMs, I chose to build for IDEs, starting with VS Code. I did that because I believed there would be value in steering people back towards code, and because it would let me build with LLMs in a **model agnostic** way. What's happening with open models and model companies in general is making me glad I didn't target one of their platforms.
 
 ![a dog in a parachute harness](harnessdog.jpg)
 
