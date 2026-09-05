@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>On convenience and understanding</title>
-		<meta property="og:title" content="On convenience and understanding">
-		<meta name="description" content="Can we leverage automation while still preserving understanding?">
-		<meta property="og:description" content="Can we leverage automation while still preserving understanding?">
+		<title>Harnesses are just software</title>
+		<meta property="og:title" content="Harnesses are just software">
+		<meta name="description" content="Learning what is happening in the software around the model.">
+		<meta property="og:description" content="Learning what is happening in the software around the model.">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Sue&#39;s blog about coding">
 
 		<meta property="og:image" content="https://www.sue.codes/blogmeta.jpg">
@@ -685,26 +685,28 @@ pre[class*="language-diff-"] {
 				
 
 
-<h1 id="on-convenience-and-understanding">On convenience and understanding</h1>
+<h1 id="harnesses-are-just-software">Harnesses are just software</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2026-05-07">07 May 2026</time> </li>
+	<li><time datetime="2026-09-05">05 September 2026</time> </li>
 </ul>
 
+<p>When I decided I wanted to make a programming learning tool that incorporates LLMs, I chose to build for IDEs, starting with VS Code. I did that because I believed there would be value in steering people back towards code, and because that way I could build with LLMs in a <strong>model agnostic</strong> way. What's happening with open models and model companies in general is making me glad I didn't target one of their platforms.</p>
+<p><picture><source type="image/avif" srcset="/blog/harnessissoftware/K_iBoR2ylt-798.avif 798w"><source type="image/webp" srcset="/blog/harnessissoftware/K_iBoR2ylt-798.webp 798w"><img loading="lazy" decoding="async" src="/blog/harnessissoftware/K_iBoR2ylt-798.jpeg" alt="a dog in a parachute harness" width="798" height="492"></picture></p>
+<p><em>A <a href="https://commons.wikimedia.org/wiki/File:War_Dog_Reception_and_Training_Center,_San_Carlos,_California_German_shepherd,_%22Pal%22,_gets_fitted_for_a_dog_parachute_harness_for_rescuing_fliers,_circa_1944_(cropped).jpg">&quot;war dog&quot;</a> being fitted for a parachute harness.</em></p>
+<p>What I'm also coming face to face with is how much of the magic people are experiencing isn't from the models themselves, but in the software around them – the harness if you must call it that.</p>
+<p>I'm mostly making LLM requests directly in my code rather than e.g. leveraging the copilot orchestration you benefit from when you use the chat. I've experimented by providing tool access to run agent style loops and parse the results programmatically, to replicate a little of what copilot itself does. It's all giving me a more tangible sense of the smoke and mirrors that are at work in most of the interfaces to this stuff.</p>
+<h2 id="a-peculiar-kind-of-data">A peculiar kind of data</h2>
+<p>If it isn’t obvious, a harness is just software. The LLM calls provide a way to incorporate data into your processing, but it's a very peculiar, unpredictable kind of data. You need to heavily constrain what you send and receive the model – the harness has to behave like a very paranoid API client.</p>
+<p>The range of possible inputs and outputs is endless. It's partly why people are having such chronic disagreements about the value of this technology, because they’re having wildly different experiences using it and talking past one another as a result. Learning how to use the model where it's most beneficial (and least wasteful) is quite a task.</p>
+<h2 id="this-is-where-we-can-find-leverage">This is where we can find leverage</h2>
+<p>The good news is that harnesses are a wide open space where we can shape the experience of using these technologies. And we can teach folk about harnesses just the same way we taught them about other software. Don't let the mystifying naming fool you.</p>
 <blockquote>
-<p><em>&quot;There is some compulsion in software where automation breeds more automation and we accidentally leap over the phase where it was actually optimal for both usefulness and understanding.&quot;</em> <a href="https://glasgow.social/@sue/116499571969099762">Me, on mastodon the other day</a></p>
+<p>There's still so much opportunity to build pathways that illuminate rather than obfuscate, that enable rather than undermine, that center the human operator rather than seeking to automate them out of the process.</p>
 </blockquote>
-<p><strong>Being able to generate code is forcing us to figure out when it’s a good idea to actually write it.</strong></p>
-<p>Recently I’ve found myself making a few small static websites, and I’ve come face to face with this choice, although not regarding LLMs. The last decade or so saw the growth of generated static site frameworks. These let you create websites without hand coding every bit of HTML. They’re handy for reusing layouts in your pages, and giving you a single point of change if you decide to redesign your site. However, it’s a lot harder to understand what’s going on under the hood, and harder to set up than what we did before – write HTML in a text editor and upload the files to a server.</p>
-<p>A few years back I decided to brush up on my frontend skills, having been focused on server side development for several years. During that time, generated static site frameworks had exploded. I discovered I had to set up a dev environment, and go through a build and deploy process, just to get a simple website online. I was like wtf are we doing here. It had become a lot harder to teach people how to get started making websites.</p>
-<h2 id="to-automate-or-not">To automate, or not</h2>
-<p>Naturally I am biased, but Glitch did a great job of keeping the door open to new developers by abstracting some of this away. Setting up dev environments is understanding I frankly wish I'd never had to develop. It's not relevant to the goals I care about – usually those relate to the content and functionality of a site I'm working on. I want to comprehend the logic in the code that gets deployed to the web, not so interested in deployment pipelines and the like. Having used Glitch to teach people who'd never written code before, I can say the balance of automation and understanding was a pretty good match for what they cared about.</p>
-<p>As I approached making those simple websites recently, I realised it would be handy to be able to reuse layouts, but certainly didn’t need the power of a full static site framework. So I decided to write some small scripts to use templating libraries, so that I could generate my pages locally and just dump them online. It felt like I was seeking some lost stage of automation we skipped over but that was optimal for my purposes, before our automations obfuscated the bejesus out of everything.</p>
-<p>When you learn how to automate making things with code, it can become a habit you jump to instinctively. We automate one thing and immediately leap to automating more and more of the same process. But each automation comes at the cost of understanding. Too often we’ve taken things far enough to sacrifice understanding in ways that created new problems – for learners, for teams, even for ourselves when we looked back at projects we’d previously worked on.</p>
-<h2 id="we-re-here-again">We're here again</h2>
-<p>Choosing when and how to leverage LLMs to generate code is subject to the same balancing act. This automation gives us the opportunity to opt out of understanding that is not relevant to our goals. But how do we know when it is worth prioritising understanding? Well it’s difficult to make that call in the moment, because typically we find out we’ve got it wrong later. For that reason I’d recommend a regular practice of revisiting your comprehension of the projects you work on. If you feel you’re losing your sense of wtf is going on <em>in a way that is relevant to your goals</em>, take a step back and course correct.</p>
+<p>What's happened to the web over the last couple of decades made it harder for people to perceive what is going on under the hood when they interact with software. It initially alarmed me how much more opaque LLMs seemed to make the situation, but the reality of the split between model and harness gives me new hope we can teach people how to understand and change the software systems that affect them. As it turns out language models are quite handy for that.</p>
 
-<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/devtopics/">How should we teach software development now?</a></li><li class="links-nextprev-next">Next →<br><a href="/blog/pedagogyway/">Pedagogy is the way</a></li>
+<ul class="links-nextprev"><li class="links-nextprev-prev">← Previous<br> <a href="/blog/runbutton/">I am once again asking for a run button</a></li>
 </ul>
 
 			</heading-anchors>
@@ -756,7 +758,7 @@ pre[class*="language-diff-"] {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/convenienceunderstanding/` was built on 2026-09-05T15:18:49.676Z -->
+		<!-- This page `/blog/harnessissoftware/` was built on 2026-09-05T15:18:49.676Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>

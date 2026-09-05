@@ -5,11 +5,32 @@
   <subtitle>A blog about coding and learning</subtitle>
   <link href="https://www.sue.codes/feed/feed.xml" rel="self" />
   <link href="https://www.sue.codes/" />
-  <updated>2026-08-04T00:00:00Z</updated>
+  <updated>2026-09-05T00:00:00Z</updated>
   <id>https://www.sue.codes/</id>
   <author>
     <name>Sue Smith</name>
   </author>
+  <entry>
+    <title>Harnesses are just software</title>
+    <link href="https://www.sue.codes/blog/harnessissoftware/" />
+    <updated>2026-09-05T00:00:00Z</updated>
+    <id>https://www.sue.codes/blog/harnessissoftware/</id>
+    <content type="html">&lt;p&gt;When I decided I wanted to make a programming learning tool that incorporates LLMs, I chose to build for IDEs, starting with VS Code. I did that because I believed there would be value in steering people back towards code, and because that way I could build with LLMs in a &lt;strong&gt;model agnostic&lt;/strong&gt; way. What&#39;s happening with open models and model companies in general is making me glad I didn&#39;t target one of their platforms.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://www.sue.codes/blog/harnessissoftware/K_iBoR2ylt-798.avif 798w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://www.sue.codes/blog/harnessissoftware/K_iBoR2ylt-798.webp 798w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://www.sue.codes/blog/harnessissoftware/K_iBoR2ylt-798.jpeg&quot; alt=&quot;a dog in a parachute harness&quot; width=&quot;798&quot; height=&quot;492&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;A &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:War_Dog_Reception_and_Training_Center,_San_Carlos,_California_German_shepherd,_%22Pal%22,_gets_fitted_for_a_dog_parachute_harness_for_rescuing_fliers,_circa_1944_(cropped).jpg&quot;&gt;&amp;quot;war dog&amp;quot;&lt;/a&gt; being fitted for a parachute harness.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What I&#39;m also coming face to face with is how much of the magic people are experiencing isn&#39;t from the models themselves, but in the software around them – the harness if you must call it that.&lt;/p&gt;
+&lt;p&gt;I&#39;m mostly making LLM requests directly in my code rather than e.g. leveraging the copilot orchestration you benefit from when you use the chat. I&#39;ve experimented by providing tool access to run agent style loops and parse the results programmatically, to replicate a little of what copilot itself does. It&#39;s all giving me a more tangible sense of the smoke and mirrors that are at work in most of the interfaces to this stuff.&lt;/p&gt;
+&lt;h2 id=&quot;a-peculiar-kind-of-data&quot;&gt;A peculiar kind of data&lt;/h2&gt;
+&lt;p&gt;If it isn’t obvious, a harness is just software. The LLM calls provide a way to incorporate data into your processing, but it&#39;s a very peculiar, unpredictable kind of data. You need to heavily constrain what you send and receive the model – the harness has to behave like a very paranoid API client.&lt;/p&gt;
+&lt;p&gt;The range of possible inputs and outputs is endless. It&#39;s partly why people are having such chronic disagreements about the value of this technology, because they’re having wildly different experiences using it and talking past one another as a result. Learning how to use the model where it&#39;s most beneficial (and least wasteful) is quite a task.&lt;/p&gt;
+&lt;h2 id=&quot;this-is-where-we-can-find-leverage&quot;&gt;This is where we can find leverage&lt;/h2&gt;
+&lt;p&gt;The good news is that harnesses are a wide open space where we can shape the experience of using these technologies. And we can teach folk about harnesses just the same way we taught them about other software. Don&#39;t let the mystifying naming fool you.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There&#39;s still so much opportunity to build pathways that illuminate rather than obfuscate, that enable rather than undermine, that center the human operator rather than seeking to automate them out of the process.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What&#39;s happened to the web over the last couple of decades made it harder for people to perceive what is going on under the hood when they interact with software. It initially alarmed me how much more opaque LLMs seemed to make the situation, but the reality of the split between model and harness gives me new hope we can teach people how to understand and change the software systems that affect them. As it turns out language models are quite handy for that.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>I am once again asking for a run button</title>
     <link href="https://www.sue.codes/blog/runbutton/" />
@@ -311,28 +332,6 @@ There were also abstractions that didn’t age quite so well. Not having to thin
 &lt;p&gt;For working developers, the question of accountability plays a huge role here. When things go wrong, who is held responsible, and what are the consequences? Understanding what you’re committing to a codebase has implications I don’t believe we’ve fully reckoned with yet.&lt;/p&gt;
 &lt;h2 id=&quot;we-can-shape-this&quot;&gt;We can shape this&lt;/h2&gt;
 &lt;p&gt;As we begin to discover the longer term consequences of using LLMs to generate code, I would love to see more honest conversations about what is truly involved in enabling people over both the short and long term. Because we can build for that if we want to.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>What to do about developer skills</title>
-    <link href="https://www.sue.codes/blog/oneanswer/" />
-    <updated>2026-04-24T00:00:00Z</updated>
-    <id>https://www.sue.codes/blog/oneanswer/</id>
-    <content type="html">&lt;p&gt;I&#39;ve been giving talks about developer learning and AI-assisted coding pretty regularly over the last couple of months. Doing this is helping me clarify my own thoughts and better position me to advise others, based on what I&#39;ve learned about software engineering and pedagogy over the years. This week I had the pleasure of speaking at &lt;a href=&quot;https://haggisruby.co.uk/&quot;&gt;Haggis Ruby&lt;/a&gt; in Glasgow, with a community I wasn&#39;t part of but who could not have been more welcoming and open to what I was saying. ❤️&lt;/p&gt;
-&lt;p&gt;It was lovely and very weird to be at a dev event with a mix of folk from various places &lt;strong&gt;in Glasgow&lt;/strong&gt;. I&#39;m so used to that being an experience I have away from home that it felt odd in a good way. I love Glasgow a lot so it makes me extremely happy to see so many more people experiencing the city these days, and in many cases choosing to stay. A mere ten minute train ride to get to the event was nice too.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Here&#39;s my deck:
-&lt;a href=&quot;https://docs.google.com/presentation/d/1S901LCH4T2zhKxUfltQYIHHaGIHCjm2xxx4PXXUR644/&quot;&gt;Developer skills worth learning when AI can write code&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;there-is-no-one-answer-to-this&quot;&gt;There is no one answer to this&lt;/h2&gt;
-&lt;p&gt;Here&#39;s the thing, I&#39;m sure there are consultancy firms sending folk into workplaces all over the world right now and giving them identical advice on what they need to do to get ready for this new world of AI writing code. Yeah, I don&#39;t think that&#39;s how this works. Aside from the fact that anyone claiming to know with certainty what is going to happen is either delusional or lying, approaching this strategically can really only be done in context. It&#39;s something we&#39;re all going to need to figure out collectively.&lt;/p&gt;
-&lt;h2 id=&quot;can-we-start-being-sensible-about-this-yet&quot;&gt;Can we start being sensible about this yet?&lt;/h2&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://www.sue.codes/blog/oneanswer/AbtzyF-W2--960.avif 960w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://www.sue.codes/blog/oneanswer/AbtzyF-W2--960.webp 960w&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://www.sue.codes/blog/oneanswer/AbtzyF-W2--960.jpeg&quot; alt=&quot;Code is cheap, The bottleneck has moved, There is no moat&quot; width=&quot;960&quot; height=&quot;540&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;At the start of my talk I show this daft slide and wait for a few moments, watching how people react. I&#39;ve had a bit of variation lol, but when I follow it up with &amp;quot;I&#39;m not sure how much time you spend on LinkedIn&amp;quot; people typically laugh and let out a small sigh of relief.&lt;/p&gt;
-&lt;p&gt;My hope is that as the dust settles and we see more of the fallout from the initial waves of adoption (and frequently overreliance) on LLMs to generate code, we&#39;ll be able to find the space to start having more constructive conversations about the real utility and impact of this tooling. Perhaps I am an optimist after all.&lt;/p&gt;
-&lt;h2 id=&quot;ok-maybe-there-is-one-answer&quot;&gt;OK maybe there is one answer&lt;/h2&gt;
-&lt;p&gt;I lied, I think there is one answer I&#39;d give to people asking what to do about developer skills right now. Create the conditions for shared learning within your organisation. Yeah it&#39;s a bit abstract, but I strongly believe that the companies and communities who can cultivate peer learning will set themselves up to succeed with this new way of making software.&lt;/p&gt;
-&lt;p&gt;I have a lot more to think and say about this, and shall do that right here on this blog, which you can subscribe to &lt;a href=&quot;https://www.sue.codes/feed/feed.xml&quot;&gt;via the RSS feed&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
