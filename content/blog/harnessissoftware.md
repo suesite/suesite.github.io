@@ -19,7 +19,7 @@ I'm mostly making LLM requests directly in my code rather than e.g. leveraging t
 
 ## A peculiar kind of data
 
-If it isn’t obvious, a harness is just software. The LLM calls provide a way to incorporate data into your processing, but it's a very peculiar, unpredictable kind of data. You need to heavily constrain what you send and receive the model – the harness has to behave like a very paranoid API client. 
+If it isn’t obvious, a harness is just software. The LLM calls provide a way to incorporate data into your processing, but it's a very peculiar, unpredictable kind of data. You need to heavily constrain what you send and receive from the model – the harness has to behave like a very paranoid API client. 
 
 The range of possible inputs and outputs is endless. It's partly why people are having such chronic disagreements about the value of this technology, because they’re having wildly different experiences using it and talking past one another as a result. Learning how to use the model where it's most beneficial (and least wasteful) is quite a task. 
 
