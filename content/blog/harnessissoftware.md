@@ -5,7 +5,7 @@ date: 2026-09-05
 img: https://www.sue.codes/harnessdog.jpg
 ---
 
-When I decided I wanted to make a programming learning tool that incorporates LLMs, I chose to build for IDEs, starting with VS Code. I did that because I believed there would be value in steering people back towards code, and because that way I could build with LLMs in a **model agnostic** way. What's happening with open models and model companies in general is making me glad I didn't target one of their platforms.
+When I decided I wanted to make a programming learning tool that incorporates LLMs, I chose to build for IDEs, starting with VS Code. I did that because I believed there would be value in steering people back towards code, and because it would let me build with LLMs in a **model agnostic** way. What's happening with open models and model companies in general is making me glad I didn't target one of their platforms.
 
 ![a dog in a parachute harness](harnessdog.jpg)
 
@@ -19,7 +19,7 @@ I'm mostly making LLM requests directly in my code rather than e.g. leveraging t
 
 ## A peculiar kind of data
 
-If it isn’t obvious, a harness is just software. The LLM calls provide a way to incorporate data into your processing, but it's a very peculiar, unpredictable kind of data. You need to heavily constrain what you send and receive the model – the harness has to behave like a very paranoid API client. 
+If it isn’t obvious, a harness is just software. The LLM calls provide a way to incorporate data into your processing, but it's a very peculiar, unpredictable kind of data. You need to heavily constrain what you send and receive from the model – the harness has to behave like a very paranoid API client. 
 
 The range of possible inputs and outputs is endless. It's partly why people are having such chronic disagreements about the value of this technology, because they’re having wildly different experiences using it and talking past one another as a result. Learning how to use the model where it's most beneficial (and least wasteful) is quite a task. 
 
