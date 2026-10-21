@@ -143,8 +143,15 @@
 	
 		
 		<url>
+			<loc>https://www.sue.codes/blog/intermediateabstractions/</loc>
+			<lastmod>2026-10-21</lastmod>
+		</url>
+	
+	
+		
+		<url>
 			<loc>https://www.sue.codes/feed/feed.xml</loc>
-			<lastmod>2026-09-05</lastmod>
+			<lastmod>2026-10-21</lastmod>
 		</url>
 	
 </urlset>

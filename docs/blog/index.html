@@ -429,6 +429,10 @@ span.description {
 	padding-top: 1rem;
 }
 
+.excerpt img {
+	margin-bottom: 1rem;
+}
+
 a.readmore {
 	font-style: italic;
 }
@@ -444,6 +448,17 @@ a.readmore {
 .excerpt em {
 	font-style: normal;
 	font-weight: normal;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+    
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
 }
 
 
@@ -519,7 +534,13 @@ a.readmore {
 <h1 id="posts">Posts</h1>
 
 
-<ul reversed="" class="postlist" style="--postlist-index: 17">
+<ul reversed="" class="postlist" style="--postlist-index: 18">
+	<li class="postlist-item">
+		<a href="/blog/intermediateabstractions/" class="postlist-link">In search of intermediate abstractions</a>
+		<time class="postlist-date" datetime="2026-10-21">21 October 2026</time>
+		<span class="description">Working with LLM generated code effectively requires some intermediate abstractions.</span>
+		
+	</li>
 	<li class="postlist-item">
 		<a href="/blog/harnessissoftware/" class="postlist-link">Harnesses are just software</a>
 		<time class="postlist-date" datetime="2026-09-05">05 September 2026</time>
@@ -669,7 +690,7 @@ a.readmore {
         </a></div>
 		</footer>
 
-		<!-- This page `/blog/` was built on 2026-09-05T15:22:40.843Z -->
+		<!-- This page `/blog/` was built on 2026-10-21T16:04:20.613Z -->
 		<script type="module" src="/dist/cC8wS6ZjFU.js"></script>
 	</body>
 </html>
