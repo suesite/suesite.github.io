@@ -56,6 +56,6 @@ Often these abstractions are exposed in the UI with the option of revealing more
 
 ## From analysis to understanding
 
-I'm using language model queries in conjunction with a few different rounds of analysis, to identify places likely to be instructive for first investigations of a codebase (based on recognising patterns from projects in the training data) and generating natural language descriptions of what's happening when the code at those locations executes. 
+I'm using language model queries in conjunction with a few different rounds of analysis, to identify places likely to be instructive for first investigations of a codebase (based on recognising patterns from projects in the training data) and generating natural language descriptions of what's happening when the code at those locations executes. The aim is to help someone construct a mental model of a project they're working on and build the confidence they need to take ownership of it.
 
-I've long wanted to build learning supports that illuminate the space between code in a file and what happens when a program runs. Exploring these intermediate levels of abstraction feels key to that purpose.
+I've long wanted to create learning supports that illuminate the space between code in a file and what happens when a program runs. Exploring these intermediate levels of abstraction feels key to that purpose.
