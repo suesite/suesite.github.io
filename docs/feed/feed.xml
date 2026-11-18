@@ -5,11 +5,37 @@
   <subtitle>A blog about coding and learning</subtitle>
   <link href="https://www.sue.codes/feed/feed.xml" rel="self" />
   <link href="https://www.sue.codes/" />
-  <updated>2026-10-21T00:00:00Z</updated>
+  <updated>2026-11-18T00:00:00Z</updated>
   <id>https://www.sue.codes/</id>
   <author>
     <name>Sue Smith</name>
   </author>
+  <entry>
+    <title>The learning grift continues</title>
+    <link href="https://www.sue.codes/blog/learninggrift/" />
+    <updated>2026-11-18T00:00:00Z</updated>
+    <id>https://www.sue.codes/blog/learninggrift/</id>
+    <content type="html">&lt;p&gt;One of my many frustrations working on developer learning in industry settings over the last couple of decades has been the attribution of the word “learning” to tools that represent its absence. My great nemesis, the LMS (Learning Management System) is the poster child. These are platforms that satisfy organisational compliance requirements by teaching material passively and checking a box on successful completion of a quiz. The goal is administrative, not educational.&lt;/p&gt;
+&lt;p&gt;Much like schools creating conditions that are not optimised for learning and that can even prevent it, many of our systems act to record learning in the form of completed outcomes that meet some institutional constraint required to continue operations. As we start to feel how critical software system comprehension is to our organisations, we&#39;ll inevitably see a rise in products whose value prop claims to address this.&lt;/p&gt;
+&lt;h2 id=&quot;the-measurement-problem&quot;&gt;The measurement problem&lt;/h2&gt;
+&lt;p&gt;I’m already seeing suggestions along the lines of quizzing people on the codebases they are held accountable for. Here’s the thing though, quizzing is a helpful technique &lt;em&gt;in stimulating learning, not necessarily in assessment&lt;/em&gt; – and is far from adequate alone, either for skill development or risk management.&lt;/p&gt;
+&lt;h2 id=&quot;software-systems-are-not-static&quot;&gt;Software systems are not static&lt;/h2&gt;
+&lt;p&gt;I’m noticing the emergence of a host of tools that aim to help build comprehension by generating assets to represent a system in different ways. Loads of these are super helpful! But the source code for a system is not the system in operation, which is both challenging to predict and subject to many external influences. If we really want to learn about software systems, we’ll do it in part by running them and exploring what is going on during runtime.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Running a program as part of a teaching loop is an established method in coding education within school settings, but that remains underused in the workplace.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;software-work-is-not-recounting-information&quot;&gt;Software work is not recounting information&lt;/h2&gt;
+&lt;p&gt;Retrieval practice is a helpful learning technique, but it’s most valuable on software work when used &lt;em&gt;actively, to inform making changes to a system&lt;/em&gt;. The relationship between being able to answer questions about what’s in the codebase and being prepared to act on it in an effective way is tangential at best.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Successful coding pedagogy leverages retrieval practice not through simple tests, but as part of &lt;em&gt;reapplying what you’ve learned in new contexts&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Similarly, activities like predicting or guessing what code is going to do can be more impactful than describing what it does now. Developers don&#39;t just observe software systems, they build and shape them. Reflection is another useful tactic, especially when our reflection prompts stimulate learners to imagine what else they might use a skill they’ve acquired to do in future.&lt;/p&gt;
+&lt;p&gt;On a related note: developer interviews that have candidates talk about a project they built are not effective because they establish knowledge of coding techniques, but because they create a dialogue for discovering something more abstract about how the person approaches their work.&lt;/p&gt;
+&lt;h2 id=&quot;this-is-hard&quot;&gt;This is hard&lt;/h2&gt;
+&lt;p&gt;There’s a reason we don’t have many tools to support this kind of learning already – it’s hard. Illuminating the space between source code and what happens when it runs is a problem that goes to the fundamentals of computer programming and how they are applied in the real world. True learning is difficult to tie to the business metrics that result in the allocation of budgets, but we’re living through the consequences of neglecting it – at some point this must surely become critical enough that we take it seriously.&lt;/p&gt;
+&lt;p&gt;I am quite certain there are edtech providers currently working on the compliance problem for system comprehension. I’m hoping more of us are also working on the learning problem.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>In search of intermediate abstractions</title>
     <link href="https://www.sue.codes/blog/intermediateabstractions/" />
@@ -291,45 +317,6 @@ There were also abstractions that didn’t age quite so well. Not having to thin
 &lt;p&gt;When you learn how to automate making things with code, it can become a habit you jump to instinctively. We automate one thing and immediately leap to automating more and more of the same process. But each automation comes at the cost of understanding. Too often we’ve taken things far enough to sacrifice understanding in ways that created new problems – for learners, for teams, even for ourselves when we looked back at projects we’d previously worked on.&lt;/p&gt;
 &lt;h2 id=&quot;we-re-here-again&quot;&gt;We&#39;re here again&lt;/h2&gt;
 &lt;p&gt;Choosing when and how to leverage LLMs to generate code is subject to the same balancing act. This automation gives us the opportunity to opt out of understanding that is not relevant to our goals. But how do we know when it is worth prioritising understanding? Well it’s difficult to make that call in the moment, because typically we find out we’ve got it wrong later. For that reason I’d recommend a regular practice of revisiting your comprehension of the projects you work on. If you feel you’re losing your sense of wtf is going on &lt;em&gt;in a way that is relevant to your goals&lt;/em&gt;, take a step back and course correct.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How should we teach software development now?</title>
-    <link href="https://www.sue.codes/blog/devtopics/" />
-    <updated>2026-04-30T00:00:00Z</updated>
-    <id>https://www.sue.codes/blog/devtopics/</id>
-    <content type="html">&lt;p&gt;Yesterday I &lt;a href=&quot;https://www.linkedin.com/posts/sue-smith-benormal_ive-been-thinking-and-posting-about-ai-assisted-activity-7455333012457738240-1n7y&quot;&gt;posted on LinkedIn&lt;/a&gt; about realising I&#39;ve been thinking and writing about AI-assisted coding for three years now, and that overwhelmingly I still stand by the positions I&#39;ve taken. My first public post on the subject was in May 2023, so I&#39;m going to revisit it on the same day this year. But for now, since the discussion touched on what we should be teaching on software engineering courses, it prompted me to jot down my current thinking, still very much WIP but here you go.&lt;/p&gt;
-&lt;p&gt;⚠️ &lt;em&gt;Note that this is squarely focused on courses where the goal is to learn the skills in being a working software developer. Many other courses involve writing code as a technique in service of some other goal – strategies will vary enormously there, as the potential to lean more heavily on LLMs to generate code increases on small scale, low complexity apps. The skills I&#39;m focused on here are for preparing to work on the kind of complex systems teams of software engineers collaborate on.&lt;/em&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;I thoroughly recommend restricting reliance on LLMs when teaching programming fundamentals. It&#39;s unrealistic to expect to eliminate it, but as far as possible I&#39;d get students up to speed with the basics the &amp;quot;old fashioned&amp;quot; way, by writing their code manually.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I would also look to the humanities, where educators are using LLMs to generate content, then having the students engage in critical thinking about the output. Raspberry Pi Foundation have shared resources for similar, covering topics like &lt;a href=&quot;https://www.raspberrypi.org/blog/ai-education-anthropomorphism/&quot;&gt;anthropomorphism&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;These first two are essentially focused on harm reduction regarding the negative consequences of LLMs being available. That&#39;s unfortunate but necessary at this stage.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol start=&quot;3&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Explore using LLMs to aid activities such as debugging and code comprehension. We&#39;re going to need a heavier focus on code reading skills when lots more code is being generated, and I&#39;m cautiously optimistic we&#39;ll see the rise of better tooling to support these practices. Similarly, with the explosion in outages and incidents, I have to assume performance and security topics are going to be more central to the working life of a developer.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;I think there&#39;s tremendous potential to use LLMs to generate practice exercises dynamically. Mostly I see anecdotal accounts of people doing this, but again I&#39;m hopeful we&#39;ll have dedicated tooling to enable it. Having an LLM generate a broken project the learner has to fix is an idea I&#39;d like to experiment with.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;In terms of developing &lt;em&gt;with&lt;/em&gt; LLMs, this is where I&#39;m more hesitant. I&#39;m thinking writing specifications, LLM scaffolding etc (the many and varied markdown files involved in effective deployment of this stuff). I would tend to treat this as an advanced topic, second to e.g. learning a foundation in programming with one or two existing languages. It might seem frustrating to not be leveraging recent technology straight away, but I storngly believe an upfront investment in these foundational skills will pay off in the long run. It&#39;s also difficult to establish good practice for building this way as it&#39;s so recent, and the volatility of the platforms makes these skills incredibly hard to pin down with any reliability.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In industry settings, the overarching advice I&#39;d give is to &lt;a href=&quot;https://www.sue.codes/blog/oneanswer/&quot;&gt;build a culture of learning&lt;/a&gt; in your organisation. That is of course not a trivial task, but a good start would be encouraging tactics like peer learning, pair programming, and mentorship – these are going to be more valuable and essential than ever.&lt;/p&gt;
-&lt;p&gt;I am a broken record on this but Raspberry Pi Foundation publish phenomenal resources on teaching programming in the context of AI:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.raspberrypi.org/blog/pedagogy-quick-reads-turning-abstract-ideas-into-classroom-practice/&quot;&gt;AI pedagogy quick reads&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://experience-ai.org/en/units&quot;&gt;Experience AI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.raspberrypi.org/hello-world/&quot;&gt;The Hello World magazine&lt;/a&gt; which has tons of example lessons&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I am extremely interested in hearing other perspectives on teaching with this stuff!&lt;/p&gt;
 </content>
   </entry>
 </feed>
