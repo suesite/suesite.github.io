@@ -20,11 +20,11 @@
 &lt;h2 id=&quot;the-measurement-problem&quot;&gt;The measurement problem&lt;/h2&gt;
 &lt;p&gt;I’m already seeing suggestions along the lines of quizzing people on the codebases they are held accountable for. Here’s the thing though, quizzing is a helpful technique &lt;em&gt;in stimulating learning, not necessarily in assessment&lt;/em&gt; – and is far from adequate alone, either for skill development or risk management.&lt;/p&gt;
 &lt;h2 id=&quot;software-systems-are-not-static&quot;&gt;Software systems are not static&lt;/h2&gt;
-&lt;p&gt;I’m noticing the emergence of a host of tools that aim to help build comprehension by generating assets to represent a system in different ways. Loads of these are super helpful! But the source code for a system is not the system in operation, which is both challenging to predict and subject to many external influences. If we really want to learn about software systems, we’ll do it in part by running them and exploring what is going on during runtime.&lt;/p&gt;
+&lt;p&gt;I’m noticing the emergence of a host of tools that aim to help build comprehension by generating assets to represent a system in different ways. Loads of these are super helpful! But the source code for a system is not the system in operation, which is both challenging to predict and subject to many external influences. If we really want to learn about software systems, we’ll do it in part by running them and exploring what is going on during execution.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Running a program as part of a teaching loop is an established method in coding education within school settings, but that remains underused in the workplace.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;software-work-is-not-recounting-information&quot;&gt;Software work is not recounting information&lt;/h2&gt;
+&lt;h2 id=&quot;software-work-is-not-descriptive&quot;&gt;Software work is not descriptive&lt;/h2&gt;
 &lt;p&gt;Retrieval practice is a helpful learning technique, but it’s most valuable on software work when used &lt;em&gt;actively, to inform making changes to a system&lt;/em&gt;. The relationship between being able to answer questions about what’s in the codebase and being prepared to act on it in an effective way is tangential at best.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Successful coding pedagogy leverages retrieval practice not through simple tests, but as part of &lt;em&gt;reapplying what you’ve learned in new contexts&lt;/em&gt;.&lt;/p&gt;
@@ -32,8 +32,8 @@
 &lt;p&gt;Similarly, activities like predicting or guessing what code is going to do can be more impactful than describing what it does now. Developers don&#39;t just observe software systems, they build and shape them. Reflection is another useful tactic, especially when our reflection prompts stimulate learners to imagine what else they might use a skill they’ve acquired to do in future.&lt;/p&gt;
 &lt;p&gt;On a related note: developer interviews that have candidates talk about a project they built are not effective because they establish knowledge of coding techniques, but because they create a dialogue for discovering something more abstract about how the person approaches their work.&lt;/p&gt;
 &lt;h2 id=&quot;this-is-hard&quot;&gt;This is hard&lt;/h2&gt;
-&lt;p&gt;There’s a reason we don’t have many tools to support this kind of learning already – it’s hard. Illuminating the space between source code and what happens when it runs is a problem that goes to the fundamentals of computer programming and how they are applied in the real world. True learning is difficult to tie to the business metrics that result in the allocation of budgets, but we’re living through the consequences of neglecting it – at some point this must surely become critical enough that we take it seriously.&lt;/p&gt;
-&lt;p&gt;I am quite certain there are edtech providers currently working on the compliance problem for system comprehension. I’m hoping more of us are also working on the learning problem.&lt;/p&gt;
+&lt;p&gt;There’s a reason we don’t have many tools to support the kind of learning I&#39;m advocating already – it’s hard. Illuminating the space between source code and what happens when it runs is a problem that goes to the fundamentals of computer programming and how they are applied in the real world. True learning is difficult to tie to the business metrics that result in the allocation of budgets, but we’re living through the consequences of neglecting it – at some point this must surely become critical enough that we take it seriously.&lt;/p&gt;
+&lt;p&gt;I am quite certain there are edtech providers currently working on the compliance problem for system comprehension. I’m hoping plenty of us are also working on the learning problem.&lt;/p&gt;
 </content>
   </entry>
   <entry>

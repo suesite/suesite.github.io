@@ -16,11 +16,11 @@ I’m already seeing suggestions along the lines of quizzing people on the codeb
 
 ## Software systems are not static 
 
-I’m noticing the emergence of a host of tools that aim to help build comprehension by generating assets to represent a system in different ways. Loads of these are super helpful! But the source code for a system is not the system in operation, which is both challenging to predict and subject to many external influences. If we really want to learn about software systems, we’ll do it in part by running them and exploring what is going on during runtime. 
+I’m noticing the emergence of a host of tools that aim to help build comprehension by generating assets to represent a system in different ways. Loads of these are super helpful! But the source code for a system is not the system in operation, which is both challenging to predict and subject to many external influences. If we really want to learn about software systems, we’ll do it in part by running them and exploring what is going on during execution. 
 
 > Running a program as part of a teaching loop is an established method in coding education within school settings, but that remains underused in the workplace.
 
-## Software work is not recounting information
+## Software work is not descriptive
 
 Retrieval practice is a helpful learning technique, but it’s most valuable on software work when used _actively, to inform making changes to a system_. The relationship between being able to answer questions about what’s in the codebase and being prepared to act on it in an effective way is tangential at best. 
 
@@ -32,6 +32,6 @@ On a related note: developer interviews that have candidates talk about a projec
 
 ## This is hard
 
-There’s a reason we don’t have many tools to support this kind of learning already – it’s hard. Illuminating the space between source code and what happens when it runs is a problem that goes to the fundamentals of computer programming and how they are applied in the real world. True learning is difficult to tie to the business metrics that result in the allocation of budgets, but we’re living through the consequences of neglecting it – at some point this must surely become critical enough that we take it seriously.
+There’s a reason we don’t have many tools to support the kind of learning I'm advocating already – it’s hard. Illuminating the space between source code and what happens when it runs is a problem that goes to the fundamentals of computer programming and how they are applied in the real world. True learning is difficult to tie to the business metrics that result in the allocation of budgets, but we’re living through the consequences of neglecting it – at some point this must surely become critical enough that we take it seriously.
 
-I am quite certain there are edtech providers currently working on the compliance problem for system comprehension. I’m hoping more of us are also working on the learning problem. 
+I am quite certain there are edtech providers currently working on the compliance problem for system comprehension. I’m hoping plenty of us are also working on the learning problem. 
