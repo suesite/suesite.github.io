@@ -2,7 +2,10 @@
 title: The learning grift continues
 description: The tension between learning and assessment with reference to software system comprehension.
 date: 2026-11-18
+img: https://www.sue.codes/examhall.jpg
 ---
+
+![an exam hall](examhall.jpg)
 
 One of my many frustrations working on developer learning in industry settings over the last couple of decades has been the attribution of the word “learning” to tools that represent its absence. My great nemesis, the LMS (Learning Management System) is the poster child. These are platforms that satisfy organisational compliance requirements by teaching material passively and checking a box on successful completion of a quiz. The goal is administrative, not educational.
 
